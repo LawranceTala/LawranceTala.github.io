@@ -147,119 +147,98 @@
     <main>
       
       <!-- Fourth Section: Projects -->
-      <section id="projects" class="section scrollspy">
-        <h3 class="page-title white-text teal">Projects</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m6 l4">
-              
-              <div class="card medium">
-                
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img alt="music streaming app" src="assets/img/Crop recommender.jpg" style="height: 100%; width: 100%" class="activator" />
-                </div>
-                
-              <div class="card-reveal">
-                <div class="card-content">
-                  <span class="card-title activator teal-text hoverline">Crop-Recommendation-System
-                    <i class="mdi-navigation-more-vert right"></i></span><p>
-                      Machine learning based  Crop recommender system
-                    </p>
-                </div>
-                
-                <span class="card-title grey-text"><small>Accomplishments</small>
-                    <i class="mdi-navigation-close right"></i>
-                </span>
-                
-                <ul>
-                  <li><b>Tools:</b> Fatapi, python, scikit-learn, XGBoost, pandas,jupyter Notebook,LabelEncoder</li>
-                  <li>This project recommends the most suitable crop to grow based on environmental and soil conditions like nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall. It uses a machine learning model trained on real agricultural data and provides predictions through a FastAPI backend with a ReactJS frontend interface.).</li>
-                </ul>
-                
-                <div class="card-action">
-                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/LawranceTala/Crop-Recommendation-System"
-                      target="_blank" data-position="top" data-tooltip="View Source"
-                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                      <i class="fa fa-github"></i></a>
-                </div>
-              </div>
-              
-              <div class="col s12 m6 l4">
-                <div class="card medium">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img alt="quiz app" src="assets/img/Energy.jpg" style="height: 100%; width: 100%" class="activator" />
-                  </div>
-                    </div>
-                      
-                      <div class="card-content">
-                        <span class="card-title activator teal-text hoverline">Energy-Consumption-Prediction
-                          <i class="mdi-navigation-more-vert right"></i>
-                        </span>
-                        <p>
-                          predicts the amount of energy consumption(KWh) based on various factors
-                        </p>
-                      </div>
-                      
-                      <div class="card-reveal">
-                        <span class="card-title grey-text"><small>Accomplishments</small>
-                          <i class="mdi-navigation-close right"></i>
-                        </span>
-                        <ul>
-                          <li><b>Tools:</b> pandas, Numpy, CSS, matplotlib, searbon,</li>
-                          <li>The system takes sensor data and environmental values as inputs such as temperature.</li>
-                          <li>The input is passed to trained ML model ,the model uses this data to predict how much energy will be consumed under those conditions </li>
-                          <li>The predicted energy consumption is returned as the output ,either through api(Fastapi) or shown in the frontend UI (react form) </li>
-                        </ul>
-                        
-                        <div class="card-action">
-                          <a aria-label="Visit the GitHub repo for  project" href="https://github.com/LawranceTala/Energy-Consumption-Prediction"
-                            target="_blank" data-position="top" data-tooltip="View Source"
-                            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                            <i class="fa fa-github"></i></a>
-                        </div>
-                      </div>
-              </div>
-              
-              <div class="col s12 m6 l4">
-                  <div class="card medium">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img alt="Screenshot of web app" src="assets/img/Paddy.jpg"
-                        style="height: 100%; width: 100%" class="activator" />
-                    </div>
-                            <div class="card-content">
-                              <span class="card-title activator teal-text hoverline">Paddy-Leaf-Disease-Classification
-                                <i class="mdi-navigation-more-vert right"></i>
-                              </span>
-                              <p>
-                                A machine learning project to classify diseases in paddy(rice)leaves from images
-                              </p>
-                            </div>
-                            
-                            <div class="card-reveal">
-                              <span class="card-title teal-text"><small>Accomplishments</small>
-                                <i class="mdi-navigation-close right"></i>
-                              </span>
-                              <ul>
-                                <li><b>Tools:</b> pandas, numpy, fast api,tensorflow, confusion matrix,vs code, Python,Jupyter notebook</li>
-                                <li>The system takes an image of a paddy leaf as input.</li>
-                                <li>CNN analyzes the image to extract visual patterns related to diseases.</li>
-                                <li>The model predicts the type of disease and returns the result.</li>
-                              </ul>
-                              
-                              <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/LawranceTala/Paddy-Leaf-Disease-Classification"
-                                  target="_blank" data-position="top" data-tooltip="View Source"
-                                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                                  <i class="fa fa-github"></i></a>
-                              </div>
-                            </div>
-                  </div>
-              </div>
-              </div>
+<section id="projects" class="section scrollspy">
+  <h3 class="page-title white-text teal">Projects</h3>
+  <div class="container">
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Crop Recommendation System" src="assets/img/Crop recommender.jpg" style="height: 100%; width: 100%" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Crop-Recommendation-System
+              <i class="mdi-navigation-more-vert right"></i></span>
+            <p>Machine learning based Crop recommender system</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text"><small>Accomplishments</small>
+              <i class="mdi-navigation-close right"></i>
+            </span>
+            <ul>
+              <li><b>Tools:</b> FastAPI, Python, scikit-learn, XGBoost, pandas, Jupyter Notebook, LabelEncoder</li>
+              <li>Recommends the most suitable crop to grow based on soil and environmental conditions.</li>
+            </ul>
+            <div class="card-action">
+              <a href="https://github.com/LawranceTala/Crop-Recommendation-System" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-position="top" data-tooltip="View Source">
+                <i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Energy Prediction App" src="assets/img/Energy.jpg" style="height: 100%; width: 100%" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Energy-Consumption-Prediction
+              <i class="mdi-navigation-more-vert right"></i></span>
+            <p>Predicts energy consumption based on environmental sensor inputs.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text"><small>Accomplishments</small>
+              <i class="mdi-navigation-close right"></i>
+            </span>
+            <ul>
+              <li><b>Tools:</b> pandas, NumPy, CSS, matplotlib, seaborn</li>
+              <li>Predicts energy usage from sensor/environment data using trained ML models.</li>
+              <li>Frontend built with React; backend via FastAPI.</li>
+            </ul>
+            <div class="card-action">
+              <a href="https://github.com/LawranceTala/Energy-Consumption-Prediction" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-position="top" data-tooltip="View Source">
+                <i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Paddy Leaf Disease Detection" src="assets/img/Paddy.jpg" style="height: 100%; width: 100%" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Paddy-Leaf-Disease-Classification
+              <i class="mdi-navigation-more-vert right"></i></span>
+            <p>Classifies diseases in rice leaves using deep learning.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text"><small>Accomplishments</small>
+              <i class="mdi-navigation-close right"></i>
+            </span>
+            <ul>
+              <li><b>Tools:</b> TensorFlow, FastAPI, pandas, NumPy, Python, Jupyter</li>
+              <li>Uses CNNs to identify visual disease features from leaf images.</li>
+              <li>Returns the classified disease result with confidence.</li>
+            </ul>
+            <div class="card-action">
+              <a href="https://github.com/LawranceTala/Paddy-Leaf-Disease-Classification" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-position="top" data-tooltip="View Source">
+                <i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     </main>
     
     <!-- typed.js -->
@@ -291,4 +270,5 @@
       })
     </script>
   </body>
+
 
