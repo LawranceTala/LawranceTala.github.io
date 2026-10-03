@@ -112,29 +112,39 @@
 
 
     /* =========================
-       ONE CLEAN CARD
+       REMOVE ABOUT CARD
+       CONTENT SITS DIRECTLY
+       ON THE BACKGROUND
     ========================= */
 
     .about-card {
       max-width: 950px;
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.96);
-      border-radius: 16px;
-      padding: 40px 50px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      padding: 20px 30px 50px;
+
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
     }
 
 
     /* =========================
-       CARD HEADING
+       ABOUT TITLE
     ========================= */
 
     .about-card-title {
       text-align: center;
-      color: #004d40;
+      color: #ffffff;
       font-size: 30px;
       font-weight: 500;
-      margin: 0 0 25px;
+      margin: 0 0 30px;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.8);
     }
 
     .about-card-title i {
@@ -148,10 +158,13 @@
     ========================= */
 
     .about-card p {
-      color: #444;
+      color: #ffffff;
       font-size: 16px;
       line-height: 1.8;
       margin-bottom: 18px;
+
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.85);
     }
 
 
@@ -160,13 +173,17 @@
     ========================= */
 
     .about-heading {
-      color: #00695c;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
-      margin-top: 30px;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #e0e0e0;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+
+      border-bottom: none !important;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.85);
     }
 
     .about-heading i {
@@ -184,17 +201,20 @@
     }
 
     .technical-info p {
-      margin: 8px 0;
+      margin: 10px 0;
       font-size: 15px;
     }
 
     .technical-info strong {
-      color: #004d40;
+      color: #80cbc4;
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9);
     }
 
 
     /* =========================
-       STRENGTHS
+       PROFESSIONAL STRENGTHS
+       NO BOXES / NO CARDS
     ========================= */
 
     .strengths {
@@ -202,13 +222,30 @@
     }
 
     .strengths span {
-      display: inline-block;
-      margin: 5px 5px 5px 0;
-      padding: 8px 15px;
-      border-radius: 20px;
-      background: #e0f2f1;
-      color: #00695c;
-      font-size: 14px;
+      display: inline;
+      margin: 0 18px 0 0;
+      padding: 0;
+
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+
+      color: #ffffff;
+      font-size: 15px;
+
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.85);
+    }
+
+    .strengths span::after {
+      content: " • ";
+      margin-left: 18px;
+      color: #80cbc4;
+    }
+
+    .strengths span:last-child::after {
+      content: "";
     }
 
 
@@ -216,13 +253,20 @@
        CAREER INTERESTS
     ========================= */
 
+    .career-interests {
+      margin-top: 10px;
+    }
+
     .career-interests p {
-      margin: 8px 0;
+      margin: 10px 0;
     }
 
     .career-interests i {
-      color: #00796b;
-      margin-right: 8px;
+      color: #80cbc4;
+      margin-right: 10px;
+
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9);
     }
 
 
@@ -234,7 +278,7 @@
 
       .about-card {
         margin: 0 15px;
-        padding: 35px 25px;
+        padding: 20px 20px 40px;
       }
 
       .page-title {
@@ -252,8 +296,7 @@
 
       .about-card {
         margin: 0 10px;
-        padding: 30px 20px;
-        border-radius: 14px;
+        padding: 15px 10px 30px;
       }
 
       .about-card-title {
@@ -267,11 +310,15 @@
 
       .about-heading {
         font-size: 18px;
+        margin-top: 28px;
+      }
+
+      .technical-info p {
+        font-size: 14px;
       }
 
       .strengths span {
-        font-size: 13px;
-        padding: 7px 12px;
+        font-size: 14px;
       }
 
     }
@@ -285,16 +332,12 @@
   <!-- Google Tag Manager (noscript) -->
 
   <noscript>
-
-```
-<iframe
-  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0"
-  width="0"
-  style="display:none;visibility:hidden">
-</iframe>
-```
-
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
   </noscript>
 
   <!-- =========================
@@ -305,7 +348,6 @@
 
 ```
 <ul class="side-nav fixed section table-of-contents">
-
 
   <!-- Profile Image - NOT CLICKABLE -->
 
@@ -494,7 +536,6 @@
 ```
 <ul id="slide-out-mobile" class="side-nav">
 
-
   <li class="bold">
 
     <a href="index.html">
@@ -601,7 +642,7 @@
   <div class="container">
 
 
-    <!-- ONE SINGLE CLEAN CARD -->
+    <!-- CLEAN CONTENT - NO CARD -->
 
     <div class="about-card">
 
