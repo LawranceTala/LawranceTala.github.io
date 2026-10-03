@@ -3,12 +3,17 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="description"
- content="Lawrance Tala Ogaywa - Software Developer, Machine Learning Enthusiast, IT Professional and Operations Support."> <meta name="author" content="Lawrance Tala Ogaywa">
+ content="Lawrance Tala Ogaywa - Software Developer, Machine Learning Enthusiast, IT Professional and Operations Support.">
+
+  <meta name="author" content="Lawrance Tala Ogaywa">
 
   <title>Lawrance Tala | Software Developer</title>
 
@@ -27,11 +32,12 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <!-- Your main stylesheet -->
+  <!-- Main stylesheet -->
 
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
+
     /* =========================================================
        INDEX / HOME PAGE
        ========================================================= */
@@ -43,13 +49,13 @@
       overflow-x: hidden;
     }
 
-    body {
-      background: #ffffff;
-    }
 
-    /* Desktop navigation */
+    /* =========================================================
+       DESKTOP SIDE NAVIGATION
+       ========================================================= */
+
     .side-nav.fixed {
-      width: 250px;
+      width: 190px;
     }
 
     .side-nav .logo {
@@ -73,261 +79,535 @@
       margin-right: 12px;
     }
 
-    /* Main content */
+
+    /* =========================================================
+       MAIN CONTENT
+       ========================================================= */
+
     main {
-      margin-left: 250px;
       min-height: 100vh;
+      margin-left: 0;
     }
 
-    /* Hero */
+
+    /* =========================================================
+       HERO / HOME SECTION
+       ========================================================= */
+
     .hero-section {
+
       min-height: 100vh;
+
       position: relative;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       text-align: center;
+
       padding: 60px 30px;
+
       box-sizing: border-box;
-      background: linear-gradient(135deg, #00897b 0%, #00695c 100%);
+
+      /*
+       * IMPORTANT:
+       * Transparent so ai-wallpaper-1.jpg from style.css
+       * can appear behind the Home section.
+       */
+      background: transparent;
+
       color: #ffffff;
+
     }
+
 
     .hero-content {
+
       width: 100%;
+
       max-width: 900px;
+
       margin: 0 auto;
+
     }
+
+
+    /* =========================================================
+       PROFILE PHOTO
+       ========================================================= */
 
     .hero-photo {
+
       width: 170px;
+
       height: 170px;
+
       object-fit: cover;
+
       border-radius: 50%;
+
       border: 5px solid rgba(255, 255, 255, 0.9);
+
       margin-bottom: 25px;
+
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
     }
+
+
+    /* =========================================================
+       NAME
+       ========================================================= */
 
     .hero-name {
+
       margin: 5px 0 10px;
+
       font-size: 52px;
+
       line-height: 1.15;
+
       font-weight: 400;
+
       letter-spacing: 0.5px;
+
+      text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.55);
+
     }
+
+
+    /* =========================================================
+       PROFESSIONAL TITLE
+       ========================================================= */
 
     .hero-title {
+
       margin: 0 auto 25px;
+
       font-size: 23px;
+
       line-height: 1.5;
+
       font-weight: 400;
+
+      text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.55);
+
     }
+
+
+    /* =========================================================
+       DESCRIPTION
+       ========================================================= */
 
     .hero-description {
+
       max-width: 720px;
+
       margin: 0 auto 30px;
+
       font-size: 17px;
+
       line-height: 1.8;
-      opacity: 0.95;
+
+      opacity: 0.96;
+
+      text-shadow:
+        1px 1px 4px rgba(0, 0, 0, 0.6);
+
     }
+
+
+    /* =========================================================
+       BUTTONS
+       ========================================================= */
 
     .hero-buttons {
+
       margin-top: 25px;
+
     }
+
 
     .hero-buttons .btn {
+
       margin: 6px;
+
       min-width: 145px;
+
       border-radius: 3px;
+
     }
+
 
     .hero-buttons .btn.white-btn {
+
       background: #ffffff;
+
       color: #00897b;
+
     }
+
 
     .hero-buttons .btn.outline-btn {
-      background: transparent;
+
+      background: rgba(0, 0, 0, 0.12);
+
+      color: #ffffff;
+
       border: 1px solid #ffffff;
+
       box-shadow: none;
+
     }
+
 
     .hero-buttons .btn.outline-btn:hover {
+
       background: #ffffff;
+
       color: #00897b;
+
     }
 
-    /* Social links */
+
+    /* =========================================================
+       SOCIAL LINKS
+       ========================================================= */
+
     .social-links {
+
       margin-top: 30px;
+
     }
+
 
     .social-links a {
+
       display: inline-block;
+
       width: 42px;
+
       height: 42px;
+
       line-height: 42px;
+
       margin: 0 5px;
+
       border-radius: 50%;
+
       color: #ffffff;
+
       font-size: 19px;
+
       transition: all 0.2s ease;
+
+      text-shadow:
+        1px 1px 3px rgba(0, 0, 0, 0.5);
+
     }
+
 
     .social-links a:hover {
+
       background: rgba(255, 255, 255, 0.18);
+
       transform: translateY(-3px);
+
     }
 
-    /* Small scroll indicator */
+
+    /* =========================================================
+       SCROLL INDICATOR
+       ========================================================= */
+
     .scroll-indicator {
+
       position: absolute;
+
       bottom: 22px;
+
       left: 50%;
+
       transform: translateX(-50%);
+
       font-size: 12px;
-      opacity: 0.8;
+
+      opacity: 0.85;
+
       letter-spacing: 1px;
+
+      text-shadow:
+        1px 1px 3px rgba(0, 0, 0, 0.6);
+
     }
+
 
     .scroll-indicator i {
+
       display: block;
+
       margin-top: 5px;
+
     }
 
-    /* Mobile navbar */
+
+    /* =========================================================
+       MOBILE NAVBAR
+       ========================================================= */
+
     .mobile-navbar {
+
       display: none;
+
     }
 
-    /* Mobile menu */
+
     .mobile-menu {
+
       display: none;
+
     }
 
-    /* Responsive */
+
+    /* =========================================================
+       TABLET
+       ========================================================= */
+
     @media (max-width: 992px) {
 
+
       .side-nav.fixed {
+
         display: none;
+
       }
+
 
       main {
+
         margin-left: 0;
+
+        padding-top: 0;
+
       }
+
 
       .mobile-navbar {
+
         display: block;
+
         position: fixed;
+
         top: 0;
+
         left: 0;
+
         right: 0;
+
         height: 56px;
+
         line-height: 56px;
-        background: #00897b;
+
+        background: rgba(0, 137, 123, 0.96);
+
         z-index: 999;
+
       }
+
 
       .mobile-navbar .button-collapse {
+
         display: block;
+
         width: 56px;
+
         height: 56px;
+
         line-height: 56px;
+
         text-align: center;
+
         color: #ffffff;
+
       }
+
 
       .mobile-navbar .button-collapse i {
+
         font-size: 30px;
+
         line-height: 56px;
+
       }
+
 
       .mobile-menu {
+
         display: block;
+
       }
+
 
       .hero-section {
+
         min-height: 100vh;
+
         padding: 85px 25px 60px;
+
       }
+
 
       .hero-name {
+
         font-size: 42px;
+
       }
 
+
       .hero-title {
+
         font-size: 21px;
+
       }
+
     }
+
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
 
     @media (max-width: 600px) {
 
+
       .hero-section {
+
+        min-height: 100vh;
+
         padding: 85px 18px 55px;
+
       }
+
 
       .hero-photo {
+
         width: 135px;
+
         height: 135px;
+
         margin-bottom: 20px;
+
       }
+
 
       .hero-name {
+
         font-size: 34px;
+
       }
+
 
       .hero-title {
+
         font-size: 18px;
+
         line-height: 1.5;
+
       }
+
 
       .hero-description {
+
         font-size: 15px;
+
         line-height: 1.7;
+
       }
+
 
       .hero-buttons .btn {
+
         display: block;
+
         width: 90%;
+
         max-width: 260px;
+
         margin: 10px auto;
+
       }
+
 
       .social-links {
+
         margin-top: 22px;
+
       }
+
 
       .social-links a {
+
         width: 38px;
+
         height: 38px;
+
         line-height: 38px;
+
       }
 
+
       .scroll-indicator {
+
         display: none;
+
       }
+
     }
+
+
+    /* =========================================================
+       VERY SMALL PHONES
+       ========================================================= */
 
     @media (max-width: 380px) {
 
+
       .hero-name {
+
         font-size: 30px;
+
       }
+
 
       .hero-title {
+
         font-size: 17px;
+
       }
+
 
       .hero-description {
+
         font-size: 14px;
+
       }
 
+
       .hero-photo {
+
         width: 120px;
+
         height: 120px;
+
       }
+
     }
+
   </style>
 
 </head>
@@ -339,9 +619,16 @@
        ========================================================= -->
 
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-      height="0" width="0" style="display:none;visibility:hidden">
-    </iframe>
+
+```
+<iframe
+  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0"
+  width="0"
+  style="display:none;visibility:hidden">
+</iframe>
+```
+
   </noscript>
 
   <!-- =========================================================
@@ -349,79 +636,137 @@
        ========================================================= -->
 
   <nav>
-    <ul class="side-nav fixed section table-of-contents">
 
 ```
+<ul class="side-nav fixed section table-of-contents">
+
+
   <!-- Profile -->
+
   <li class="logo">
-    <a id="logo-container"
+
+    <a
+      id="logo-container"
       href="index.html"
       class="brand-logo grey-blue-text">
+
       <img
         src="assets/img/passport-new.jpg"
         class="circle img-responsive profile-pic"
         alt="Lawrance Tala profile photo">
+
     </a>
+
   </li>
+
 
   <!-- About -->
+
   <li class="bold">
+
     <a href="about.html">
+
       <i class="mdi-social-person small"></i>
+
       <span>About</span>
+
     </a>
+
   </li>
+
 
   <!-- Experience -->
+
   <li class="bold">
+
     <a href="experience.html">
+
       <i class="mdi-action-trending-up small"></i>
+
       <span>Experience</span>
+
     </a>
+
   </li>
+
 
   <!-- Projects -->
+
   <li class="bold">
+
     <a href="projects.html">
+
       <i class="mdi-av-my-library-books small"></i>
+
       <span>Projects</span>
+
     </a>
+
   </li>
+
 
   <!-- Skills -->
+
   <li class="bold">
+
     <a href="skills.html">
+
       <i class="mdi-action-assessment small"></i>
+
       <span>Skills</span>
+
     </a>
+
   </li>
+
 
   <!-- Education -->
+
   <li class="bold">
+
     <a href="education.html">
+
       <i class="mdi-social-school small"></i>
+
       <span>Education</span>
+
     </a>
+
   </li>
+
 
   <!-- Contact -->
+
   <li class="bold">
+
     <a href="contact.html">
+
       <i class="mdi-content-mail small"></i>
+
       <span>Contact</span>
+
     </a>
+
   </li>
 
+
   <!-- Resume -->
+
   <li class="bold">
+
     <a
       href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
       target="_blank"
       rel="noopener">
+
       <i class="mdi-file-folder-open small"></i>
+
       <span>Resume</span>
+
     </a>
+
   </li>
+
 
 </ul>
 ```
@@ -433,77 +778,135 @@
        ========================================================= -->
 
   <nav class="mobile-navbar">
-    <a
-      href="#"
-      data-activates="mobile-slide-out"
-      class="button-collapse"
-      aria-label="Open navigation menu">
-      <i class="mdi-navigation-menu"></i>
-    </a>
-  </nav>
-
-  <nav class="mobile-menu">
-    <ul id="mobile-slide-out" class="side-nav">
 
 ```
+<a
+  href="#"
+  data-activates="mobile-slide-out"
+  class="button-collapse"
+  aria-label="Open navigation menu">
+
+  <i class="mdi-navigation-menu"></i>
+
+</a>
+```
+
+  </nav>
+
+  <!-- Mobile menu -->
+
+  <nav class="mobile-menu">
+
+```
+<ul id="mobile-slide-out" class="side-nav">
+
+
   <li class="bold">
+
     <a href="index.html">
+
       <i class="mdi-action-home small"></i>
+
       <span>Home</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a href="about.html">
+
       <i class="mdi-social-person small"></i>
+
       <span>About</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a href="experience.html">
+
       <i class="mdi-action-trending-up small"></i>
+
       <span>Experience</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a href="projects.html">
+
       <i class="mdi-av-my-library-books small"></i>
+
       <span>Projects</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a href="skills.html">
+
       <i class="mdi-action-assessment small"></i>
+
       <span>Skills</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a href="education.html">
+
       <i class="mdi-social-school small"></i>
+
       <span>Education</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a href="contact.html">
+
       <i class="mdi-content-mail small"></i>
+
       <span>Contact</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a
       href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
       target="_blank"
       rel="noopener">
+
       <i class="mdi-file-folder-open small"></i>
+
       <span>Resume</span>
+
     </a>
+
   </li>
+
 
 </ul>
 ```
@@ -511,41 +914,58 @@
   </nav>
 
   <!-- =========================================================
-       MAIN HOME PAGE
+       HOME
        ========================================================= -->
 
   <main>
 
 ```
-<section id="home" class="hero-section">
+<section
+  id="intro"
+  class="section scrollspy full-height hero-section">
+
 
   <div class="hero-content">
 
+
     <!-- Profile photo -->
+
     <img
       src="assets/img/passport-new.jpg"
       alt="Lawrance Tala Ogaywa"
       class="hero-photo">
 
+
     <!-- Name -->
+
     <h1 class="hero-name">
+
       Lawrance Tala Ogaywa
+
     </h1>
 
+
     <!-- Professional title -->
+
     <h2 class="hero-title">
+
       Software Developer |
       Machine Learning Enthusiast |
       IT Professional |
       Operations Support
+
     </h2>
 
+
     <!-- Introduction -->
+
     <p class="hero-description">
+
       Computer Science professional passionate about software development,
       machine learning, IT support, data, and technology solutions.
       I enjoy building practical digital solutions and continuously
       developing my technical skills.
+
     </p>
 
 
@@ -555,23 +975,35 @@
 
     <div class="hero-buttons">
 
-      <a href="about.html"
+
+      <a
+        href="about.html"
         class="btn white-btn">
+
         About Me
+
       </a>
+
 
       <a
         href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
         target="_blank"
         rel="noopener"
         class="btn outline-btn">
+
         View Resume
+
       </a>
 
-      <a href="contact.html"
+
+      <a
+        href="contact.html"
         class="btn outline-btn">
+
         Contact Me
+
       </a>
+
 
     </div>
 
@@ -582,41 +1014,60 @@
 
     <div class="social-links">
 
+
       <!-- GitHub -->
+
       <a
         href="https://github.com/LawranceTala"
         target="_blank"
         rel="noopener"
         aria-label="GitHub">
+
         <i class="fa fa-github"></i>
+
       </a>
 
+
       <!-- LinkedIn -->
+
       <a
         href="https://www.linkedin.com/in/lawrance-tala/"
         target="_blank"
         rel="noopener"
         aria-label="LinkedIn">
+
         <i class="fa fa-linkedin"></i>
+
       </a>
 
+
       <!-- Email -->
+
       <a
         href="mailto:lawrancetala@gmail.com"
         aria-label="Email">
+
         <i class="fa fa-envelope"></i>
+
       </a>
 
+
     </div>
+
 
   </div>
 
 
   <!-- Scroll indicator -->
+
   <div class="scroll-indicator">
+
     Explore
+
     <i class="fa fa-angle-down"></i>
+
   </div>
+
 
 </section>
 ```
@@ -636,18 +1087,25 @@
   </script>
 
   <script>
+
     $(document).ready(function () {
 
       /*
        * Initialize the Materialize mobile side navigation.
        */
+
       $(".button-collapse").sideNav({
+
         menuWidth: 220,
+
         edge: "left",
+
         closeOnClick: true
+
       });
 
     });
+
   </script>
 
 </body>
