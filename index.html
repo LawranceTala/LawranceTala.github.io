@@ -1,1113 +1,504 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="description"
- content="Lawrance Tala Ogaywa - Software Developer, Machine Learning Enthusiast, IT Professional and Operations Support.">
-
-  <meta name="author" content="Lawrance Tala Ogaywa">
-
-  <title>Lawrance Tala | Software Developer</title>
+  <title>Lawrance Tala Ogaywa | Software Developer | ML Enthusiast</title>
 
   <!-- Materialize CSS -->
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
 
   <!-- Font Awesome -->
 
-  <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- Google Material Icons -->
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Main stylesheet -->
+  <!-- Custom CSS -->
 
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-
-    /* =========================================================
-       INDEX / HOME PAGE
-       ========================================================= */
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-
-
-    /* =========================================================
-       DESKTOP SIDE NAVIGATION
-       ========================================================= */
-
+    /* Sidebar */
     .side-nav.fixed {
       width: 190px;
     }
 
-    .side-nav .logo {
-      padding: 25px 0 20px;
-      text-align: center;
-    }
-
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border: 4px solid #ffffff;
-    }
-
-    .side-nav li.bold a {
-      height: 52px;
-      line-height: 52px;
-    }
-
-    .side-nav li.bold a i {
-      margin-right: 12px;
-    }
-
-
-    /* =========================================================
-       MAIN CONTENT
-       ========================================================= */
-
+    /* Main content */
     main {
       min-height: 100vh;
       margin-left: 0;
     }
 
-
-    /* =========================================================
-       HERO / HOME SECTION
-       ========================================================= */
-
+    /* Hero section */
     .hero-section {
-
       min-height: 100vh;
-
-      position: relative;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       text-align: center;
-
-      padding: 60px 30px;
-
-      box-sizing: border-box;
-
-      /*
-       * IMPORTANT:
-       * Transparent so ai-wallpaper-1.jpg from style.css
-       * can appear behind the Home section.
-       */
+      position: relative;
       background: transparent;
-
-      color: #ffffff;
-
     }
-
 
     .hero-content {
-
       width: 100%;
-
-      max-width: 900px;
-
-      margin: 0 auto;
-
+      max-width: 950px;
+      padding: 40px 20px;
     }
 
-
-    /* =========================================================
-       PROFILE PHOTO
-       ========================================================= */
-
-    .hero-photo {
-
-      width: 170px;
-
-      height: 170px;
-
+    /* Profile picture */
+    .hero-profile {
+      width: 140px;
+      height: 140px;
       object-fit: cover;
-
       border-radius: 50%;
-
-      border: 5px solid rgba(255, 255, 255, 0.9);
-
-      margin-bottom: 25px;
-
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-
+      border: 6px solid rgba(0, 77, 64, 0.35);
+      margin-bottom: 20px;
     }
 
-
-    /* =========================================================
-       NAME
-       ========================================================= */
-
-    .hero-name {
-
-      margin: 5px 0 10px;
-
-      font-size: 52px;
-
-      line-height: 1.15;
-
-      font-weight: 400;
-
-      letter-spacing: 0.5px;
-
-      text-shadow:
-        2px 2px 5px rgba(0, 0, 0, 0.55);
-
+    /* Name */
+    .hero-content h1 {
+      font-size: 46px;
+      font-weight: 700;
+      margin: 10px 0;
+      color: #004d40;
     }
 
-
-    /* =========================================================
-       PROFESSIONAL TITLE
-       ========================================================= */
-
+    /* Title */
     .hero-title {
-
-      margin: 0 auto 25px;
-
       font-size: 23px;
-
-      line-height: 1.5;
-
-      font-weight: 400;
-
-      text-shadow:
-        2px 2px 5px rgba(0, 0, 0, 0.55);
-
+      font-weight: 500;
+      color: #00695c;
+      margin: 10px 0 20px;
     }
 
-
-    /* =========================================================
-       DESCRIPTION
-       ========================================================= */
-
+    /* Intro text */
     .hero-description {
-
-      max-width: 720px;
-
+      max-width: 800px;
       margin: 0 auto 30px;
-
-      font-size: 17px;
-
+      font-size: 18px;
       line-height: 1.8;
-
-      opacity: 0.96;
-
-      text-shadow:
-        1px 1px 4px rgba(0, 0, 0, 0.6);
-
+      color: #333;
     }
 
-
-    /* =========================================================
-       BUTTONS
-       ========================================================= */
-
+    /* Buttons */
     .hero-buttons {
-
-      margin-top: 25px;
-
+      margin: 25px 0;
     }
-
 
     .hero-buttons .btn {
-
       margin: 6px;
-
-      min-width: 145px;
-
-      border-radius: 3px;
-
+      border-radius: 25px;
+      padding: 0 25px;
     }
 
-
-    .hero-buttons .btn.white-btn {
-
-      background: #ffffff;
-
-      color: #00897b;
-
-    }
-
-
-    .hero-buttons .btn.outline-btn {
-
-      background: rgba(0, 0, 0, 0.12);
-
-      color: #ffffff;
-
-      border: 1px solid #ffffff;
-
-      box-shadow: none;
-
-    }
-
-
-    .hero-buttons .btn.outline-btn:hover {
-
-      background: #ffffff;
-
-      color: #00897b;
-
-    }
-
-
-    /* =========================================================
-       SOCIAL LINKS
-       ========================================================= */
-
+    /* Social links */
     .social-links {
-
-      margin-top: 30px;
-
+      margin-top: 25px;
     }
-
 
     .social-links a {
-
       display: inline-block;
-
-      width: 42px;
-
-      height: 42px;
-
-      line-height: 42px;
-
-      margin: 0 5px;
-
-      border-radius: 50%;
-
-      color: #ffffff;
-
-      font-size: 19px;
-
-      transition: all 0.2s ease;
-
-      text-shadow:
-        1px 1px 3px rgba(0, 0, 0, 0.5);
-
+      margin: 0 8px;
+      font-size: 25px;
+      color: #004d40;
+      transition: 0.3s;
     }
-
 
     .social-links a:hover {
-
-      background: rgba(255, 255, 255, 0.18);
-
+      color: #26a69a;
       transform: translateY(-3px);
-
     }
 
-
-    /* =========================================================
-       SCROLL INDICATOR
-       ========================================================= */
-
-    .scroll-indicator {
-
+    /* Scroll indicator */
+    .scroll-down {
       position: absolute;
-
-      bottom: 22px;
-
+      bottom: 25px;
       left: 50%;
-
       transform: translateX(-50%);
-
-      font-size: 12px;
-
-      opacity: 0.85;
-
-      letter-spacing: 1px;
-
-      text-shadow:
-        1px 1px 3px rgba(0, 0, 0, 0.6);
-
+      font-size: 30px;
+      color: #004d40;
+      animation: bounce 2s infinite;
     }
 
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translate(-50%, 0);
+      }
 
-    .scroll-indicator i {
+      40% {
+        transform: translate(-50%, -10px);
+      }
 
-      display: block;
-
-      margin-top: 5px;
-
+      60% {
+        transform: translate(-50%, -5px);
+      }
     }
 
-
-    /* =========================================================
-       MOBILE NAVBAR
-       ========================================================= */
-
-    .mobile-navbar {
-
-      display: none;
-
-    }
-
-
-    .mobile-menu {
-
-      display: none;
-
-    }
-
-
-    /* =========================================================
-       TABLET
-       ========================================================= */
-
+    /* Mobile */
     @media (max-width: 992px) {
 
-
-      .side-nav.fixed {
-
-        display: none;
-
-      }
-
-
       main {
-
         margin-left: 0;
-
         padding-top: 0;
-
       }
-
-
-      .mobile-navbar {
-
-        display: block;
-
-        position: fixed;
-
-        top: 0;
-
-        left: 0;
-
-        right: 0;
-
-        height: 56px;
-
-        line-height: 56px;
-
-        background: rgba(0, 137, 123, 0.96);
-
-        z-index: 999;
-
-      }
-
-
-      .mobile-navbar .button-collapse {
-
-        display: block;
-
-        width: 56px;
-
-        height: 56px;
-
-        line-height: 56px;
-
-        text-align: center;
-
-        color: #ffffff;
-
-      }
-
-
-      .mobile-navbar .button-collapse i {
-
-        font-size: 30px;
-
-        line-height: 56px;
-
-      }
-
-
-      .mobile-menu {
-
-        display: block;
-
-      }
-
 
       .hero-section {
-
-        min-height: 100vh;
-
-        padding: 85px 25px 60px;
-
+        min-height: calc(100vh - 64px);
+        padding-top: 20px;
       }
 
-
-      .hero-name {
-
-        font-size: 42px;
-
+      .hero-content {
+        padding: 30px 15px;
       }
 
+      .hero-profile {
+        width: 120px;
+        height: 120px;
+      }
+
+      .hero-content h1 {
+        font-size: 34px;
+      }
 
       .hero-title {
-
-        font-size: 21px;
-
+        font-size: 19px;
+        line-height: 1.5;
       }
 
+      .hero-description {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .hero-buttons .btn {
+        width: 90%;
+        margin: 6px auto;
+      }
+
+      .scroll-down {
+        display: none;
+      }
     }
-
-
-    /* =========================================================
-       MOBILE
-       ========================================================= */
 
     @media (max-width: 600px) {
 
-
-      .hero-section {
-
-        min-height: 100vh;
-
-        padding: 85px 18px 55px;
-
+      .hero-content h1 {
+        font-size: 30px;
       }
-
-
-      .hero-photo {
-
-        width: 135px;
-
-        height: 135px;
-
-        margin-bottom: 20px;
-
-      }
-
-
-      .hero-name {
-
-        font-size: 34px;
-
-      }
-
 
       .hero-title {
-
-        font-size: 18px;
-
-        line-height: 1.5;
-
+        font-size: 17px;
       }
-
 
       .hero-description {
-
         font-size: 15px;
-
-        line-height: 1.7;
-
       }
-
-
-      .hero-buttons .btn {
-
-        display: block;
-
-        width: 90%;
-
-        max-width: 260px;
-
-        margin: 10px auto;
-
-      }
-
-
-      .social-links {
-
-        margin-top: 22px;
-
-      }
-
 
       .social-links a {
-
-        width: 38px;
-
-        height: 38px;
-
-        line-height: 38px;
-
+        font-size: 23px;
+        margin: 0 6px;
       }
-
-
-      .scroll-indicator {
-
-        display: none;
-
-      }
-
     }
-
-
-    /* =========================================================
-       VERY SMALL PHONES
-       ========================================================= */
-
-    @media (max-width: 380px) {
-
-
-      .hero-name {
-
-        font-size: 30px;
-
-      }
-
-
-      .hero-title {
-
-        font-size: 17px;
-
-      }
-
-
-      .hero-description {
-
-        font-size: 14px;
-
-      }
-
-
-      .hero-photo {
-
-        width: 120px;
-
-        height: 120px;
-
-      }
-
-    }
-
   </style>
 
 </head>
 
 <body>
 
-  <!-- =========================================================
-       GOOGLE TAG MANAGER
-       ========================================================= -->
+  <!-- Desktop Side Navigation -->
 
-  <noscript>
+  <ul id="slide-out" class="side-nav fixed">
 
 ```
-<iframe
-  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0"
-  width="0"
-  style="display:none;visibility:hidden">
-</iframe>
+<li class="logo">
+  <div class="user-view center-align" style="padding: 25px 10px 15px;">
+    <img
+      src="assets/img/passport-new.jpg"
+      alt="Lawrance Tala Ogaywa"
+      class="profile-pic"
+      style="width:120px;height:120px;object-fit:cover;border-radius:50%;"
+    >
+
+    <h5 style="margin-top:15px;color:#004d40;">
+      Lawrance Tala
+    </h5>
+
+    <p style="font-size:13px;color:#777;">
+      Software Developer
+    </p>
+  </div>
+</li>
+
+<li>
+  <a href="index.html">
+    <i class="material-icons">home</i>
+    Home
+  </a>
+</li>
+
+<li>
+  <a href="about.html">
+    <i class="material-icons">person</i>
+    About
+  </a>
+</li>
+
+<li>
+  <a href="experience.html">
+    <i class="material-icons">work</i>
+    Experience
+  </a>
+</li>
+
+<li>
+  <a href="projects.html">
+    <i class="material-icons">code</i>
+    Projects
+  </a>
+</li>
+
+<li>
+  <a href="skills.html">
+    <i class="material-icons">build</i>
+    Skills
+  </a>
+</li>
+
+<li>
+  <a href="education.html">
+    <i class="material-icons">school</i>
+    Education
+  </a>
+</li>
+
+<li>
+  <a href="contact.html">
+    <i class="material-icons">email</i>
+    Contact
+  </a>
+</li>
+
+<li>
+  <a href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+     target="_blank">
+    <i class="material-icons">description</i>
+    Resume
+  </a>
+</li>
 ```
 
-  </noscript>
+  </ul>
 
-  <!-- =========================================================
-       DESKTOP NAVIGATION
-       ========================================================= -->
+  <!-- Mobile Navigation -->
 
-  <nav>
+  <div class="navbar-fixed hide-on-large-only">
+    <nav>
+      <div class="nav-wrapper">
 
 ```
-<ul class="side-nav fixed section table-of-contents">
-
-
-  <!-- Profile -->
-
-  <li class="logo">
-
-    <a
-      id="logo-container"
-      href="index.html"
-      class="brand-logo grey-blue-text">
-
-      <img
-        src="assets/img/passport-new.jpg"
-        class="circle img-responsive profile-pic"
-        alt="Lawrance Tala profile photo">
-
+    <a href="#" data-activates="mobile-demo" class="button-collapse">
+      <i class="material-icons">menu</i>
     </a>
 
-  </li>
-
-
-  <!-- About -->
-
-  <li class="bold">
-
-    <a href="about.html">
-
-      <i class="mdi-social-person small"></i>
-
-      <span>About</span>
-
+    <a href="index.html" class="brand-logo">
+      Lawrance Tala
     </a>
 
-  </li>
+    <ul class="side-nav" id="mobile-demo">
 
+      <li>
+        <a href="index.html">
+          <i class="material-icons">home</i>
+          Home
+        </a>
+      </li>
 
-  <!-- Experience -->
+      <li>
+        <a href="about.html">
+          <i class="material-icons">person</i>
+          About
+        </a>
+      </li>
 
-  <li class="bold">
+      <li>
+        <a href="experience.html">
+          <i class="material-icons">work</i>
+          Experience
+        </a>
+      </li>
 
-    <a href="experience.html">
+      <li>
+        <a href="projects.html">
+          <i class="material-icons">code</i>
+          Projects
+        </a>
+      </li>
 
-      <i class="mdi-action-trending-up small"></i>
+      <li>
+        <a href="skills.html">
+          <i class="material-icons">build</i>
+          Skills
+        </a>
+      </li>
 
-      <span>Experience</span>
+      <li>
+        <a href="education.html">
+          <i class="material-icons">school</i>
+          Education
+        </a>
+      </li>
 
-    </a>
+      <li>
+        <a href="contact.html">
+          <i class="material-icons">email</i>
+          Contact
+        </a>
+      </li>
 
-  </li>
+      <li>
+        <a href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+           target="_blank">
+          <i class="material-icons">description</i>
+          Resume
+        </a>
+      </li>
 
-
-  <!-- Projects -->
-
-  <li class="bold">
-
-    <a href="projects.html">
-
-      <i class="mdi-av-my-library-books small"></i>
-
-      <span>Projects</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- Skills -->
-
-  <li class="bold">
-
-    <a href="skills.html">
-
-      <i class="mdi-action-assessment small"></i>
-
-      <span>Skills</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- Education -->
-
-  <li class="bold">
-
-    <a href="education.html">
-
-      <i class="mdi-social-school small"></i>
-
-      <span>Education</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- Contact -->
-
-  <li class="bold">
-
-    <a href="contact.html">
-
-      <i class="mdi-content-mail small"></i>
-
-      <span>Contact</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- Resume -->
-
-  <li class="bold">
-
-    <a
-      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-      target="_blank"
-      rel="noopener">
-
-      <i class="mdi-file-folder-open small"></i>
-
-      <span>Resume</span>
-
-    </a>
-
-  </li>
-
-
-</ul>
+    </ul>
+  </div>
+</nav>
 ```
 
-  </nav>
+  </div>
 
-  <!-- =========================================================
-       MOBILE NAVIGATION
-       ========================================================= -->
-
-  <nav class="mobile-navbar">
-
-```
-<a
-  href="#"
-  data-activates="mobile-slide-out"
-  class="button-collapse"
-  aria-label="Open navigation menu">
-
-  <i class="mdi-navigation-menu"></i>
-
-</a>
-```
-
-  </nav>
-
-  <!-- Mobile menu -->
-
-  <nav class="mobile-menu">
-
-```
-<ul id="mobile-slide-out" class="side-nav">
-
-
-  <li class="bold">
-
-    <a href="index.html">
-
-      <i class="mdi-action-home small"></i>
-
-      <span>Home</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a href="about.html">
-
-      <i class="mdi-social-person small"></i>
-
-      <span>About</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a href="experience.html">
-
-      <i class="mdi-action-trending-up small"></i>
-
-      <span>Experience</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a href="projects.html">
-
-      <i class="mdi-av-my-library-books small"></i>
-
-      <span>Projects</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a href="skills.html">
-
-      <i class="mdi-action-assessment small"></i>
-
-      <span>Skills</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a href="education.html">
-
-      <i class="mdi-social-school small"></i>
-
-      <span>Education</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a href="contact.html">
-
-      <i class="mdi-content-mail small"></i>
-
-      <span>Contact</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a
-      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-      target="_blank"
-      rel="noopener">
-
-      <i class="mdi-file-folder-open small"></i>
-
-      <span>Resume</span>
-
-    </a>
-
-  </li>
-
-
-</ul>
-```
-
-  </nav>
-
-  <!-- =========================================================
-       HOME
-       ========================================================= -->
+  <!-- Main Content -->
 
   <main>
 
 ```
-<section
-  id="intro"
-  class="section scrollspy full-height hero-section">
-
+<!-- Hero Section -->
+<section id="intro" class="section hero-section">
 
   <div class="hero-content">
-
-
-    <!-- Profile photo -->
 
     <img
       src="assets/img/passport-new.jpg"
       alt="Lawrance Tala Ogaywa"
-      class="hero-photo">
+      class="hero-profile"
+    >
 
-
-    <!-- Name -->
-
-    <h1 class="hero-name">
-
+    <h1>
       Lawrance Tala Ogaywa
-
     </h1>
 
-
-    <!-- Professional title -->
-
-    <h2 class="hero-title">
-
+    <div class="hero-title">
       Software Developer |
       Machine Learning Enthusiast |
       IT Professional |
       Operations Support
-
-    </h2>
-
-
-    <!-- Introduction -->
+    </div>
 
     <p class="hero-description">
-
       Computer Science professional passionate about software development,
-      machine learning, IT support, data, and technology solutions.
-      I enjoy building practical digital solutions and continuously
-      developing my technical skills.
-
+      machine learning, artificial intelligence, IT support, data analysis,
+      and technology-driven solutions. I enjoy building practical systems,
+      learning new technologies, solving problems, and continuously
+      improving my technical skills.
     </p>
 
-
-    <!-- =====================================================
-         BUTTONS
-         ===================================================== -->
-
+    <!-- Buttons -->
     <div class="hero-buttons">
 
-
-      <a
-        href="about.html"
-        class="btn white-btn">
-
+      <a href="about.html" class="btn waves-effect waves-light teal darken-2">
         About Me
-
+        <i class="material-icons right">person</i>
       </a>
-
 
       <a
         href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
         target="_blank"
-        rel="noopener"
-        class="btn outline-btn">
-
+        class="btn waves-effect waves-light teal darken-2"
+      >
         View Resume
-
+        <i class="material-icons right">description</i>
       </a>
 
-
-      <a
-        href="contact.html"
-        class="btn outline-btn">
-
+      <a href="contact.html" class="btn waves-effect waves-light teal darken-2">
         Contact Me
-
+        <i class="material-icons right">email</i>
       </a>
-
 
     </div>
 
-
-    <!-- =====================================================
-         SOCIAL LINKS
-         ===================================================== -->
-
+    <!-- Social Links -->
     <div class="social-links">
-
-
-      <!-- GitHub -->
 
       <a
         href="https://github.com/LawranceTala"
         target="_blank"
-        rel="noopener"
-        aria-label="GitHub">
-
+        aria-label="GitHub"
+      >
         <i class="fa fa-github"></i>
-
       </a>
-
-
-      <!-- LinkedIn -->
 
       <a
         href="https://www.linkedin.com/in/lawrance-tala/"
         target="_blank"
-        rel="noopener"
-        aria-label="LinkedIn">
-
+        aria-label="LinkedIn"
+      >
         <i class="fa fa-linkedin"></i>
-
       </a>
-
-
-      <!-- Email -->
 
       <a
         href="mailto:lawrancetala@gmail.com"
-        aria-label="Email">
-
+        aria-label="Email"
+      >
         <i class="fa fa-envelope"></i>
-
       </a>
-
 
     </div>
 
-
   </div>
 
-
-  <!-- Scroll indicator -->
-
-  <div class="scroll-indicator">
-
-    Explore
-
-    <i class="fa fa-angle-down"></i>
-
-  </div>
-
+  <!-- Scroll Indicator -->
+  <a href="about.html" class="scroll-down">
+    <i class="material-icons">keyboard_arrow_down</i>
+  </a>
 
 </section>
 ```
 
   </main>
 
-  <!-- =========================================================
-       JAVASCRIPT
-       ========================================================= -->
+  <!-- jQuery -->
 
-  <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-  </script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
-  </script>
+  <!-- Materialize JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+
+  <!-- Typed.js -->
+
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <script>
-
-    $(document).ready(function () {
-
-      /*
-       * Initialize the Materialize mobile side navigation.
-       */
+    $(document).ready(function() {
 
       $(".button-collapse").sideNav({
-
-        menuWidth: 220,
-
+        menuWidth: 250,
         edge: "left",
-
         closeOnClick: true
-
       });
 
     });
-
   </script>
 
 </body>
-
 </html>
