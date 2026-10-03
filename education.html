@@ -15,13 +15,16 @@
 
   <title>Education | Lawrance Tala</title>
 
-  <!-- Google Tag Manager -->
+  <!-- =========================================================
+       GOOGLE TAG MANAGER
+  ========================================================= -->
 
   <script>
     (function(w,d,s,l,i){
       w[l]=w[l]||[];
       w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});
+
       var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),
           dl=l!='dataLayer'?'&l='+l:'';
@@ -36,22 +39,30 @@
 
   <!-- End Google Tag Manager -->
 
-  <!-- Materialize CSS -->
+  <!-- =========================================================
+       MATERIALIZE CSS
+  ========================================================= -->
 
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
 
-  <!-- Font Awesome -->
+  <!-- =========================================================
+       FONT AWESOME
+  ========================================================= -->
 
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Material Icons -->
+  <!-- =========================================================
+       MATERIAL ICONS
+  ========================================================= -->
 
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <!-- Main CSS -->
+  <!-- =========================================================
+       MAIN CSS
+  ========================================================= -->
 
   <link rel="stylesheet"
         href="assets/css/style.css">
@@ -68,34 +79,50 @@
     }
 
 
-    /* =========================================================
-       MOBILE NAME/TITLE BAR
-       
-       IMPORTANT:
-       This page does NOT display the name/title bar.
-    ========================================================= */
-
-    .education-name-title {
-      display: none !important;
+    main {
+      min-height: 100vh;
     }
 
 
     /* =========================================================
-       EDUCATION PAGE HEADING
+       PROFILE IMAGE
+    ========================================================= */
+
+    .profile-pic {
+      cursor: default !important;
+    }
+
+
+    /* =========================================================
+       SIDEBAR
+    ========================================================= */
+
+    .side-nav.fixed {
+      width: 190px;
+    }
+
+
+    /* =========================================================
+       EDUCATION PAGE TITLE
     ========================================================= */
 
     .education-page-title {
+
       margin: 0 !important;
 
       padding: 22px 40px;
 
       text-align: left;
 
-      font-size: 32px;
+      font-size: 34px;
 
       line-height: 1.3;
 
-      font-weight: 400;
+      font-weight: 500;
+
+      text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.85);
+
     }
 
 
@@ -109,7 +136,7 @@
 
       width: 100%;
 
-      padding: 35px 70px 90px;
+      padding: 45px 75px 95px;
 
       box-sizing: border-box;
 
@@ -147,7 +174,7 @@
       grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-      gap: 25px;
+      gap: 60px;
 
       width: 100%;
 
@@ -165,7 +192,7 @@
       grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-      gap: 25px;
+      gap: 55px 70px;
 
       width: 100%;
 
@@ -173,7 +200,7 @@
 
 
     /* =========================================================
-       CARDS
+       REMOVE ALL CARDS / BOXES
     ========================================================= */
 
     .education-card,
@@ -181,15 +208,19 @@
 
       margin: 0;
 
-      border-radius: 6px;
+      padding: 0;
 
-      height: 100%;
+      height: auto;
 
-      box-sizing: border-box;
+      background: transparent !important;
 
-      transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+      border: none !important;
+
+      border-radius: 0 !important;
+
+      box-shadow: none !important;
+
+      transition: none;
 
     }
 
@@ -197,7 +228,9 @@
     .education-card:hover,
     .certification-card:hover {
 
-      transform: translateY(-5px);
+      transform: none;
+
+      box-shadow: none !important;
 
     }
 
@@ -205,7 +238,9 @@
     .education-card .card-content,
     .certification-card .card-content {
 
-      padding: 28px;
+      padding: 0 !important;
+
+      background: transparent !important;
 
     }
 
@@ -217,44 +252,52 @@
     .education-icon,
     .certification-icon {
 
-      width: 55px;
+      width: 60px;
 
-      height: 55px;
+      height: 60px;
 
-      line-height: 55px;
+      line-height: 60px;
 
       text-align: center;
 
       border-radius: 50%;
 
-      background: #e0f2f1;
+      background: transparent !important;
 
-      color: #009688;
+      color: #80cbc4;
 
-      font-size: 24px;
+      font-size: 30px;
 
       margin-bottom: 18px;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
 
     }
 
 
     /* =========================================================
-       CARD CATEGORY
+       CATEGORY
     ========================================================= */
 
     .education-heading {
 
       display: block;
 
-      font-size: 14px;
+      color: #80cbc4 !important;
+
+      font-size: 16px;
 
       font-weight: 600;
 
       text-transform: uppercase;
 
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
 
       margin-bottom: 12px;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
 
     }
 
@@ -267,9 +310,18 @@
 
       margin-top: 5px;
 
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+
+      color: #ffffff !important;
+
+      font-size: 28px;
+
+      line-height: 1.35;
 
       font-weight: 600;
+
+      text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.95);
 
     }
 
@@ -282,7 +334,49 @@
 
       margin-top: 0;
 
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+
+      color: #e0f2f1 !important;
+
+      font-size: 18px;
+
+      line-height: 1.6;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
+
+    }
+
+
+    /* =========================================================
+       GENERAL EDUCATION TEXT
+    ========================================================= */
+
+    .education-card p,
+    .certification-card p {
+
+      color: #ffffff !important;
+
+      font-size: 18px;
+
+      line-height: 1.8;
+
+      margin-top: 8px;
+
+      margin-bottom: 12px;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
+
+    }
+
+
+    .education-card p b,
+    .certification-card p b {
+
+      color: #80cbc4;
+
+      font-weight: 600;
 
     }
 
@@ -295,9 +389,10 @@
 
       border: 0;
 
-      border-top: 1px solid #eeeeee;
+      border-top:
+        1px solid rgba(255, 255, 255, 0.35);
 
-      margin: 22px 0;
+      margin: 25px 0;
 
     }
 
@@ -308,18 +403,27 @@
 
     .coursework-list {
 
-      margin-top: 5px;
+      margin-top: 10px;
 
-      padding-left: 20px;
+      padding-left: 25px;
 
     }
 
 
     .coursework-list li {
 
-      margin-bottom: 8px;
+      margin-bottom: 10px;
 
       list-style-type: disc;
+
+      color: #ffffff;
+
+      font-size: 18px;
+
+      line-height: 1.7;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
 
     }
 
@@ -332,11 +436,18 @@
 
       margin-top: 8px;
 
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+
+      color: #ffffff !important;
+
+      font-size: 26px;
+
+      line-height: 1.4;
 
       font-weight: 600;
 
-      line-height: 1.4;
+      text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.95);
 
     }
 
@@ -347,11 +458,16 @@
 
     .certification-provider {
 
-      color: #795548;
+      color: #80cbc4 !important;
 
-      font-weight: 500;
+      font-size: 18px !important;
+
+      font-weight: 600;
 
       margin-bottom: 18px;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
 
     }
 
@@ -368,17 +484,17 @@
 
       transform: translateY(-50%);
 
-      width: 44px;
+      width: 48px;
 
-      height: 44px;
+      height: 48px;
 
-      line-height: 44px;
+      line-height: 48px;
 
       text-align: center;
 
       border-radius: 50%;
 
-      background: #009688;
+      background: #00695c;
 
       color: #ffffff;
 
@@ -387,26 +503,22 @@
       z-index: 20;
 
       box-shadow:
-        0 3px 8px rgba(0,0,0,0.18);
+        0 3px 10px rgba(0,0,0,0.35);
 
       transition:
         background 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        transform 0.2s ease;
 
     }
 
 
     .education-arrow:hover {
 
-      background: #00796b;
+      background: #004d40;
 
       transform:
         translateY(-50%)
         scale(1.08);
-
-      box-shadow:
-        0 5px 12px rgba(0,0,0,0.25);
 
     }
 
@@ -426,7 +538,7 @@
 
     .education-arrow.left {
 
-      left: 10px;
+      left: 12px;
 
     }
 
@@ -437,7 +549,7 @@
 
     .education-arrow.right {
 
-      right: 10px;
+      right: 12px;
 
     }
 
@@ -450,17 +562,20 @@
 
       position: absolute;
 
-      bottom: 38px;
+      bottom: 42px;
 
       left: 50%;
 
       transform: translateX(-50%);
 
-      font-size: 14px;
+      font-size: 16px;
 
-      color: #757575;
+      color: #ffffff;
 
-      font-weight: 500;
+      font-weight: 600;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
 
     }
 
@@ -481,7 +596,7 @@
 
       display: flex;
 
-      gap: 8px;
+      gap: 10px;
 
     }
 
@@ -490,13 +605,13 @@
 
       display: block;
 
-      width: 9px;
+      width: 11px;
 
-      height: 9px;
+      height: 11px;
 
       border-radius: 50%;
 
-      background: #bdbdbd;
+      background: rgba(255,255,255,0.55);
 
       cursor: pointer;
 
@@ -507,9 +622,9 @@
 
     .education-dot.active {
 
-      background: #009688;
+      background: #80cbc4;
 
-      transform: scale(1.2);
+      transform: scale(1.25);
 
     }
 
@@ -541,15 +656,30 @@
       .education-grid,
       .certifications-grid {
 
-        gap: 18px;
+        gap: 35px;
 
       }
 
 
-      .education-card .card-content,
-      .certification-card .card-content {
+      .education-institution {
 
-        padding: 22px;
+        font-size: 25px;
+
+      }
+
+
+      .certification-title {
+
+        font-size: 23px;
+
+      }
+
+
+      .education-card p,
+      .certification-card p,
+      .coursework-list li {
+
+        font-size: 17px;
 
       }
 
@@ -563,10 +693,6 @@
     @media (max-width: 600px) {
 
 
-      /* -------------------------------------------------------
-         EDUCATION HEADING
-      ------------------------------------------------------- */
-
       .education-page-title {
 
         margin: 0 !important;
@@ -575,45 +701,30 @@
 
         text-align: center;
 
-        font-size: 27px;
+        font-size: 29px;
 
       }
 
-
-      /* -------------------------------------------------------
-         SLIDER
-      ------------------------------------------------------- */
 
       .education-slider {
 
         padding:
-
-          25px
-
-          42px
-
-          85px;
+          35px
+          45px
+          90px;
 
       }
 
-
-      /* -------------------------------------------------------
-         ONE CARD PER ROW
-      ------------------------------------------------------- */
 
       .education-grid,
       .certifications-grid {
 
         grid-template-columns: 1fr;
 
-        gap: 18px;
+        gap: 45px;
 
       }
 
-
-      /* -------------------------------------------------------
-         CARDS
-      ------------------------------------------------------- */
 
       .education-card,
       .certification-card {
@@ -625,25 +736,85 @@
       }
 
 
-      .education-card .card-content,
-      .certification-card .card-content {
+      .education-icon,
+      .certification-icon {
 
-        padding: 20px;
+        width: 52px;
+
+        height: 52px;
+
+        line-height: 52px;
+
+        font-size: 26px;
 
       }
 
 
-      /* -------------------------------------------------------
-         ARROWS
-      ------------------------------------------------------- */
+      .education-heading {
+
+        font-size: 14px;
+
+      }
+
+
+      .education-institution {
+
+        font-size: 24px;
+
+        line-height: 1.4;
+
+      }
+
+
+      .education-location {
+
+        font-size: 17px;
+
+      }
+
+
+      .education-card p,
+      .certification-card p {
+
+        font-size: 17px;
+
+        line-height: 1.75;
+
+      }
+
+
+      .coursework-list li {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+
+      }
+
+
+      .certification-title {
+
+        font-size: 22px;
+
+        line-height: 1.45;
+
+      }
+
+
+      .certification-provider {
+
+        font-size: 17px !important;
+
+      }
+
 
       .education-arrow {
 
-        width: 38px;
+        width: 40px;
 
-        height: 38px;
+        height: 40px;
 
-        line-height: 38px;
+        line-height: 40px;
 
       }
 
@@ -662,20 +833,14 @@
       }
 
 
-      /* -------------------------------------------------------
-         COUNTER
-      ------------------------------------------------------- */
-
       .education-counter {
 
-        bottom: 38px;
+        bottom: 40px;
+
+        font-size: 15px;
 
       }
 
-
-      /* -------------------------------------------------------
-         DOTS
-      ------------------------------------------------------- */
 
       .education-dots {
 
@@ -694,37 +859,52 @@
 
       .education-page-title {
 
-        font-size: 24px;
+        font-size: 26px;
 
-        padding: 15px;
+        padding: 16px;
 
       }
 
 
       .education-slider {
 
-        padding-left: 38px;
+        padding-left: 40px;
 
-        padding-right: 38px;
+        padding-right: 40px;
 
       }
 
 
-      .education-card .card-content,
-      .certification-card .card-content {
+      .education-institution {
 
-        padding: 17px;
+        font-size: 22px;
+
+      }
+
+
+      .education-card p,
+      .certification-card p,
+      .coursework-list li {
+
+        font-size: 16px;
+
+      }
+
+
+      .certification-title {
+
+        font-size: 20px;
 
       }
 
 
       .education-arrow {
 
-        width: 34px;
+        width: 36px;
 
-        height: 34px;
+        height: 36px;
 
-        line-height: 34px;
+        line-height: 36px;
 
       }
 
@@ -737,7 +917,7 @@
 <body>
 
   <!-- =========================================================
-       GOOGLE TAG MANAGER
+       GOOGLE TAG MANAGER NOSCRIPT
   ========================================================= -->
 
   <noscript>
@@ -918,14 +1098,9 @@
 
   <!-- =========================================================
        MOBILE NAVIGATION
-
-       ONLY THE HAMBURGER IS SHOWN.
-       NO NAME.
-       NO SOFTWARE DEVELOPER.
-       NO COMPUTER SCIENCE PROFESSIONAL.
   ========================================================= -->
 
-  <nav class="hide-on-large only trigger z-depth-1">
+  <nav class="hide-on-large-only trigger z-depth-1">
 
 ```
 <a
@@ -945,7 +1120,7 @@
        MOBILE SIDE NAVIGATION
   ========================================================= -->
 
-  <nav class="hide-on-large only">
+  <nav class="hide-on-large-only">
 
 ```
 <ul id="slide-out" class="side-nav">
@@ -1076,9 +1251,7 @@
 
 
   <!-- =====================================================
-       MAIN HEADING
-
-       This is the ONLY heading shown at the top.
+       PAGE TITLE
   ===================================================== -->
 
   <h3
@@ -1126,7 +1299,7 @@
 
           <!-- LAIKIPIA UNIVERSITY -->
 
-          <div class="card education-card">
+          <div class="education-card">
 
             <div class="card-content">
 
@@ -1138,7 +1311,7 @@
               </div>
 
 
-              <span class="education-heading teal-text">
+              <span class="education-heading">
 
                 University Education
 
@@ -1152,7 +1325,7 @@
               </h5>
 
 
-              <p class="brown-text education-location">
+              <p class="education-location">
 
                 Nyahururu, Kenya
 
@@ -1218,7 +1391,7 @@
 
           <!-- RAMBA SECONDARY SCHOOL -->
 
-          <div class="card education-card">
+          <div class="education-card">
 
             <div class="card-content">
 
@@ -1230,7 +1403,7 @@
               </div>
 
 
-              <span class="education-heading teal-text">
+              <span class="education-heading">
 
                 Secondary Education
 
@@ -1244,7 +1417,7 @@
               </h5>
 
 
-              <p class="brown-text education-location">
+              <p class="education-location">
 
                 Siaya, Kenya
 
@@ -1314,7 +1487,7 @@
 
           <!-- PLP -->
 
-          <div class="card certification-card">
+          <div class="certification-card">
 
             <div class="card-content">
 
@@ -1326,7 +1499,7 @@
               </div>
 
 
-              <span class="education-heading teal-text">
+              <span class="education-heading">
 
                 Software Development
 
@@ -1363,7 +1536,7 @@
 
           <!-- ORACLE -->
 
-          <div class="card certification-card">
+          <div class="certification-card">
 
             <div class="card-content">
 
@@ -1375,7 +1548,7 @@
               </div>
 
 
-              <span class="education-heading teal-text">
+              <span class="education-heading">
 
                 Artificial Intelligence & Cloud
 
@@ -1412,7 +1585,7 @@
 
           <!-- BRIGHTERMONDAY -->
 
-          <div class="card certification-card">
+          <div class="certification-card">
 
             <div class="card-content">
 
@@ -1424,7 +1597,7 @@
               </div>
 
 
-              <span class="education-heading teal-text">
+              <span class="education-heading">
 
                 Professional Development
 
@@ -1460,7 +1633,7 @@
 
           <!-- IBM SKILLSBUILD -->
 
-          <div class="card certification-card">
+          <div class="certification-card">
 
             <div class="card-content">
 
@@ -1472,7 +1645,7 @@
               </div>
 
 
-              <span class="education-heading teal-text">
+              <span class="education-heading">
 
                 Information Technology
 
@@ -1608,7 +1781,7 @@
 
 
       /* =======================================================
-         MATERIALIZE MOBILE MENU
+         MOBILE MENU
       ======================================================= */
 
       $(".button-collapse").sideNav({
@@ -1623,32 +1796,26 @@
 
 
       /* =======================================================
-         EDUCATION SLIDER
+         SLIDER ELEMENTS
       ======================================================= */
 
       var slides =
         document.querySelectorAll(".education-slide");
 
-
       var dots =
         document.querySelectorAll(".education-dot");
-
 
       var counter =
         document.getElementById("educationCounter");
 
-
       var pageTitle =
         document.getElementById("educationPageTitle");
-
 
       var previousButton =
         document.getElementById("educationPrev");
 
-
       var nextButton =
         document.getElementById("educationNext");
-
 
       var currentSlide = 0;
 
@@ -1677,7 +1844,7 @@
         currentSlide = index;
 
 
-        /* Hide slides */
+        /* Hide all slides */
 
         slides.forEach(function (slide) {
 
@@ -1706,7 +1873,7 @@
 
 
         /* =====================================================
-           CHANGE MAIN HEADING
+           CHANGE PAGE TITLE
         ===================================================== */
 
         if (currentSlide === 0) {
@@ -1783,7 +1950,7 @@
 
 
       /* =======================================================
-         KEYBOARD
+         KEYBOARD NAVIGATION
       ======================================================= */
 
       document.addEventListener(
