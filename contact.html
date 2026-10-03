@@ -48,6 +48,7 @@
   </script>
 
   <script>
+
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -56,6 +57,7 @@
 
     gtag('js', new Date());
     gtag('config', 'UA-126939217-2');
+
   </script>
 
   <!-- Google Site Verification -->
@@ -106,39 +108,52 @@
       margin: 0 0 35px 0;
       padding: 20px;
       text-align: center;
-      font-size: 32px;
+      font-size: 34px;
       font-weight: 500;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.7);
     }
 
 
     /* =========================
-       ONE CLEAN CARD
+       REMOVE CONTACT CARD
+       CONTENT DIRECTLY ON
+       BACKGROUND
     ========================= */
 
     .contact-card {
       max-width: 950px;
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.96);
-      border-radius: 16px;
-      padding: 40px 50px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      padding: 20px 30px 50px;
+
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
     }
 
 
     /* =========================
-       CARD TITLE
+       CONTACT TITLE
     ========================= */
 
     .contact-card-title {
       text-align: center;
-      color: #004d40;
-      font-size: 30px;
+      color: #ffffff;
+      font-size: 32px;
       font-weight: 500;
-      margin: 0 0 20px;
+      margin: 0 0 25px;
+
+      text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.9);
     }
 
     .contact-card-title i {
-      margin-right: 8px;
+      margin-right: 10px;
     }
 
 
@@ -148,14 +163,18 @@
 
     .contact-intro {
       text-align: center;
-      max-width: 720px;
-      margin: 0 auto 30px;
+      max-width: 800px;
+      margin: 0 auto 35px;
     }
 
     .contact-intro p {
-      color: #444;
-      font-size: 16px;
+      color: #ffffff;
+      font-size: 18px;
       line-height: 1.8;
+      margin-bottom: 14px;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
     }
 
 
@@ -165,31 +184,46 @@
 
     .contact-details {
       text-align: center;
-      margin: 25px 0 35px;
+      margin: 30px auto 40px;
       padding: 20px 0;
-      border-top: 1px solid #e0e0e0;
-      border-bottom: 1px solid #e0e0e0;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.45);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.45);
     }
 
     .contact-details p {
-      margin: 12px 0;
-      font-size: 15px;
-      color: #444;
+      margin: 16px 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ffffff;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
     }
 
     .contact-details i {
-      color: #00796b;
-      width: 25px;
-      margin-right: 5px;
+      color: #80cbc4;
+      width: 30px;
+      margin-right: 8px;
+      font-size: 18px;
+
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9);
     }
 
     .contact-details a {
-      color: #00695c;
+      color: #ffffff;
+      font-size: 18px;
+      text-decoration: none;
+
       transition: 0.3s;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
     }
 
     .contact-details a:hover {
-      color: #26a69a;
+      color: #80cbc4;
     }
 
 
@@ -198,15 +232,18 @@
     ========================= */
 
     .form-title {
-      color: #00695c;
-      font-size: 21px;
+      color: #ffffff;
+      font-size: 24px;
       font-weight: 500;
-      margin: 25px 0 20px;
+      margin: 35px 0 25px;
       text-align: center;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
     }
 
     .form-title i {
-      margin-right: 7px;
+      margin-right: 8px;
     }
 
 
@@ -216,22 +253,32 @@
 
     .input-field input,
     .input-field textarea {
-      color: #333;
+      color: #ffffff;
+      font-size: 17px;
+
+      text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.8);
     }
 
     .input-field label {
-      color: #777;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 16px;
+    }
+
+    .input-field input,
+    .input-field textarea {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     }
 
     .input-field input:focus,
     .input-field textarea:focus {
-      border-bottom: 1px solid #00796b;
-      box-shadow: 0 1px 0 0 #00796b;
+      border-bottom: 2px solid #80cbc4;
+      box-shadow: 0 1px 0 0 #80cbc4;
     }
 
     .input-field input:focus + label,
     .input-field textarea:focus + label {
-      color: #00796b;
+      color: #80cbc4;
     }
 
 
@@ -241,13 +288,15 @@
 
     .send-button {
       text-align: center;
-      margin-top: 15px;
+      margin-top: 25px;
     }
 
     .send-button .btn {
       border-radius: 25px;
-      padding: 0 28px;
+      padding: 0 30px;
       background-color: #00695c;
+      font-size: 15px;
+      font-weight: 500;
     }
 
     .send-button .btn:hover {
@@ -261,19 +310,23 @@
 
     .social-links {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 35px;
     }
 
     .social-links a {
       display: inline-block;
-      margin: 0 9px;
-      font-size: 24px;
-      color: #004d40;
+      margin: 0 12px;
+      font-size: 28px;
+      color: #ffffff;
+
       transition: 0.3s;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
     }
 
     .social-links a:hover {
-      color: #26a69a;
+      color: #80cbc4;
       transform: translateY(-3px);
     }
 
@@ -286,11 +339,20 @@
 
       .contact-card {
         margin: 0 15px;
-        padding: 35px 25px;
+        padding: 20px 20px 40px;
       }
 
       .page-title {
-        font-size: 28px;
+        font-size: 30px;
+      }
+
+      .contact-intro p {
+        font-size: 17px;
+      }
+
+      .contact-details p,
+      .contact-details a {
+        font-size: 17px;
       }
 
     }
@@ -304,21 +366,52 @@
 
       .contact-card {
         margin: 0 10px;
-        padding: 30px 18px;
-        border-radius: 14px;
+        padding: 15px 10px 30px;
+      }
+
+      .page-title {
+        font-size: 28px;
+        margin-bottom: 25px;
       }
 
       .contact-card-title {
-        font-size: 25px;
+        font-size: 27px;
       }
 
       .contact-intro p {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .contact-details {
+        padding: 15px 0;
       }
 
       .contact-details p {
-        font-size: 14px;
+        font-size: 16px;
         word-break: break-word;
+      }
+
+      .contact-details a {
+        font-size: 16px;
+      }
+
+      .form-title {
+        font-size: 21px;
+      }
+
+      .input-field input,
+      .input-field textarea {
+        font-size: 16px;
+      }
+
+      .input-field label {
+        font-size: 15px;
+      }
+
+      .social-links a {
+        font-size: 25px;
+        margin: 0 10px;
       }
 
     }
@@ -354,7 +447,7 @@
 <ul class="side-nav fixed section table-of-contents">
 
 
-  <!-- Profile Image - NOT CLICKABLE -->
+  <!-- Profile Image -->
 
   <li class="logo">
 
@@ -507,6 +600,7 @@
 
   </li>
 
+
 </ul>
 ```
 
@@ -658,6 +752,7 @@
 
   </li>
 
+
 </ul>
 ```
 
@@ -683,9 +778,7 @@
   <div class="container">
 
 
-    <!-- =========================
-         ONE SINGLE CONTACT CARD
-    ========================= -->
+    <!-- CLEAN CONTACT CONTENT -->
 
     <div class="contact-card">
 
@@ -786,7 +879,7 @@
       </div>
 
 
-      <!-- Message Form Title -->
+      <!-- Form Title -->
 
       <h3 class="form-title">
 
@@ -866,8 +959,7 @@
               id="message"
               name="Message"
               class="materialize-textarea"
-              required>
-            </textarea>
+              required></textarea>
 
             <label for="message">
               Your Message
