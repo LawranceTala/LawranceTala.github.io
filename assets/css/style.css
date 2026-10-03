@@ -131,9 +131,8 @@ body {
 color: #333;
 font-size: 18px;
 
-/*
+/* AI wallpaper
 
-* AI wallpaper
 * style.css is inside assets/css/
 * image is inside assets/img/
   */
@@ -142,6 +141,7 @@ font-size: 18px;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  min-height: 100vh;
   }
 
 /* =========================================================
@@ -195,29 +195,20 @@ MAIN
 ========================================================= */
 
 main {
-/*
-
-* Use the new AI wallpaper instead of bg.png
-  */
-  background-image: url("../img/ai-wallpaper-1.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
+/* Keep the AI wallpaper visible behind the content */
+background: transparent;
 padding-left: 190px;
 position: relative;
+min-height: 100vh;
 }
 
-/*
+/* Keep sections transparent so the wallpaper
+remains visible behind every section */
 
-* Keep sections transparent so the wallpaper can be seen
-* behind every section.
-  */
-  main .section,
-  main section {
-  background-color: transparent;
-  }
+main .section,
+main section {
+background-color: transparent;
+}
 
 dl {
 margin-top: 0.5rem;
@@ -325,12 +316,9 @@ padding-bottom: 30px;
 padding-top: 0;
 position: relative;
 
-/*
-
-* Transparent so wallpaper remains visible.
-  */
-  background: transparent;
-  }
+/* Transparent so wallpaper remains visible */
+background: transparent;
+}
 
 .full-height {
 height: 100vh;
@@ -341,14 +329,10 @@ INTRO / HOME SECTION
 ========================================================= */
 
 #intro.section {
-/*
-
-* Removed old #a7ffeb background.
-* The AI wallpaper from body/main is now visible.
-  */
-  background: transparent;
-  position: relative;
-  }
+/* AI wallpaper is controlled by the body */
+background: transparent;
+position: relative;
+}
 
 #intro.section .container {
 color: white;
@@ -400,13 +384,10 @@ CARDS
 .card {
 margin-bottom: 60px;
 
-/*
-
-* Slight transparency allows a small amount of the
-* AI wallpaper to remain visible while keeping text clear.
-  */
-  background-color: rgba(255, 255, 255, 0.95);
-  }
+/* Slight transparency allows the AI wallpaper
+to remain visible while keeping text clear */
+background-color: rgba(255, 255, 255, 0.95);
+}
 
 .card .role {
 font-size: 1.25rem;
@@ -675,14 +656,8 @@ padding-left: 0;
 padding-top: 64px;
 
 ```
-/*
- * Keep wallpaper on mobile.
- */
-background-image: url("../img/ai-wallpaper-1.jpg");
-background-size: cover;
-background-position: center center;
-background-attachment: fixed;
-background-repeat: no-repeat;
+/* Keep wallpaper on mobile */
+background: transparent;
 ```
 
 }
@@ -774,11 +749,11 @@ SMALL MOBILE
 body {
 background-position: center center;
 background-attachment: fixed;
+background-size: cover;
 }
 
 main {
-background-position: center center;
-background-attachment: fixed;
+background: transparent;
 }
 
 h2 {
