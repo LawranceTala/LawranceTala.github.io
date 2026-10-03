@@ -6,8 +6,7 @@
 
   <meta charset="UTF-8">
 
-<meta name="viewport"
-     content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
      content="Education and professional certifications of Lawrance Tala Ogaywa">
@@ -22,8 +21,8 @@
       w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});
       var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),
-      dl=l!='dataLayer'?'&l='+l:'';
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
       j.async=true;
       j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
       f.parentNode.insertBefore(j,f);
@@ -42,43 +41,55 @@
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Material Design Icons -->
+  <!-- Material Icons -->
 
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <!-- Your Main CSS -->
+  <!-- Main CSS -->
 
   <link rel="stylesheet"
         href="assets/css/style.css">
 
   <style>
 
-    /* ========================================================= */
-    /* EDUCATION SLIDER */
-    /* ========================================================= */
+    /* =========================================================
+       PAGE
+    ========================================================= */
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+
+    /* =========================================================
+       EDUCATION SLIDER
+    ========================================================= */
 
     .education-slider {
       position: relative;
       width: 100%;
-      padding: 35px 65px 85px;
+      padding: 35px 65px 90px;
+      box-sizing: border-box;
     }
 
 
-    /* ========================================================= */
-    /* PAGE HEADING */
-    /* ========================================================= */
+    /* =========================================================
+       PAGE HEADING
+    ========================================================= */
 
     .education-page-title {
-      margin-bottom: 0 !important;
-      padding: 18px 0;
+      margin: 0 !important;
+      padding: 18px 65px;
       text-align: left;
+      box-sizing: border-box;
     }
 
 
-    /* ========================================================= */
-    /* SLIDES */
-    /* ========================================================= */
+    /* =========================================================
+       SLIDES
+    ========================================================= */
 
     .education-slide {
       display: none;
@@ -91,9 +102,9 @@
     }
 
 
-    /* ========================================================= */
-    /* EDUCATION CARDS - TWO PER ROW */
-    /* ========================================================= */
+    /* =========================================================
+       EDUCATION GRID
+    ========================================================= */
 
     .education-grid {
       display: grid;
@@ -103,9 +114,9 @@
     }
 
 
-    /* ========================================================= */
-    /* CERTIFICATION CARDS - TWO PER ROW */
-    /* ========================================================= */
+    /* =========================================================
+       CERTIFICATION GRID
+    ========================================================= */
 
     .certifications-grid {
       display: grid;
@@ -115,17 +126,20 @@
     }
 
 
-    /* ========================================================= */
-    /* GENERAL CARD DESIGN */
-    /* ========================================================= */
+    /* =========================================================
+       CARDS
+    ========================================================= */
 
     .education-card,
     .certification-card {
       margin: 0;
       border-radius: 6px;
       height: 100%;
-      transition: transform 0.25s ease,
-                  box-shadow 0.25s ease;
+      box-sizing: border-box;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
     }
 
 
@@ -141,9 +155,9 @@
     }
 
 
-    /* ========================================================= */
-    /* ICONS */
-    /* ========================================================= */
+    /* =========================================================
+       ICONS
+    ========================================================= */
 
     .education-icon,
     .certification-icon {
@@ -151,42 +165,50 @@
       height: 55px;
       line-height: 55px;
       text-align: center;
+
       border-radius: 50%;
+
       background: #e0f2f1;
       color: #009688;
+
       font-size: 24px;
+
       margin-bottom: 18px;
     }
 
 
-    /* ========================================================= */
-    /* SECTION LABEL */
-    /* ========================================================= */
+    /* =========================================================
+       SUBHEADINGS
+    ========================================================= */
 
     .education-heading {
       display: block;
+
       font-size: 14px;
       font-weight: 600;
+
       text-transform: uppercase;
       letter-spacing: 0.5px;
+
       margin-bottom: 12px;
     }
 
 
-    /* ========================================================= */
-    /* INSTITUTION */
-    /* ========================================================= */
+    /* =========================================================
+       INSTITUTION
+    ========================================================= */
 
     .education-institution {
       margin-top: 5px;
       margin-bottom: 5px;
+
       font-weight: 600;
     }
 
 
-    /* ========================================================= */
-    /* LOCATION */
-    /* ========================================================= */
+    /* =========================================================
+       LOCATION
+    ========================================================= */
 
     .education-location {
       margin-top: 0;
@@ -194,20 +216,21 @@
     }
 
 
-    /* ========================================================= */
-    /* DIVIDER */
-    /* ========================================================= */
+    /* =========================================================
+       DIVIDER
+    ========================================================= */
 
     .education-divider {
       border: 0;
       border-top: 1px solid #eeeeee;
+
       margin: 22px 0;
     }
 
 
-    /* ========================================================= */
-    /* COURSEWORK */
-    /* ========================================================= */
+    /* =========================================================
+       COURSEWORK
+    ========================================================= */
 
     .coursework-list {
       margin-top: 5px;
@@ -221,32 +244,34 @@
     }
 
 
-    /* ========================================================= */
-    /* CERTIFICATION TITLE */
-    /* ========================================================= */
+    /* =========================================================
+       CERTIFICATION TITLE
+    ========================================================= */
 
     .certification-title {
       margin-top: 8px;
       margin-bottom: 8px;
+
       font-weight: 600;
       line-height: 1.4;
     }
 
 
-    /* ========================================================= */
-    /* CERTIFICATION PROVIDER */
-    /* ========================================================= */
+    /* =========================================================
+       CERTIFICATION PROVIDER
+    ========================================================= */
 
     .certification-provider {
       color: #795548;
       font-weight: 500;
+
       margin-bottom: 18px;
     }
 
 
-    /* ========================================================= */
-    /* SLIDER ARROWS */
-    /* ========================================================= */
+    /* =========================================================
+       SLIDER ARROWS
+    ========================================================= */
 
     .education-arrow {
       position: absolute;
@@ -258,7 +283,6 @@
       height: 44px;
 
       line-height: 44px;
-
       text-align: center;
 
       border-radius: 50%;
@@ -297,32 +321,32 @@
     }
 
 
-    /* ========================================================= */
-    /* LEFT ARROW */
-    /* ========================================================= */
+    /* =========================================================
+       LEFT ARROW
+    ========================================================= */
 
     .education-arrow.left {
       left: 8px;
     }
 
 
-    /* ========================================================= */
-    /* RIGHT / NEXT ARROW */
-    /* ========================================================= */
+    /* =========================================================
+       RIGHT ARROW
+    ========================================================= */
 
     .education-arrow.right {
       right: 8px;
     }
 
 
-    /* ========================================================= */
-    /* COUNTER */
-    /* ========================================================= */
+    /* =========================================================
+       COUNTER
+    ========================================================= */
 
     .education-counter {
       position: absolute;
 
-      bottom: 35px;
+      bottom: 38px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -335,14 +359,14 @@
     }
 
 
-    /* ========================================================= */
-    /* DOTS */
-    /* ========================================================= */
+    /* =========================================================
+       DOTS
+    ========================================================= */
 
     .education-dots {
       position: absolute;
 
-      bottom: 10px;
+      bottom: 12px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -376,21 +400,43 @@
     }
 
 
-    /* ========================================================= */
-    /* TABLET */
-    /* ========================================================= */
+    /* =========================================================
+       HIDE MOBILE NAVIGATION ON DESKTOP
+    ========================================================= */
+
+    #slide-out {
+      display: none;
+    }
+
+
+    .button-collapse {
+      display: none;
+    }
+
+
+    /* =========================================================
+       TABLET
+    ========================================================= */
 
     @media (max-width: 900px) {
+
+      .education-page-title {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+
 
       .education-slider {
         padding-left: 55px;
         padding-right: 55px;
       }
 
+
       .education-grid,
       .certifications-grid {
         gap: 18px;
       }
+
 
       .education-card .card-content,
       .certification-card .card-content {
@@ -400,40 +446,73 @@
     }
 
 
-    /* ========================================================= */
-    /* MOBILE */
-    /* ========================================================= */
+    /* =========================================================
+       MOBILE
+    ========================================================= */
 
     @media (max-width: 600px) {
 
+      /* ---------------------------------------------------------
+         PAGE HEADING
+      --------------------------------------------------------- */
+
       .education-page-title {
-        padding: 15px 0;
+        padding: 15px 20px;
+
+        font-size: 26px;
+
+        text-align: center;
       }
 
+
+      /* ---------------------------------------------------------
+         SLIDER
+      --------------------------------------------------------- */
 
       .education-slider {
-        padding-left: 42px;
-        padding-right: 42px;
-        padding-bottom: 80px;
+        padding: 25px 42px 85px;
       }
 
+
+      /* ---------------------------------------------------------
+         ONE CARD PER ROW
+      --------------------------------------------------------- */
 
       .education-grid,
       .certifications-grid {
+        display: grid;
+
         grid-template-columns: 1fr;
+
         gap: 18px;
       }
 
 
+      /* ---------------------------------------------------------
+         CARDS
+      --------------------------------------------------------- */
+
       .education-card,
       .certification-card {
+        width: 100%;
         height: auto;
       }
 
 
+      .education-card .card-content,
+      .certification-card .card-content {
+        padding: 20px;
+      }
+
+
+      /* ---------------------------------------------------------
+         ARROWS
+      --------------------------------------------------------- */
+
       .education-arrow {
         width: 38px;
         height: 38px;
+
         line-height: 38px;
       }
 
@@ -448,13 +527,78 @@
       }
 
 
+      /* ---------------------------------------------------------
+         COUNTER
+      --------------------------------------------------------- */
+
       .education-counter {
         bottom: 38px;
       }
 
 
+      /* ---------------------------------------------------------
+         DOTS
+      --------------------------------------------------------- */
+
       .education-dots {
         bottom: 12px;
+      }
+
+
+      /* ---------------------------------------------------------
+         MOBILE NAVIGATION
+      --------------------------------------------------------- */
+
+      .button-collapse {
+        display: block;
+      }
+
+
+      #slide-out {
+        display: block;
+      }
+
+
+      /*
+        Make sure navigation text does not appear
+        outside the mobile menu.
+      */
+
+      .side-nav {
+        z-index: 9999;
+      }
+
+    }
+
+
+    /* =========================================================
+       VERY SMALL PHONES
+    ========================================================= */
+
+    @media (max-width: 380px) {
+
+      .education-page-title {
+        font-size: 23px;
+        padding: 13px 15px;
+      }
+
+
+      .education-slider {
+        padding-left: 38px;
+        padding-right: 38px;
+      }
+
+
+      .education-card .card-content,
+      .certification-card .card-content {
+        padding: 17px;
+      }
+
+
+      .education-arrow {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
       }
 
     }
@@ -465,11 +609,9 @@
 
 <body>
 
-  <!-- ========================================================= -->
-
-  <!-- GOOGLE TAG MANAGER -->
-
-  <!-- ========================================================= -->
+  <!-- =========================================================
+       GOOGLE TAG MANAGER
+  ========================================================= -->
 
   <noscript>
 
@@ -484,11 +626,9 @@
 
   </noscript>
 
-  <!-- ========================================================= -->
-
-  <!-- DESKTOP NAVIGATION -->
-
-  <!-- ========================================================= -->
+  <!-- =========================================================
+       DESKTOP NAVIGATION
+  ========================================================= -->
 
   <ul class="side-nav fixed section table-of-contents">
 
@@ -629,6 +769,7 @@
     aria-label="Open Lawrance Tala resume in a new tab"
     href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
     target="_blank"
+    rel="noopener"
     class="waves-effect waves-dark teal-text">
 
     <i class="mdi-file-folder-open small"></i>
@@ -642,11 +783,9 @@
 
   </ul>
 
-  <!-- ========================================================= -->
-
-  <!-- MOBILE NAVIGATION -->
-
-  <!-- ========================================================= -->
+  <!-- =========================================================
+       MOBILE MENU BUTTON
+  ========================================================= -->
 
 <a
  aria-label="Toggle visibility of the mobile navbar"
@@ -659,6 +798,10 @@
 ```
 
   </a>
+
+  <!-- =========================================================
+       MOBILE NAME
+  ========================================================= -->
 
   <div class="name-title">
 
@@ -683,7 +826,9 @@
 
   </div>
 
-  <!-- MOBILE SIDE NAV -->
+  <!-- =========================================================
+       MOBILE SIDE NAVIGATION
+  ========================================================= -->
 
   <ul id="slide-out" class="side-nav">
 
@@ -783,6 +928,7 @@
   <a
     href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
     target="_blank"
+    rel="noopener"
     class="waves-effect waves-dark teal-text">
 
     <i class="mdi-file-folder-open small"></i>
@@ -796,11 +942,9 @@
 
   </ul>
 
-  <!-- ========================================================= -->
-
-  <!-- EDUCATION -->
-
-  <!-- ========================================================= -->
+  <!-- =========================================================
+       EDUCATION / CERTIFICATIONS SECTION
+  ========================================================= -->
 
   <section id="education" class="section scrollspy">
 
@@ -822,9 +966,9 @@
   <div class="education-slider">
 
 
-    <!-- ================================================= -->
-    <!-- LEFT ARROW -->
-    <!-- ================================================= -->
+    <!-- =====================================================
+         PREVIOUS ARROW
+    ===================================================== -->
 
     <div
       class="education-arrow left"
@@ -838,9 +982,9 @@
     </div>
 
 
-    <!-- ================================================= -->
-    <!-- SLIDE 1: EDUCATION -->
-    <!-- ================================================= -->
+    <!-- =====================================================
+         SLIDE 1 - EDUCATION
+    ===================================================== -->
 
     <div
       class="education-slide active"
@@ -922,17 +1066,11 @@
 
             <ul class="coursework-list">
 
-              <li>
-                Internet of Things (IoT)
-              </li>
+              <li>Internet of Things (IoT)</li>
 
-              <li>
-                Cloud Computing
-              </li>
+              <li>Cloud Computing</li>
 
-              <li>
-                Machine Learning
-              </li>
+              <li>Machine Learning</li>
 
             </ul>
 
@@ -1026,9 +1164,9 @@
     </div>
 
 
-    <!-- ================================================= -->
-    <!-- SLIDE 2: CERTIFICATIONS -->
-    <!-- ================================================= -->
+    <!-- =====================================================
+         SLIDE 2 - CERTIFICATIONS
+    ===================================================== -->
 
     <div
       class="education-slide"
@@ -1238,9 +1376,9 @@
     </div>
 
 
-    <!-- ================================================= -->
-    <!-- RIGHT / NEXT ARROW -->
-    <!-- ================================================= -->
+    <!-- =====================================================
+         NEXT ARROW
+    ===================================================== -->
 
     <div
       class="education-arrow right"
@@ -1254,9 +1392,9 @@
     </div>
 
 
-    <!-- ================================================= -->
-    <!-- COUNTER -->
-    <!-- ================================================= -->
+    <!-- =====================================================
+         COUNTER
+    ===================================================== -->
 
     <div class="education-counter">
 
@@ -1269,9 +1407,9 @@
     </div>
 
 
-    <!-- ================================================= -->
-    <!-- DOTS -->
-    <!-- ================================================= -->
+    <!-- =====================================================
+         DOTS
+    ===================================================== -->
 
     <div class="education-dots">
 
@@ -1279,16 +1417,18 @@
       <span
         class="education-dot active"
         data-slide="0"
+        role="button"
+        tabindex="0"
         aria-label="Education">
-
       </span>
 
 
       <span
         class="education-dot"
         data-slide="1"
+        role="button"
+        tabindex="0"
         aria-label="Certifications">
-
       </span>
 
 
@@ -1303,11 +1443,9 @@
 
   </section>
 
-  <!-- ========================================================= -->
-
-  <!-- JAVASCRIPT -->
-
-  <!-- ========================================================= -->
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================= -->
 
   <script
     src="https://code.jquery.com/jquery-2.1.1.min.js">
@@ -1322,9 +1460,9 @@
     document.addEventListener("DOMContentLoaded", function () {
 
 
-      /* ===================================================== */
-      /* EDUCATION SLIDER */
-      /* ===================================================== */
+      /* =======================================================
+         ELEMENTS
+      ======================================================= */
 
       var slides =
         document.querySelectorAll(".education-slide");
@@ -1353,9 +1491,9 @@
       var currentSlide = 0;
 
 
-      /* ===================================================== */
-      /* SHOW SLIDE */
-      /* ===================================================== */
+      /* =======================================================
+         SHOW SLIDE
+      ======================================================= */
 
       function showEducationSlide(index) {
 
@@ -1395,48 +1533,46 @@
         });
 
 
-        /* Show selected slide */
+        /* Show current slide */
 
         if (slides[currentSlide]) {
 
-          slides[currentSlide]
-            .classList.add("active");
+          slides[currentSlide].classList.add("active");
 
         }
 
 
-        /* Activate selected dot */
+        /* Activate current dot */
 
         if (dots[currentSlide]) {
 
-          dots[currentSlide]
-            .classList.add("active");
+          dots[currentSlide].classList.add("active");
 
         }
 
 
-        /* ================================================= */
-        /* CHANGE PAGE HEADING */
-        /* ================================================= */
+        /* =====================================================
+           CHANGE MAIN PAGE HEADING
+        ===================================================== */
 
         if (pageTitle) {
 
           if (currentSlide === 1) {
 
-            pageTitle.textContent =
-              "Certifications";
+            pageTitle.textContent = "Certifications";
 
           } else {
 
-            pageTitle.textContent =
-              "Education";
+            pageTitle.textContent = "Education";
 
           }
 
         }
 
 
-        /* Update counter */
+        /* =====================================================
+           UPDATE COUNTER
+        ===================================================== */
 
         if (counter) {
 
@@ -1450,9 +1586,9 @@
       }
 
 
-      /* ===================================================== */
-      /* PREVIOUS BUTTON */
-      /* ===================================================== */
+      /* =======================================================
+         PREVIOUS
+      ======================================================= */
 
       if (previousButton) {
 
@@ -1460,9 +1596,26 @@
           "click",
           function () {
 
-            showEducationSlide(
-              currentSlide - 1
-            );
+            showEducationSlide(currentSlide - 1);
+
+          }
+        );
+
+
+        previousButton.addEventListener(
+          "keydown",
+          function (event) {
+
+            if (
+              event.key === "Enter" ||
+              event.key === " "
+            ) {
+
+              event.preventDefault();
+
+              showEducationSlide(currentSlide - 1);
+
+            }
 
           }
         );
@@ -1470,9 +1623,9 @@
       }
 
 
-      /* ===================================================== */
-      /* NEXT BUTTON */
-      /* ===================================================== */
+      /* =======================================================
+         NEXT
+      ======================================================= */
 
       if (nextButton) {
 
@@ -1480,9 +1633,26 @@
           "click",
           function () {
 
-            showEducationSlide(
-              currentSlide + 1
-            );
+            showEducationSlide(currentSlide + 1);
+
+          }
+        );
+
+
+        nextButton.addEventListener(
+          "keydown",
+          function (event) {
+
+            if (
+              event.key === "Enter" ||
+              event.key === " "
+            ) {
+
+              event.preventDefault();
+
+              showEducationSlide(currentSlide + 1);
+
+            }
 
           }
         );
@@ -1490,9 +1660,9 @@
       }
 
 
-      /* ===================================================== */
-      /* DOT NAVIGATION */
-      /* ===================================================== */
+      /* =======================================================
+         DOT NAVIGATION
+      ======================================================= */
 
       dots.forEach(function (dot, index) {
 
@@ -1505,43 +1675,56 @@
           }
         );
 
+
+        dot.addEventListener(
+          "keydown",
+          function (event) {
+
+            if (
+              event.key === "Enter" ||
+              event.key === " "
+            ) {
+
+              event.preventDefault();
+
+              showEducationSlide(index);
+
+            }
+
+          }
+        );
+
       });
 
 
-      /* ===================================================== */
-      /* KEYBOARD NAVIGATION */
-      /* ===================================================== */
+      /* =======================================================
+         KEYBOARD NAVIGATION
+      ======================================================= */
 
       document.addEventListener(
         "keydown",
         function (event) {
 
-
           if (event.key === "ArrowLeft") {
 
-            showEducationSlide(
-              currentSlide - 1
-            );
+            showEducationSlide(currentSlide - 1);
 
           }
 
 
           if (event.key === "ArrowRight") {
 
-            showEducationSlide(
-              currentSlide + 1
-            );
+            showEducationSlide(currentSlide + 1);
 
           }
-
 
         }
       );
 
 
-      /* ===================================================== */
-      /* TOUCH SWIPE */
-      /* ===================================================== */
+      /* =======================================================
+         TOUCH SWIPE
+      ======================================================= */
 
       var touchStartX = 0;
 
@@ -1570,7 +1753,6 @@
         slider.addEventListener(
           "touchend",
           function (event) {
-
 
             touchEndX =
               event.changedTouches[0].screenX;
@@ -1606,21 +1788,20 @@
       }
 
 
-      /* ===================================================== */
-      /* INITIALIZE */
-      /* ===================================================== */
+      /* =======================================================
+         INITIALIZE SLIDER
+      ======================================================= */
 
       showEducationSlide(0);
 
 
-      /* ===================================================== */
-      /* MATERIALIZE MOBILE NAVIGATION */
-      /* ===================================================== */
+      /* =======================================================
+         MATERIALIZE MOBILE NAVIGATION
+      ======================================================= */
 
       if (typeof jQuery !== "undefined") {
 
-        jQuery(".button-collapse")
-          .sideNav();
+        jQuery(".button-collapse").sideNav();
 
       }
 
