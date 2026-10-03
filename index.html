@@ -3,19 +3,28 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Lawrance Tala Ogaywa | Software Developer | ML Enthusiast</title>
 
+  <!-- Materialize CSS -->
+
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+
+  <!-- Font Awesome -->
 
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+  <!-- Material Icons -->
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+
+  <!-- Main CSS -->
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -38,6 +47,7 @@
   </script>
 
   <script>
+
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -45,61 +55,65 @@
     }
 
     gtag('js', new Date());
+
     gtag('config', 'UA-126939217-2');
+
   </script>
 
   <style>
 
     /* =========================
-       SIDEBAR
-    ========================= */
-
-    .side-nav.fixed {
-      width: 190px;
-    }
-
-    .profile-pic {
-      cursor: default !important;
-      pointer-events: none;
-    }
-
-
-    /* =========================
-       MAIN
+       MAIN PAGE
     ========================= */
 
     main {
       min-height: 100vh;
-      margin-left: 0;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
     }
 
 
     /* =========================
-       HERO
+       HERO SECTION
     ========================= */
 
     .hero-section {
+
       min-height: 100vh;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       padding: 40px 20px;
+
       background: transparent;
+
     }
 
 
     /* =========================
-       ONE CLEAN CARD
+       HERO CARD
     ========================= */
 
     .hero-card {
+
       width: 100%;
+
       max-width: 850px;
+
       background: rgba(255, 255, 255, 0.95);
+
       padding: 45px 55px;
+
       border-radius: 16px;
+
       text-align: center;
+
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+
     }
 
 
@@ -107,13 +121,46 @@
        PROFILE PHOTO
     ========================= */
 
+    .profile-link {
+
+      display: inline-block;
+
+      text-decoration: none;
+
+      border: none;
+
+      outline: none;
+
+    }
+
+
     .hero-profile {
+
       width: 135px;
+
       height: 135px;
+
       object-fit: cover;
+
       border-radius: 50%;
+
       border: 5px solid rgba(0, 77, 64, 0.25);
+
       margin-bottom: 15px;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+
+    }
+
+
+    .hero-profile:hover {
+
+      transform: scale(1.04);
+
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.20);
+
     }
 
 
@@ -122,10 +169,15 @@
     ========================= */
 
     .hero-card h1 {
+
       font-size: 42px;
+
       font-weight: 700;
+
       color: #004d40;
+
       margin: 8px 0 12px;
+
     }
 
 
@@ -134,11 +186,17 @@
     ========================= */
 
     .hero-title {
+
       font-size: 20px;
+
       line-height: 1.6;
+
       font-weight: 500;
+
       color: #00796b;
+
       margin-bottom: 22px;
+
     }
 
 
@@ -147,11 +205,17 @@
     ========================= */
 
     .hero-description {
+
       max-width: 720px;
+
       margin: 0 auto 25px;
+
       font-size: 17px;
+
       line-height: 1.8;
+
       color: #444;
+
     }
 
 
@@ -160,18 +224,29 @@
     ========================= */
 
     .hero-buttons {
+
       margin: 25px 0;
+
     }
+
 
     .hero-buttons .btn {
+
       margin: 5px;
+
       border-radius: 25px;
+
       padding: 0 24px;
+
       background-color: #00695c;
+
     }
 
+
     .hero-buttons .btn:hover {
+
       background-color: #004d40;
+
     }
 
 
@@ -180,50 +255,150 @@
     ========================= */
 
     .social-links {
+
       margin-top: 20px;
+
     }
+
 
     .social-links a {
+
       display: inline-block;
+
       margin: 0 9px;
+
       font-size: 25px;
+
       color: #004d40;
+
       transition: 0.3s;
+
     }
 
+
     .social-links a:hover {
+
       color: #26a69a;
+
       transform: translateY(-3px);
+
     }
 
 
     /* =========================
-       SCROLL BUTTON
+       PROFILE-ONLY VIEW
     ========================= */
 
-    .scroll-down {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 30px;
-      color: #004d40;
-      animation: bounce 2s infinite;
+    .profile-only-section {
+
+      min-height: 100vh;
+
+      display: none;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 40px 20px;
+
+      background: transparent;
+
     }
 
-    @keyframes bounce {
 
-      0%, 20%, 50%, 80%, 100% {
-        transform: translate(-50%, 0);
-      }
+    .profile-only-card {
 
-      40% {
-        transform: translate(-50%, -10px);
-      }
+      width: 100%;
 
-      60% {
-        transform: translate(-50%, -5px);
-      }
+      max-width: 850px;
+
+      background: rgba(255, 255, 255, 0.96);
+
+      padding: 50px 60px;
+
+      border-radius: 16px;
+
+      text-align: center;
+
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+
+    }
+
+
+    .profile-only-card img {
+
+      width: 150px;
+
+      height: 150px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 5px solid rgba(0, 77, 64, 0.25);
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .profile-only-card h1 {
+
+      font-size: 42px;
+
+      font-weight: 700;
+
+      color: #004d40;
+
+      margin: 8px 0 15px;
+
+    }
+
+
+    .profile-only-title {
+
+      font-size: 20px;
+
+      line-height: 1.6;
+
+      font-weight: 500;
+
+      color: #00796b;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    .profile-only-description {
+
+      max-width: 720px;
+
+      margin: 0 auto;
+
+      font-size: 17px;
+
+      line-height: 1.8;
+
+      color: #444;
+
+    }
+
+
+    /* =========================
+       PROFILE MODE
+    ========================= */
+
+    body.profile-mode .hero-section {
+
+      display: none;
+
+    }
+
+
+    body.profile-mode .profile-only-section {
+
+      display: flex;
 
     }
 
@@ -235,43 +410,114 @@
     @media (max-width: 992px) {
 
       main {
-        margin-left: 0;
-        padding-top: 0;
+
+        margin-left: 0 !important;
+
+        padding-left: 0 !important;
+
+        padding-top: 0 !important;
+
       }
+
 
       .hero-section {
-        min-height: calc(100vh - 64px);
+
+        min-height: 100vh;
+
         padding: 30px 15px;
+
       }
+
 
       .hero-card {
+
         padding: 35px 25px;
+
       }
+
 
       .hero-profile {
+
         width: 120px;
+
         height: 120px;
+
       }
+
 
       .hero-card h1 {
+
         font-size: 34px;
+
       }
+
 
       .hero-title {
+
         font-size: 18px;
+
       }
+
 
       .hero-description {
+
         font-size: 16px;
+
       }
+
 
       .hero-buttons .btn {
+
         width: 90%;
+
         margin: 6px auto;
+
       }
 
-      .scroll-down {
-        display: none;
+
+      .profile-only-section {
+
+        min-height: 100vh;
+
+        padding: 30px 15px;
+
+      }
+
+
+      .profile-only-card {
+
+        padding: 40px 25px;
+
+      }
+
+
+      .profile-only-card img {
+
+        width: 130px;
+
+        height: 130px;
+
+      }
+
+
+      .profile-only-card h1 {
+
+        font-size: 34px;
+
+      }
+
+
+      .profile-only-title {
+
+        font-size: 18px;
+
+      }
+
+
+      .profile-only-description {
+
+        font-size: 16px;
+
       }
 
     }
@@ -280,34 +526,103 @@
     @media (max-width: 600px) {
 
       .hero-section {
+
         padding: 20px 10px;
+
       }
+
 
       .hero-card {
+
         padding: 30px 18px;
+
         border-radius: 14px;
+
       }
+
 
       .hero-profile {
+
         width: 105px;
+
         height: 105px;
+
       }
+
 
       .hero-card h1 {
+
         font-size: 29px;
+
       }
+
 
       .hero-title {
+
         font-size: 16px;
+
       }
+
 
       .hero-description {
+
         font-size: 15px;
+
       }
 
+
       .social-links a {
+
         font-size: 22px;
+
         margin: 0 6px;
+
+      }
+
+
+      .profile-only-section {
+
+        padding: 20px 10px;
+
+      }
+
+
+      .profile-only-card {
+
+        padding: 30px 18px;
+
+        border-radius: 14px;
+
+      }
+
+
+      .profile-only-card img {
+
+        width: 110px;
+
+        height: 110px;
+
+      }
+
+
+      .profile-only-card h1 {
+
+        font-size: 29px;
+
+      }
+
+
+      .profile-only-title {
+
+        font-size: 16px;
+
+      }
+
+
+      .profile-only-description {
+
+        font-size: 15px;
+
       }
 
     }
@@ -321,209 +636,17 @@
   <!-- Google Tag Manager (noscript) -->
 
   <noscript>
-    <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-      height="0"
-      width="0"
-      style="display:none;visibility:hidden">
-    </iframe>
+
+```
+<iframe
+  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0"
+  width="0"
+  style="display:none;visibility:hidden">
+</iframe>
+```
+
   </noscript>
-
-  <!-- =========================
-       DESKTOP SIDEBAR
-  ========================= -->
-
-  <ul id="slide-out" class="side-nav fixed">
-
-```
-<li class="logo">
-
-  <div class="user-view center-align"
-    style="padding:25px 10px 15px;">
-
-    <img
-      src="assets/img/passport-new.jpg"
-      alt="Lawrance Tala Ogaywa"
-      class="profile-pic"
-      style="
-        width:120px;
-        height:120px;
-        object-fit:cover;
-        border-radius:50%;
-      "
-    >
-
-    <h5 style="margin-top:15px;color:#004d40;">
-      Lawrance Tala
-    </h5>
-
-    <p style="font-size:13px;color:#777;">
-      Software Developer
-    </p>
-
-  </div>
-
-</li>
-
-
-<li>
-  <a href="index.html">
-    <i class="material-icons">home</i>
-    Home
-  </a>
-</li>
-
-<li>
-  <a href="about.html">
-    <i class="material-icons">person</i>
-    About
-  </a>
-</li>
-
-<li>
-  <a href="experience.html">
-    <i class="material-icons">work</i>
-    Experience
-  </a>
-</li>
-
-<li>
-  <a href="projects.html">
-    <i class="material-icons">code</i>
-    Projects
-  </a>
-</li>
-
-<li>
-  <a href="skills.html">
-    <i class="material-icons">build</i>
-    Skills
-  </a>
-</li>
-
-<li>
-  <a href="education.html">
-    <i class="material-icons">school</i>
-    Education
-  </a>
-</li>
-
-<li>
-  <a href="contact.html">
-    <i class="material-icons">email</i>
-    Contact
-  </a>
-</li>
-
-<li>
-  <a
-    href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-    target="_blank">
-
-    <i class="material-icons">description</i>
-    Resume
-
-  </a>
-</li>
-```
-
-  </ul>
-
-  <!-- =========================
-       MOBILE NAVIGATION
-  ========================= -->
-
-  <div class="navbar-fixed hide-on-large-only">
-
-```
-<nav>
-
-  <div class="nav-wrapper">
-
-    <a
-      href="#"
-      data-activates="mobile-demo"
-      class="button-collapse">
-
-      <i class="material-icons">menu</i>
-
-    </a>
-
-    <a href="index.html" class="brand-logo">
-      Lawrance Tala
-    </a>
-
-
-    <ul class="side-nav" id="mobile-demo">
-
-      <li>
-        <a href="index.html">
-          <i class="material-icons">home</i>
-          Home
-        </a>
-      </li>
-
-      <li>
-        <a href="about.html">
-          <i class="material-icons">person</i>
-          About
-        </a>
-      </li>
-
-      <li>
-        <a href="experience.html">
-          <i class="material-icons">work</i>
-          Experience
-        </a>
-      </li>
-
-      <li>
-        <a href="projects.html">
-          <i class="material-icons">code</i>
-          Projects
-        </a>
-      </li>
-
-      <li>
-        <a href="skills.html">
-          <i class="material-icons">build</i>
-          Skills
-        </a>
-      </li>
-
-      <li>
-        <a href="education.html">
-          <i class="material-icons">school</i>
-          Education
-        </a>
-      </li>
-
-      <li>
-        <a href="contact.html">
-          <i class="material-icons">email</i>
-          Contact
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-          target="_blank">
-
-          <i class="material-icons">description</i>
-          Resume
-
-        </a>
-      </li>
-
-    </ul>
-
-  </div>
-
-</nav>
-```
-
-  </div>
 
   <!-- =========================
        MAIN CONTENT
@@ -532,23 +655,41 @@
   <main>
 
 ```
+<!-- =========================
+     NORMAL HOMEPAGE
+========================= -->
+
 <section id="intro" class="section hero-section">
 
-  <!-- ONE CLEAN CARD -->
 
   <div class="hero-card">
 
-    <img
-      src="assets/img/passport-new.jpg"
-      alt="Lawrance Tala Ogaywa"
-      class="hero-profile"
-    >
 
+    <!-- Profile Picture -->
+
+    <a
+      href="index.html#profile"
+      class="profile-link"
+      aria-label="View profile">
+
+      <img
+        src="assets/img/passport-new.jpg"
+        alt="Lawrance Tala Ogaywa"
+        class="hero-profile">
+
+    </a>
+
+
+    <!-- Name -->
 
     <h1>
+
       Lawrance Tala Ogaywa
+
     </h1>
 
+
+    <!-- Professional Title -->
 
     <div class="hero-title">
 
@@ -559,6 +700,8 @@
 
     </div>
 
+
+    <!-- Introduction -->
 
     <p class="hero-description">
 
@@ -572,7 +715,10 @@
     </p>
 
 
+    <!-- Buttons -->
+
     <div class="hero-buttons">
+
 
       <a
         href="about.html"
@@ -581,7 +727,9 @@
         About Me
 
         <i class="material-icons right">
+
           person
+
         </i>
 
       </a>
@@ -595,7 +743,9 @@
         View Resume
 
         <i class="material-icons right">
+
           description
+
         </i>
 
       </a>
@@ -608,15 +758,21 @@
         Contact Me
 
         <i class="material-icons right">
+
           email
+
         </i>
 
       </a>
 
+
     </div>
 
 
+    <!-- Social Links -->
+
     <div class="social-links">
+
 
       <a
         href="https://github.com/LawranceTala"
@@ -646,9 +802,79 @@
 
       </a>
 
+
     </div>
 
+
   </div>
+
+
+</section>
+
+
+<!-- =========================
+     CLEAN PROFILE VIEW
+========================= -->
+
+<section
+  id="profile"
+  class="profile-only-section">
+
+
+  <div class="profile-only-card">
+
+
+    <!-- Click to return to homepage -->
+
+    <a
+      href="index.html"
+      class="profile-link"
+      aria-label="Return to homepage">
+
+      <img
+        src="assets/img/passport-new.jpg"
+        alt="Lawrance Tala Ogaywa">
+
+    </a>
+
+
+    <!-- Name -->
+
+    <h1>
+
+      Lawrance Tala Ogaywa
+
+    </h1>
+
+
+    <!-- Title -->
+
+    <div class="profile-only-title">
+
+      Software Developer |
+      Machine Learning Enthusiast |
+      IT Professional |
+      Operations Support
+
+    </div>
+
+
+    <!-- Description -->
+
+    <p class="profile-only-description">
+
+      Computer Science professional passionate about software
+      development, machine learning, artificial intelligence,
+      IT support, data analysis, and technology-driven solutions.
+      I enjoy building practical systems, solving problems,
+      learning new technologies, and continuously improving
+      my technical skills.
+
+    </p>
+
+
+  </div>
+
 
 </section>
 ```
@@ -657,7 +883,9 @@
 
   <!-- jQuery -->
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-2.1.1.min.js">
+  </script>
 
   <!-- Materialize JS -->
 
@@ -667,19 +895,37 @@
 
   <!-- Typed.js -->
 
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script
+    src="assets/vendor/typed.js/typed.min.js">
+  </script>
+
+  <!-- Profile View Script -->
 
   <script>
 
-    $(document).ready(function() {
+    function updateProfileView() {
 
-      $(".button-collapse").sideNav({
-        menuWidth: 250,
-        edge: "left",
-        closeOnClick: true
-      });
+      if (window.location.hash === "#profile") {
 
-    });
+        document.body.classList.add("profile-mode");
+
+      } else {
+
+        document.body.classList.remove("profile-mode");
+
+      }
+
+    }
+
+
+    /* Run when page loads */
+
+    updateProfileView();
+
+
+    /* Run when the URL hash changes */
+
+    window.addEventListener("hashchange", updateProfileView);
 
   </script>
 
