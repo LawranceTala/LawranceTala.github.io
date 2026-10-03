@@ -3,9 +3,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>About | Lawrance Tala</title>
 
   <!-- Google Tag Manager -->
 
@@ -22,28 +25,35 @@
   <!-- Materialize CSS -->
 
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
 
   <!-- Font Awesome -->
 
   <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Custom Styles -->
+  <!-- Google Material Icons -->
 
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 
-  <title>About | Lawrance Tala</title>
+  <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Google Analytics -->
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2">
+  </script>
 
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
+
     gtag('js', new Date());
     gtag('config', 'UA-126939217-2');
   </script>
@@ -51,7 +61,222 @@
   <!-- Google Site Verification -->
 
 <meta name="google-site-verification"
- content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+ content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84">
+
+  <style>
+
+    /* =========================
+       SIDEBAR
+    ========================= */
+
+    .side-nav.fixed {
+      width: 190px;
+    }
+
+    .profile-pic {
+      cursor: default !important;
+      pointer-events: none;
+    }
+
+
+    /* =========================
+       MAIN CONTENT
+    ========================= */
+
+    main {
+      min-height: 100vh;
+    }
+
+
+    /* =========================
+       ABOUT SECTION
+    ========================= */
+
+    #about {
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+
+    /* =========================
+       PAGE TITLE
+    ========================= */
+
+    .page-title {
+      margin: 0 0 35px 0;
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+
+    /* =========================
+       ONE CLEAN CARD
+    ========================= */
+
+    .about-card {
+      max-width: 950px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 16px;
+      padding: 40px 50px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* =========================
+       CARD HEADING
+    ========================= */
+
+    .about-card-title {
+      text-align: center;
+      color: #004d40;
+      font-size: 30px;
+      font-weight: 500;
+      margin: 0 0 25px;
+    }
+
+    .about-card-title i {
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    .about-card p {
+      color: #444;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+
+    /* =========================
+       SECTION HEADINGS
+    ========================= */
+
+    .about-heading {
+      color: #00695c;
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .about-heading i {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+
+    /* =========================
+       TECHNICAL INFORMATION
+    ========================= */
+
+    .technical-info {
+      margin-top: 10px;
+    }
+
+    .technical-info p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .technical-info strong {
+      color: #004d40;
+    }
+
+
+    /* =========================
+       STRENGTHS
+    ========================= */
+
+    .strengths {
+      margin-top: 10px;
+    }
+
+    .strengths span {
+      display: inline-block;
+      margin: 5px 5px 5px 0;
+      padding: 8px 15px;
+      border-radius: 20px;
+      background: #e0f2f1;
+      color: #00695c;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       CAREER INTERESTS
+    ========================= */
+
+    .career-interests p {
+      margin: 8px 0;
+    }
+
+    .career-interests i {
+      color: #00796b;
+      margin-right: 8px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 992px) {
+
+      .about-card {
+        margin: 0 15px;
+        padding: 35px 25px;
+      }
+
+      .page-title {
+        font-size: 28px;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      #about {
+        padding-bottom: 30px;
+      }
+
+      .about-card {
+        margin: 0 10px;
+        padding: 30px 20px;
+        border-radius: 14px;
+      }
+
+      .about-card-title {
+        font-size: 25px;
+      }
+
+      .about-card p {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .about-heading {
+        font-size: 18px;
+      }
+
+      .strengths span {
+        font-size: 13px;
+        padding: 7px 12px;
+      }
+
+    }
+
+  </style>
 
 </head>
 
@@ -60,89 +285,162 @@
   <!-- Google Tag Manager (noscript) -->
 
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-
-  <!-- ================= DESKTOP NAVIGATION ================= -->
-
-  <nav>
-    <ul class="side-nav fixed section table-of-contents">
 
 ```
+<iframe
+  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0"
+  width="0"
+  style="display:none;visibility:hidden">
+</iframe>
+```
+
+  </noscript>
+
+  <!-- =========================
+       DESKTOP NAVIGATION
+  ========================= -->
+
+  <nav>
+
+```
+<ul class="side-nav fixed section table-of-contents">
+
+
   <!-- Profile Image - NOT CLICKABLE -->
+
   <li class="logo">
-    <div id="logo-container" class="brand-logo center-align">
+
+    <div id="logo-container"
+      class="brand-logo center-align">
+
       <img
         src="assets/img/passport-new.jpg"
         class="circle img-responsive profile-pic"
         alt="Lawrance Tala Ogaywa"
-        style="width:120px;height:120px;object-fit:cover;margin-top:20px;cursor:default;">
+        style="
+          width:120px;
+          height:120px;
+          object-fit:cover;
+          margin-top:20px;
+        "
+      >
+
     </div>
+
   </li>
 
+
+  <!-- About -->
+
   <li class="bold">
-    <a aria-label="Navigate to the About section"
+
+    <a
       href="about.html"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-person small"></i>
+
+      <i class="fa fa-user"></i>
       <span>About</span>
+
     </a>
+
   </li>
 
+
+  <!-- Experience -->
+
   <li class="bold">
-    <a aria-label="Navigate to the Experience section"
+
+    <a
       href="experience.html"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-trending-up small"></i>
+
+      <i class="fa fa-briefcase"></i>
       <span>Experience</span>
+
     </a>
+
   </li>
 
+
+  <!-- Projects -->
+
   <li class="bold">
-    <a aria-label="Navigate to the Projects section"
+
+    <a
       href="projects.html"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-av-my-library-books small"></i>
+
+      <i class="fa fa-code"></i>
       <span>Projects</span>
+
     </a>
+
   </li>
 
+
+  <!-- Skills -->
+
   <li class="bold">
-    <a aria-label="Navigate to the Skills section"
+
+    <a
       href="skills.html"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-assessment small"></i>
+
+      <i class="fa fa-cogs"></i>
       <span>Skills</span>
+
     </a>
+
   </li>
 
+
+  <!-- Education -->
+
   <li class="bold">
-    <a aria-label="Navigate to the Education section"
+
+    <a
       href="education.html"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-school small"></i>
+
+      <i class="fa fa-graduation-cap"></i>
       <span>Education</span>
+
     </a>
+
   </li>
 
+
+  <!-- Contact -->
+
   <li class="bold">
-    <a aria-label="Navigate to the Contact section"
+
+    <a
       href="contact.html"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-content-mail small"></i>
+
+      <i class="fa fa-envelope"></i>
       <span>Contact</span>
+
     </a>
+
   </li>
 
+
+  <!-- Resume -->
+
   <li class="bold">
-    <a aria-label="Open Lawrance Tala resume in a new tab"
+
+    <a
       href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
       target="_blank"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-file-folder-open small"></i>
+
+      <i class="fa fa-file-text"></i>
       <span>Resume</span>
+
     </a>
+
   </li>
 
 </ul>
@@ -150,29 +448,40 @@
 
   </nav>
 
-  <!-- ================= MOBILE NAVIGATION ================= -->
+  <!-- =========================
+       MOBILE NAVIGATION
+  ========================= -->
 
   <nav class="hide-on-large-only trigger z-depth-1">
 
 ```
-<a aria-label="Toggle visibility of the mobile navbar"
+<a
   href="#"
-  data-activates="slide-out"
+  data-activates="slide-out-mobile"
   class="button-collapse">
-  <i class="mdi-navigation-menu"></i>
+
+  <i class="material-icons">
+    menu
+  </i>
+
 </a>
 
+
 <div class="name-title">
-  <a id="name"
-    aria-label="Navigate to the beginning of the page"
+
+  <a
+    id="name"
     href="index.html"
     class="teal-text">
+
     Lawrance Tala
+
   </a>
 
   <span class="black-text">
     Software Developer
   </span>
+
 </div>
 ```
 
@@ -183,63 +492,90 @@
   <nav class="hide-on-large-only">
 
 ```
-<ul id="slide-out" class="side-nav">
+<ul id="slide-out-mobile" class="side-nav">
+
 
   <li class="bold">
-    <a href="about.html"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-person small"></i>
+
+    <a href="index.html">
+      <i class="fa fa-home"></i>
+      <span>Home</span>
+    </a>
+
+  </li>
+
+
+  <li class="bold">
+
+    <a href="about.html">
+      <i class="fa fa-user"></i>
       <span>About</span>
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="experience.html"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-trending-up small"></i>
+
+    <a href="experience.html">
+      <i class="fa fa-briefcase"></i>
       <span>Experience</span>
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="projects.html"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-av-my-library-books small"></i>
+
+    <a href="projects.html">
+      <i class="fa fa-code"></i>
       <span>Projects</span>
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="skills.html"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-assessment small"></i>
+
+    <a href="skills.html">
+      <i class="fa fa-cogs"></i>
       <span>Skills</span>
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="education.html"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-school small"></i>
+
+    <a href="education.html">
+      <i class="fa fa-graduation-cap"></i>
       <span>Education</span>
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="contact.html"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-content-mail small"></i>
+
+    <a href="contact.html">
+      <i class="fa fa-envelope"></i>
       <span>Contact</span>
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-      target="_blank"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-file-folder-open small"></i>
+
+    <a
+      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+      target="_blank">
+
+      <i class="fa fa-file-text"></i>
       <span>Resume</span>
+
     </a>
+
   </li>
 
 </ul>
@@ -247,280 +583,201 @@
 
   </nav>
 
-  <!-- ================= MAIN CONTENT ================= -->
+  <!-- =========================
+       MAIN CONTENT
+  ========================= -->
 
   <main>
 
 ```
 <section id="about" class="section">
 
+
   <h3 class="page-title white-text teal">
     About
   </h3>
 
+
   <div class="container">
 
-    <!-- Introduction Card -->
-    <div class="card">
 
-      <div class="card-content">
+    <!-- ONE SINGLE CLEAN CARD -->
 
-        <span class="card-title teal-text">
-          <i class="fa fa-user"></i>
-          About Me
-        </span>
+    <div class="about-card">
+
+
+      <h2 class="about-card-title">
+
+        <i class="fa fa-user"></i>
+        About Me
+
+      </h2>
+
+
+      <!-- Introduction -->
+
+      <p>
+
+        I’m a passionate and curious Computer Science professional
+        with experience in software development, machine learning,
+        IT support, and operations.
+
+      </p>
+
+
+      <p>
+
+        I enjoy building practical technology solutions,
+        solving problems, learning new technologies, and
+        continuously expanding my technical knowledge.
+
+      </p>
+
+
+      <!-- Professional Profile -->
+
+      <h3 class="about-heading">
+
+        <i class="fa fa-code"></i>
+        Professional Profile
+
+      </h3>
+
+
+      <p>
+
+        I have experience developing and deploying websites using
+        WordPress and cPanel, working with ERP systems such as Odoo,
+        and supporting technology-driven operational environments.
+
+      </p>
+
+
+      <p>
+
+        My technical interests include backend development,
+        frontend development, machine learning, data analysis,
+        and IT support.
+
+      </p>
+
+
+      <!-- Technical Focus -->
+
+      <h3 class="about-heading">
+
+        <i class="fa fa-laptop"></i>
+        Technical Focus
+
+      </h3>
+
+
+      <div class="technical-info">
 
         <p>
-          I’m a passionate and curious Computer Science professional
-          with experience in software development, machine learning,
-          IT support, and operations.
+          <strong>Programming:</strong>
+          Python, JavaScript, HTML/CSS
         </p>
 
         <p>
-          I enjoy building practical technology solutions and
-          continuously expanding my technical knowledge.
+          <strong>Backend & Frameworks:</strong>
+          FastAPI, Flask, Laravel, Django, Node.js
+        </p>
+
+        <p>
+          <strong>Machine Learning & Data:</strong>
+          TensorFlow, Keras, PyTorch, scikit-learn,
+          Pandas, NumPy, Matplotlib
+        </p>
+
+        <p>
+          <strong>Tools & Technologies:</strong>
+          GitHub, Jupyter Notebook, cPanel, Anaconda, VS Code
+        </p>
+
+        <p>
+          <strong>Databases:</strong>
+          MySQL, PostgreSQL, MongoDB
+        </p>
+
+        <p>
+          <strong>Cloud & AI:</strong>
+          Oracle Cloud Infrastructure AI Foundations
         </p>
 
       </div>
 
-    </div>
+
+      <!-- Professional Strengths -->
+
+      <h3 class="about-heading">
+
+        <i class="fa fa-lightbulb-o"></i>
+        Professional Strengths
+
+      </h3>
 
 
-    <!-- Professional Profile -->
-    <div class="card">
+      <div class="strengths">
 
-      <div class="card-content">
+        <span>Problem Solving</span>
 
-        <span class="card-title teal-text">
+        <span>Troubleshooting</span>
+
+        <span>Communication</span>
+
+        <span>Teamwork</span>
+
+        <span>Adaptability</span>
+
+        <span>Continuous Learning</span>
+
+      </div>
+
+
+      <!-- Career Interests -->
+
+      <h3 class="about-heading">
+
+        <i class="fa fa-rocket"></i>
+        Career Interests
+
+      </h3>
+
+
+      <div class="career-interests">
+
+        <p>
           <i class="fa fa-code"></i>
-          Professional Profile
-        </span>
-
-        <p>
-          I have experience developing and deploying websites using
-          WordPress and cPanel, working with ERP systems such as Odoo,
-          and supporting technology-driven operational environments.
+          Software Development
         </p>
 
         <p>
-          My technical interests include backend development,
-          frontend development, machine learning, data analysis,
-          and IT support.
+          <i class="fa fa-cogs"></i>
+          Machine Learning
         </p>
-
-      </div>
-
-    </div>
-
-
-    <!-- Technical Focus -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          <i class="fa fa-laptop"></i>
-          Technical Focus
-        </span>
-
-        <div class="row">
-
-          <div class="col s12 m6">
-
-            <p>
-              <b>Programming</b>
-            </p>
-
-            <p>
-              Python, JavaScript, HTML/CSS
-            </p>
-
-          </div>
-
-          <div class="col s12 m6">
-
-            <p>
-              <b>Backend & Frameworks</b>
-            </p>
-
-            <p>
-              FastAPI, Flask, Laravel, Django, Node.js
-            </p>
-
-          </div>
-
-          <div class="col s12 m6">
-
-            <p>
-              <b>Machine Learning & Data</b>
-            </p>
-
-            <p>
-              TensorFlow, Keras, PyTorch, scikit-learn,
-              Pandas, NumPy, Matplotlib
-            </p>
-
-          </div>
-
-          <div class="col s12 m6">
-
-            <p>
-              <b>Tools & Technologies</b>
-            </p>
-
-            <p>
-              GitHub, Jupyter Notebook, cPanel, Anaconda,
-              VS Code
-            </p>
-
-          </div>
-
-          <div class="col s12 m6">
-
-            <p>
-              <b>Databases</b>
-            </p>
-
-            <p>
-              MySQL, PostgreSQL, MongoDB
-            </p>
-
-          </div>
-
-          <div class="col s12 m6">
-
-            <p>
-              <b>Cloud & AI</b>
-            </p>
-
-            <p>
-              Oracle Cloud Infrastructure AI Foundations
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Strengths -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          <i class="fa fa-lightbulb-o"></i>
-          Professional Strengths
-        </span>
-
-        <div class="row">
-
-          <div class="col s12 m4">
-            <p>
-              <i class="fa fa-check teal-text"></i>
-              Problem Solving
-            </p>
-          </div>
-
-          <div class="col s12 m4">
-            <p>
-              <i class="fa fa-check teal-text"></i>
-              Troubleshooting
-            </p>
-          </div>
-
-          <div class="col s12 m4">
-            <p>
-              <i class="fa fa-check teal-text"></i>
-              Communication
-            </p>
-          </div>
-
-          <div class="col s12 m4">
-            <p>
-              <i class="fa fa-check teal-text"></i>
-              Teamwork
-            </p>
-          </div>
-
-          <div class="col s12 m4">
-            <p>
-              <i class="fa fa-check teal-text"></i>
-              Adaptability
-            </p>
-          </div>
-
-          <div class="col s12 m4">
-            <p>
-              <i class="fa fa-check teal-text"></i>
-              Continuous Learning
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Career Interests -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          <i class="fa fa-rocket"></i>
-          Career Interests
-        </span>
 
         <p>
-          I am seeking opportunities where I can apply my skills
-          and experience in:
+          <i class="fa fa-database"></i>
+          Data Analysis
         </p>
 
-        <div class="row">
-
-          <div class="col s12 m3">
-            <p>
-              <i class="fa fa-code teal-text"></i>
-              Software Development
-            </p>
-          </div>
-
-          <div class="col s12 m3">
-            <p>
-              <i class="fa fa-cogs teal-text"></i>
-              Machine Learning
-            </p>
-          </div>
-
-          <div class="col s12 m3">
-            <p>
-              <i class="fa fa-database teal-text"></i>
-              Data
-            </p>
-          </div>
-
-          <div class="col s12 m3">
-            <p>
-              <i class="fa fa-desktop teal-text"></i>
-              IT Support
-            </p>
-          </div>
-
-        </div>
-
         <p>
-          I am motivated to contribute to meaningful projects,
-          learn from experienced teams, and continue growing
-          professionally in technology.
+          <i class="fa fa-desktop"></i>
+          IT Support
         </p>
 
       </div>
+
+
+      <p>
+
+        I am motivated to contribute to meaningful projects,
+        learn from experienced teams, and continue growing
+        professionally in technology.
+
+      </p>
+
 
     </div>
 
@@ -531,15 +788,19 @@
 
   </main>
 
-  <!-- jQuery -->
+  <!-- =========================
+       SCRIPTS
+  ========================= -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  </script>
 
-  <!-- Materialize JavaScript -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
+  </script>
 
   <script>
+
     $(document).ready(function () {
 
       $(".button-collapse").sideNav({
@@ -549,6 +810,7 @@
       });
 
     });
+
   </script>
 
 </body>
