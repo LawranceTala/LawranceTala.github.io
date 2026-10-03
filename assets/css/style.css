@@ -131,8 +131,9 @@ body {
 color: #333;
 font-size: 18px;
 
-/* AI wallpaper
+/*
 
+* AI wallpaper
 * style.css is inside assets/css/
 * image is inside assets/img/
   */
@@ -195,15 +196,22 @@ MAIN
 ========================================================= */
 
 main {
-/* Keep the AI wallpaper visible behind the content */
-background: transparent;
-padding-left: 190px;
-position: relative;
-min-height: 100vh;
-}
+/*
 
-/* Keep sections transparent so the wallpaper
-remains visible behind every section */
+* Keep the AI wallpaper from body visible
+* behind all sections.
+  */
+  background: transparent;
+  padding-left: 190px;
+  position: relative;
+  min-height: 100vh;
+  }
+
+/*
+
+* Keep sections transparent so the AI wallpaper
+* remains visible behind every section.
+  */
 
 main .section,
 main section {
@@ -316,9 +324,12 @@ padding-bottom: 30px;
 padding-top: 0;
 position: relative;
 
-/* Transparent so wallpaper remains visible */
-background: transparent;
-}
+/*
+
+* Transparent so wallpaper remains visible.
+  */
+  background: transparent;
+  }
 
 .full-height {
 height: 100vh;
@@ -329,24 +340,83 @@ INTRO / HOME SECTION
 ========================================================= */
 
 #intro.section {
-/* AI wallpaper is controlled by the body */
-background: transparent;
-position: relative;
-}
+/*
+
+* A subtle translucent white layer makes
+* dark/black writing readable while still
+* allowing the AI wallpaper to remain visible.
+  */
+  background: rgba(255, 255, 255, 0.72);
+  position: relative;
+  }
+
+/*
+
+* Home page content
+  */
 
 #intro.section .container {
-color: white;
+color: #222;
 font-weight: 200;
 left: 0;
 position: absolute;
 top: 0;
 }
 
+/*
+
+* Make all Home page text dark and readable.
+  */
+
 #intro.section .container *:not(span) {
+color: #222;
 font-weight: 300;
 line-height: 150%;
-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+text-shadow: none;
 }
+
+/*
+
+* Main heading
+  */
+
+#intro.section .container h1,
+#intro.section .container h2,
+#intro.section .container h3 {
+color: #004d40;
+}
+
+/*
+
+* Paragraph text
+  */
+
+#intro.section .container p {
+color: #222;
+}
+
+/*
+
+* Links inside Home section
+  */
+
+#intro.section .container a {
+color: #004d40;
+}
+
+/*
+
+* Keep buttons readable.
+  */
+
+#intro.section .container .btn {
+color: #fff;
+}
+
+/*
+
+* Underline
+  */
 
 #intro.section .underline {
 border-bottom: 5px solid #24305e;
@@ -384,10 +454,13 @@ CARDS
 .card {
 margin-bottom: 60px;
 
-/* Slight transparency allows the AI wallpaper
-to remain visible while keeping text clear */
-background-color: rgba(255, 255, 255, 0.95);
-}
+/*
+
+* Slight transparency allows a small amount
+* of the AI wallpaper to remain visible.
+  */
+  background-color: rgba(255, 255, 255, 0.95);
+  }
 
 .card .role {
 font-size: 1.25rem;
@@ -654,12 +727,7 @@ TABLET / MOBILE
 main {
 padding-left: 0;
 padding-top: 64px;
-
-```
-/* Keep wallpaper on mobile */
 background: transparent;
-```
-
 }
 
 ul.side-nav a {
@@ -762,6 +830,15 @@ line-height: 200%;
 margin: 30px 0 0;
 }
 
+#intro.section {
+/*
+* Slightly stronger light layer on small screens
+* for better text readability.
+*/
+background: rgba(255, 255, 255, 0.78);
+background-position-x: 30%;
+}
+
 #intro.section .container *:not(span) {
 padding: 0;
 }
@@ -796,11 +873,6 @@ bottom: initial;
 display: block;
 text-align: center;
 margin: 0 auto;
-}
-
-#intro.section {
-background: transparent;
-background-position-x: 30%;
 }
 
 }
