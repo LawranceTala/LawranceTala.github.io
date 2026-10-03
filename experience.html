@@ -1,39 +1,79 @@
-html
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Google Tag Manager -->
+  <meta charset="utf-8" />
+
+<meta name="viewport"
+     content="width=device-width, initial-scale=1" />
+
+<meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+
+  <!-- ========================================================= -->
+
+  <!-- GOOGLE TAG MANAGER -->
+
+  <!-- ========================================================= -->
+
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PGZH8HT');
   </script>
-  <!-- End Google Tag Manager -->
 
-  <!-- Materialize - Compiled and minified CSS -->
-  <link rel="stylesheet"
+  <!-- ========================================================= -->
+
+  <!-- MATERIALIZE CSS -->
+
+  <!-- ========================================================= -->
+
+  <link
+    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
 
-  <!-- Font Awesome Icon - CSS -->
-  <link rel="stylesheet"
+  <!-- ========================================================= -->
+
+  <!-- FONT AWESOME -->
+
+  <!-- ========================================================= -->
+
+  <link
+    rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- ========================================================= -->
 
-  <title>Lawrance Tala | Computer Science Professional</title>
+  <!-- CUSTOM CSS -->
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <!-- ========================================================= -->
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css" />
+
+  <title>
+    Lawrance Tala | Experience
+  </title>
+
+  <!-- ========================================================= -->
+
+  <!-- GOOGLE ANALYTICS -->
+
+  <!-- ========================================================= -->
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2">
+  </script>
 
   <script>
+
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -41,844 +81,1450 @@ html
     }
 
     gtag('js', new Date());
+
     gtag('config', 'UA-126939217-2');
+
   </script>
 
-  <!-- Logo Styling -->
+  <!-- ========================================================= -->
+
+  <!-- EXPERIENCE SLIDER STYLES -->
+
+  <!-- ========================================================= -->
+
   <style>
-    .company-logo-wrapper {
-      width: 130px;
-      height: 130px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 12px;
-      box-sizing: border-box;
+
+
+    /* ========================================================= */
+    /* EXPERIENCE SLIDER */
+    /* ========================================================= */
+
+    .experience-slider {
+
+      position: relative;
+
+      width: 100%;
+
+      padding: 20px 65px 70px;
+
     }
 
-    .company-logo {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      object-fit: contain;
+
+    /* ========================================================= */
+    /* EXPERIENCE SLIDES */
+    /* ========================================================= */
+
+    .experience-slide {
+
+      display: none;
+
+      width: 100%;
+
+    }
+
+
+    .experience-slide.active {
+
       display: block;
+
     }
 
-    .company-logo.atlas-logo {
-      max-width: 115px;
-      max-height: 115px;
+
+    /* ========================================================= */
+    /* EXPERIENCE CARD */
+    /* ========================================================= */
+
+    .experience-card {
+
+      margin: 0;
+
+      width: 100%;
+
+      min-height: 500px;
+
+      border-radius: 6px;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
     }
 
-    .company-logo.ampersand-logo {
-      max-width: 120px;
-      max-height: 120px;
+
+    .experience-card:hover {
+
+      transform: translateY(-4px);
+
     }
 
-    .company-logo.mkopa-logo {
-      max-width: 120px;
-      max-height: 100px;
+
+    .experience-card .card-content {
+
+      padding: 35px 40px;
+
     }
 
-    .company-logo.softlink-logo {
-      max-width: 110px;
-      max-height: 110px;
+
+    /* ========================================================= */
+    /* EXPERIENCE ICON */
+    /* ========================================================= */
+
+    .experience-icon {
+
+      width: 65px;
+
+      height: 65px;
+
+      line-height: 65px;
+
+      text-align: center;
+
+      border-radius: 50%;
+
+      background: #e0f2f1;
+
+      color: #009688;
+
+      font-size: 28px;
+
+      margin-bottom: 20px;
+
     }
+
+
+    /* ========================================================= */
+    /* COMPANY NAME */
+    /* ========================================================= */
+
+    .experience-company {
+
+      margin-top: 5px;
+
+      margin-bottom: 8px;
+
+      font-size: 25px;
+
+      font-weight: 600;
+
+    }
+
+
+    /* ========================================================= */
+    /* JOB TITLE */
+    /* ========================================================= */
+
+    .experience-role {
+
+      font-size: 17px;
+
+      font-weight: 500;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    /* ========================================================= */
+    /* LOCATION / PERIOD */
+    /* ========================================================= */
+
+    .experience-meta {
+
+      font-size: 14px;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    .experience-meta i {
+
+      margin-right: 5px;
+
+    }
+
+
+    /* ========================================================= */
+    /* RESPONSIBILITIES */
+    /* ========================================================= */
+
+    .experience-card ul {
+
+      padding-left: 20px;
+
+      margin-top: 10px;
+
+    }
+
+
+    .experience-card li {
+
+      margin-bottom: 12px;
+
+      line-height: 1.65;
+
+      list-style-type: disc;
+
+    }
+
+
+    /* ========================================================= */
+    /* AREAS */
+    /* ========================================================= */
+
+    .experience-areas {
+
+      margin-top: 25px;
+
+      padding-top: 18px;
+
+      border-top: 1px solid #eeeeee;
+
+      line-height: 1.6;
+
+    }
+
+
+    /* ========================================================= */
+    /* CARD ACTION */
+    /* ========================================================= */
+
+    .experience-card .card-action {
+
+      padding: 16px 40px;
+
+      font-size: 14px;
+
+    }
+
+
+    /* ========================================================= */
+    /* ARROWS */
+    /* ========================================================= */
+
+    .experience-arrow {
+
+      position: absolute;
+
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      width: 45px;
+
+      height: 45px;
+
+      line-height: 45px;
+
+      text-align: center;
+
+      border-radius: 50%;
+
+      background: #009688;
+
+      color: #ffffff;
+
+      cursor: pointer;
+
+      z-index: 10;
+
+      transition: all 0.2s ease;
+
+    }
+
+
+    .experience-arrow:hover {
+
+      background: #00796b;
+
+      transform:
+        translateY(-50%)
+        scale(1.08);
+
+    }
+
+
+    .experience-arrow.left {
+
+      left: 5px;
+
+    }
+
+
+    .experience-arrow.right {
+
+      right: 5px;
+
+    }
+
+
+    /* ========================================================= */
+    /* COUNTER */
+    /* ========================================================= */
+
+    .experience-counter {
+
+      position: absolute;
+
+      bottom: 30px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      font-size: 14px;
+
+      color: #757575;
+
+      font-weight: 500;
+
+    }
+
+
+    /* ========================================================= */
+    /* DOTS */
+    /* ========================================================= */
+
+    .experience-dots {
+
+      position: absolute;
+
+      bottom: 7px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      display: flex;
+
+      gap: 9px;
+
+    }
+
+
+    .experience-dot {
+
+      display: block;
+
+      width: 9px;
+
+      height: 9px;
+
+      border-radius: 50%;
+
+      background: #bdbdbd;
+
+      cursor: pointer;
+
+      transition: all 0.2s ease;
+
+    }
+
+
+    .experience-dot.active {
+
+      background: #009688;
+
+      transform: scale(1.2);
+
+    }
+
+
+    /* ========================================================= */
+    /* TABLET */
+    /* ========================================================= */
+
+    @media only screen and (max-width: 900px) {
+
+
+      .experience-slider {
+
+        padding-left: 50px;
+
+        padding-right: 50px;
+
+      }
+
+
+      .experience-card {
+
+        min-height: 500px;
+
+      }
+
+
+      .experience-card .card-content {
+
+        padding: 28px;
+
+      }
+
+
+      .experience-card .card-action {
+
+        padding-left: 28px;
+
+        padding-right: 28px;
+
+      }
+
+    }
+
+
+    /* ========================================================= */
+    /* MOBILE */
+    /* ========================================================= */
 
     @media only screen and (max-width: 600px) {
-      .company-logo-wrapper {
-        width: 110px;
-        height: 110px;
-        margin-bottom: 20px;
+
+
+      .experience-slider {
+
+        padding-left: 35px;
+
+        padding-right: 35px;
+
+        padding-bottom: 70px;
+
       }
+
+
+      .experience-card {
+
+        min-height: auto;
+
+      }
+
+
+      .experience-card .card-content {
+
+        padding: 25px;
+
+      }
+
+
+      .experience-card .card-action {
+
+        padding-left: 25px;
+
+        padding-right: 25px;
+
+      }
+
+
+      .experience-company {
+
+        font-size: 21px;
+
+      }
+
+
+      .experience-role {
+
+        font-size: 16px;
+
+      }
+
+
+      .experience-arrow {
+
+        width: 36px;
+
+        height: 36px;
+
+        line-height: 36px;
+
+      }
+
+
+      .experience-arrow.left {
+
+        left: 0;
+
+      }
+
+
+      .experience-arrow.right {
+
+        right: 0;
+
+      }
+
     }
+
+
   </style>
 
 </head>
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
+  <!-- ========================================================= -->
+
+  <!-- GOOGLE TAG MANAGER NOSCRIPT -->
+
+  <!-- ========================================================= -->
+
   <noscript>
-    <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-      height="0"
-      width="0"
-      style="display:none;visibility:hidden">
-    </iframe>
+
+```
+<iframe
+  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0"
+  width="0"
+  style="display:none;visibility:hidden">
+</iframe>
+```
+
   </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
+  <!-- ========================================================= -->
 
-  <!-- =============================== -->
   <!-- DESKTOP NAVIGATION -->
-  <!-- =============================== -->
+
+  <!-- ========================================================= -->
 
   <nav>
-    <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container"
-          aria-label="Navigate to the beginning of the page"
-          href="index.html"
-          class="brand-logo grey-blue-text">
-
-          <img
-            src="assets/img/passport-new.jpg"
-            class="circle img-responsive profile-pic"
-            alt="Lawrance Tala profile photo">
-        </a>
-      </li>
+```
+<ul class="side-nav fixed section table-of-contents">
 
 
-      <li class="bold">
-        <a
-          aria-label="Navigate to the About section"
-          href="about.html"
-          class="waves-effect waves-dark teal-text">
+  <!-- PROFILE -->
 
-          <i class="mdi-social-person small"></i>
-          <span>About</span>
-
-        </a>
-      </li>
-
-
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Experience section"
-          href="experience.html"
-          class="waves-effect waves-dark teal-text">
-
-          <i class="mdi-action-trending-up small"></i>
-          <span>Experience</span>
-
-        </a>
-      </li>
-
-
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Projects section"
-          href="projects.html"
-          class="waves-effect waves-dark teal-text">
-
-          <i class="mdi-av-my-library-books small"></i>
-          <span>Projects</span>
-
-        </a>
-      </li>
-
-
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Skills section"
-          href="skills.html"
-          class="waves-effect waves-dark teal-text">
-
-          <i class="mdi-action-assessment small"></i>
-          <span>Skills</span>
-
-        </a>
-      </li>
-
-
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Education section"
-          href="education.html"
-          class="waves-effect waves-dark teal-text">
-
-          <i class="mdi-social-school small"></i>
-          <span>Education</span>
-
-        </a>
-      </li>
-
-
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Contact section"
-          href="contact.html"
-          class="waves-effect waves-dark teal-text">
-
-          <i class="mdi-content-mail small"></i>
-          <span>Contact</span>
-
-        </a>
-      </li>
-
-
-      <li class="bold">
-        <a
-          aria-label="Open Lawrance Tala resume in a new tab"
-          href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-          target="_blank"
-          class="waves-effect waves-dark teal-text">
-
-          <i class="mdi-file-folder-open small"></i>
-          <span>Resume</span>
-
-        </a>
-      </li>
-
-    </ul>
-  </nav>
-
-
-  <!-- =============================== -->
-  <!-- MOBILE TOP NAVIGATION -->
-  <!-- =============================== -->
-
-  <nav class="hide-on-large only trigger z-depth-1">
+  <li class="logo">
 
     <a
-      aria-label="Toggle visibility of the mobile navbar"
-      href="#"
-      data-activates="slide-out"
-      class="button-collapse">
+      id="logo-container"
+      aria-label="Navigate to the beginning of the page"
+      href="index.html"
+      class="brand-logo grey-blue-text">
 
-      <i class="mdi-navigation-menu"></i>
+      <img
+        src="assets/img/passport-new.jpg"
+        class="circle img-responsive profile-pic"
+        alt="Lawrance Tala profile photo">
 
     </a>
 
+  </li>
 
-    <div class="name-title">
 
-      <a
-        id="name"
-        aria-label="Navigate to the beginning of the page"
-        href="index.html"
-        class="teal-text">
+  <!-- ABOUT -->
 
-        Lawrance Tala
+  <li class="bold">
 
-      </a>
+    <a
+      aria-label="Navigate to the About section"
+      href="about.html"
+      class="waves-effect waves-dark teal-text">
 
-      <span class="black-text">
-        Computer Science Professional
-      </span>
+      <i class="mdi-social-person small"></i>
 
-    </div>
+      <span>About</span>
+
+    </a>
+
+  </li>
+
+
+  <!-- EXPERIENCE -->
+
+  <li class="bold">
+
+    <a
+      aria-label="Navigate to the Experience section"
+      href="experience.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-action-trending-up small"></i>
+
+      <span>Experience</span>
+
+    </a>
+
+  </li>
+
+
+  <!-- PROJECTS -->
+
+  <li class="bold">
+
+    <a
+      aria-label="Navigate to the Projects section"
+      href="projects.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-av-my-library-books small"></i>
+
+      <span>Projects</span>
+
+    </a>
+
+  </li>
+
+
+  <!-- SKILLS -->
+
+  <li class="bold">
+
+    <a
+      aria-label="Navigate to the Skills section"
+      href="skills.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-action-assessment small"></i>
+
+      <span>Skills</span>
+
+    </a>
+
+  </li>
+
+
+  <!-- EDUCATION -->
+
+  <li class="bold">
+
+    <a
+      aria-label="Navigate to the Education section"
+      href="education.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-social-school small"></i>
+
+      <span>Education</span>
+
+    </a>
+
+  </li>
+
+
+  <!-- CONTACT -->
+
+  <li class="bold">
+
+    <a
+      aria-label="Navigate to the Contact section"
+      href="contact.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-content-mail small"></i>
+
+      <span>Contact</span>
+
+    </a>
+
+  </li>
+
+
+  <!-- RESUME -->
+
+  <li class="bold">
+
+    <a
+      aria-label="Open Lawrance Tala resume in a new tab"
+      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+      target="_blank"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-file-folder-open small"></i>
+
+      <span>Resume</span>
+
+    </a>
+
+  </li>
+
+
+</ul>
+```
 
   </nav>
 
+  <!-- ========================================================= -->
 
-  <!-- =============================== -->
+  <!-- MOBILE TOP NAVIGATION -->
+
+  <!-- ========================================================= -->
+
+  <nav class="hide-on-large only trigger z-depth-1">
+
+```
+<a
+  aria-label="Toggle visibility of the mobile navbar"
+  href="#"
+  data-activates="slide-out"
+  class="button-collapse">
+
+  <i class="mdi-navigation-menu"></i>
+
+</a>
+
+
+<div class="name-title">
+
+
+  <a
+    id="name"
+    aria-label="Navigate to the beginning of the page"
+    href="index.html"
+    class="teal-text">
+
+    Lawrance Tala
+
+  </a>
+
+
+  <span class="black-text">
+
+    Computer Science Professional
+
+  </span>
+
+
+</div>
+```
+
+  </nav>
+
+  <!-- ========================================================= -->
+
   <!-- MOBILE MENU -->
-  <!-- =============================== -->
+
+  <!-- ========================================================= -->
 
   <nav class="hide-on-large only">
 
-    <ul id="slide-out" class="side-nav">
-
-      <li class="bold">
-        <a
-          aria-label="Navigate to the About section"
-          href="about.html"
-          class="waves-effect waves-dark teal-text">
-
-          <i class="mdi-social-person small"></i>
-          <span>About</span>
-
-        </a>
-      </li>
+```
+<ul id="slide-out" class="side-nav">
 
 
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Experience section"
-          href="experience.html"
-          class="waves-effect waves-dark teal-text">
+  <li class="bold">
 
-          <i class="mdi-action-trending-up small"></i>
-          <span>Experience</span>
+    <a
+      href="about.html"
+      class="waves-effect waves-dark teal-text">
 
-        </a>
-      </li>
+      <i class="mdi-social-person small"></i>
 
+      <span>About</span>
 
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Projects section"
-          href="projects.html"
-          class="waves-effect waves-dark teal-text">
+    </a>
 
-          <i class="mdi-av-my-library-books small"></i>
-          <span>Projects</span>
-
-        </a>
-      </li>
+  </li>
 
 
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Skills section"
-          href="skills.html"
-          class="waves-effect waves-dark teal-text">
+  <li class="bold">
 
-          <i class="mdi-action-assessment small"></i>
-          <span>Skills</span>
+    <a
+      href="experience.html"
+      class="waves-effect waves-dark teal-text">
 
-        </a>
-      </li>
+      <i class="mdi-action-trending-up small"></i>
 
+      <span>Experience</span>
 
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Education section"
-          href="education.html"
-          class="waves-effect waves-dark teal-text">
+    </a>
 
-          <i class="mdi-social-school small"></i>
-          <span>Education</span>
-
-        </a>
-      </li>
+  </li>
 
 
-      <li class="bold">
-        <a
-          aria-label="Navigate to the Contact section"
-          href="contact.html"
-          class="waves-effect waves-dark teal-text">
+  <li class="bold">
 
-          <i class="mdi-content-mail small"></i>
-          <span>Contact</span>
+    <a
+      href="projects.html"
+      class="waves-effect waves-dark teal-text">
 
-        </a>
-      </li>
+      <i class="mdi-av-my-library-books small"></i>
+
+      <span>Projects</span>
+
+    </a>
+
+  </li>
 
 
-      <li class="bold">
-        <a
-          aria-label="Open Lawrance Tala resume in a new tab"
-          href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-          target="_blank"
-          class="waves-effect waves-dark teal-text">
+  <li class="bold">
 
-          <i class="mdi-file-folder-open small"></i>
-          <span>Resume</span>
+    <a
+      href="skills.html"
+      class="waves-effect waves-dark teal-text">
 
-        </a>
-      </li>
+      <i class="mdi-action-assessment small"></i>
 
-    </ul>
+      <span>Skills</span>
+
+    </a>
+
+  </li>
+
+
+  <li class="bold">
+
+    <a
+      href="education.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-social-school small"></i>
+
+      <span>Education</span>
+
+    </a>
+
+  </li>
+
+
+  <li class="bold">
+
+    <a
+      href="contact.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-content-mail small"></i>
+
+      <span>Contact</span>
+
+    </a>
+
+  </li>
+
+
+  <li class="bold">
+
+    <a
+      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+      target="_blank"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="mdi-file-folder-open small"></i>
+
+      <span>Resume</span>
+
+    </a>
+
+  </li>
+
+
+</ul>
+```
 
   </nav>
 
+  <!-- ========================================================= -->
 
-  <!-- =============================== -->
   <!-- MAIN CONTENT -->
-  <!-- =============================== -->
+
+  <!-- ========================================================= -->
 
   <main>
 
-    <!-- Experience Section -->
-
-    <section
-      id="experience"
-      class="section scrollspy">
-
-      <h3 class="page-title white-text teal">
-        Experience
-      </h3>
+```
+<section
+  id="experience"
+  class="section scrollspy">
 
 
-      <div class="container">
+  <h3 class="page-title white-text teal">
+
+    Experience
+
+  </h3>
 
 
-        <!-- ================================================= -->
-        <!-- ATLAS CAPTURE AI -->
-        <!-- ================================================= -->
+  <div class="container">
 
-        <div class="card">
+
+    <!-- ===================================================== -->
+    <!-- EXPERIENCE SLIDER -->
+    <!-- ===================================================== -->
+
+    <div class="experience-slider">
+
+
+      <!-- ================================================= -->
+      <!-- LEFT ARROW -->
+      <!-- ================================================= -->
+
+      <div
+        class="experience-arrow left"
+        id="experiencePrev"
+        role="button"
+        tabindex="0"
+        aria-label="Previous experience">
+
+        <i class="fa fa-chevron-left"></i>
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- SLIDE 1: ATLAS CAPTURE AI -->
+      <!-- ================================================= -->
+
+      <div
+        class="experience-slide active"
+        data-slide="0">
+
+
+        <div class="card experience-card">
+
 
           <div class="card-content">
 
-            <div class="row">
 
+            <div class="experience-icon">
 
-              <!-- LOGO -->
-
-              <div class="col s12 m2">
-
-                <div class="center-align">
-
-                  <div class="company-logo-wrapper">
-
-                    <img
-                      src="assets/img/logos/atlas.png"
-                      class="company-logo atlas-logo"
-                      alt="Atlas Capture AI logo">
-
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <!-- EXPERIENCE -->
-
-              <div class="col s12 m10">
-
-                <p>
-
-                  <span class="card-title">
-
-                    <span class="teal-text hoverline">
-                      Atlas Capture AI
-                    </span>
-
-                  </span>
-
-                </p>
-
-
-                <div class="role brown-text text-darken-2">
-
-                  AI Data Annotator / Human Verifier
-
-                </div>
-
-
-                <ul>
-
-                  <li>
-                    Perform AI data labeling and annotation tasks according
-                    to project-specific guidelines and quality requirements.
-                  </li>
-
-                  <li>
-                    Review and categorize datasets to support the development
-                    and improvement of AI and machine learning models.
-                  </li>
-
-                  <li>
-                    Verify annotations and review labeled data for accuracy,
-                    consistency, and adherence to project requirements.
-                  </li>
-
-                  <li>
-                    Identify inconsistencies and correct annotation issues
-                    to maintain dataset quality.
-                  </li>
-
-                  <li>
-                    Follow project guidelines and quality standards while
-                    maintaining accuracy and attention to detail.
-                  </li>
-
-                  <li>
-                    Contribute to the preparation and validation of training
-                    data used in AI and machine learning workflows.
-                  </li>
-
-                  <li>
-                    <b>Areas:</b>
-                    AI Data Labeling, Data Annotation, Dataset Categorization,
-                    Quality Review, AI/ML Training Data
-                  </li>
-
-                </ul>
-
-              </div>
+              <i class="fa fa-database"></i>
 
             </div>
 
-          </div>
+
+            <h4 class="experience-company teal-text">
+
+              Atlas Capture AI
+
+            </h4>
 
 
-          <div class="card-action">
+            <div class="experience-role brown-text text-darken-2">
 
-            <span>
-              June 2026 - Present | Remote
-            </span>
-
-          </div>
-
-        </div>
-
-
-        <!-- ================================================= -->
-        <!-- AMPERSAND E-MOBILITY -->
-        <!-- ================================================= -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <div class="row">
-
-
-              <!-- LOGO -->
-
-              <div class="col s12 m2">
-
-                <div class="center-align">
-
-                  <div class="company-logo-wrapper">
-
-                    <img
-                      src="assets/img/logos/ampersand.png"
-                      class="company-logo ampersand-logo"
-                      alt="Ampersand E-Mobility logo">
-
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <!-- EXPERIENCE -->
-
-              <div class="col s12 m10">
-
-                <p>
-
-                  <span class="card-title">
-
-                    <span class="teal-text hoverline">
-                      Ampersand E-Mobility
-                    </span>
-
-                  </span>
-
-                </p>
-
-
-                <div class="role brown-text text-darken-2">
-
-                  Systems &amp; Operations Support
-
-                </div>
-
-
-                <ul>
-
-                  <li>
-                    Supported daily technology-driven operations involving
-                    battery swapping, charging systems, and station processes.
-                  </li>
-
-                  <li>
-                    Assisted customers and riders while providing guidance
-                    on system and operational procedures.
-                  </li>
-
-                  <li>
-                    Performed basic troubleshooting and identified issues
-                    affecting batteries, chargers, vehicles, and station systems.
-                  </li>
-
-                  <li>
-                    Maintained accurate system and transaction records while
-                    following established operational procedures.
-                  </li>
-
-                  <li>
-                    Identified operational and technical issues, documented
-                    them, and escalated unresolved issues to the appropriate
-                    teams or supervisors.
-                  </li>
-
-                  <li>
-                    Worked in a fast-paced operational environment while
-                    maintaining safety, service quality, and procedural compliance.
-                  </li>
-
-                  <li>
-                    <b>Areas:</b>
-                    Systems Operations, Technical Support, Troubleshooting,
-                    Customer Support, EV Charging Operations
-                  </li>
-
-                </ul>
-
-              </div>
+              AI Data Annotator / Human Verifier
 
             </div>
 
-          </div>
 
+            <div class="experience-meta brown-text">
 
-          <div class="card-action">
+              <i class="fa fa-calendar"></i>
 
-            <span>
-              October 2025 - September 2026 | Nairobi, Kenya
-            </span>
+              June 2026 - Present
 
-          </div>
+              &nbsp;&nbsp; | &nbsp;&nbsp;
 
-        </div>
+              <i class="fa fa-globe"></i>
 
-
-        <!-- ================================================= -->
-        <!-- M-KOPA -->
-        <!-- ================================================= -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <div class="row">
-
-
-              <!-- LOGO -->
-
-              <div class="col s12 m2">
-
-                <div class="center-align">
-
-                  <div class="company-logo-wrapper">
-
-                    <img
-                      src="assets/img/logos/mkopa.png"
-                      class="company-logo mkopa-logo"
-                      alt="M-KOPA logo">
-
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <!-- EXPERIENCE -->
-
-              <div class="col s12 m10">
-
-                <p>
-
-                  <span class="card-title">
-
-                    <span class="teal-text hoverline">
-                      M-KOPA
-                    </span>
-
-                  </span>
-
-                </p>
-
-
-                <div class="role brown-text text-darken-2">
-
-                  Production Operator
-
-                </div>
-
-
-                <ul>
-
-                  <li>
-                    Supported production and processing activities while
-                    following established operational procedures.
-                  </li>
-
-                  <li>
-                    Performed inspection and quality checks to identify
-                    defects and ensure products met required standards.
-                  </li>
-
-                  <li>
-                    Identified and reported production issues and maintained
-                    accurate records of completed tasks.
-                  </li>
-
-                  <li>
-                    Worked efficiently to meet production targets while
-                    maintaining quality and safety requirements.
-                  </li>
-
-                  <li>
-                    Collaborated with team members to maintain smooth
-                    production and workflow operations.
-                  </li>
-
-                  <li>
-                    <b>Areas:</b>
-                    Production Operations, Quality Control, Inspection,
-                    Teamwork, Process Compliance
-                  </li>
-
-                </ul>
-
-              </div>
+              Remote
 
             </div>
 
-          </div>
+
+            <ul>
 
 
-          <div class="card-action">
-
-            <span>
-              September 2025 - October 2025 | Kenya
-            </span>
-
-          </div>
-
-        </div>
+              <li>
+                Perform AI data labeling and annotation tasks
+                according to project-specific guidelines and
+                quality requirements.
+              </li>
 
 
-        <!-- ================================================= -->
-        <!-- SOFTLINK OPTIONS LIMITED -->
-        <!-- ================================================= -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <div class="row">
+              <li>
+                Review and categorize datasets to support the
+                development and improvement of AI and machine
+                learning models.
+              </li>
 
 
-              <!-- ICON -->
-
-              <div class="col s12 m2">
-
-                <div class="center-align">
-
-                  <div class="company-logo-wrapper">
-
-                    <i class="fa fa-code fa-5x teal-text"></i>
-
-                  </div>
-
-                </div>
-
-              </div>
+              <li>
+                Verify annotations and review labeled data for
+                accuracy, consistency, and adherence to project
+                requirements.
+              </li>
 
 
-              <!-- EXPERIENCE -->
-
-              <div class="col s12 m10">
-
-                <p>
-
-                  <span class="card-title">
-
-                    <span class="teal-text hoverline">
-                      Softlink Options Limited
-                    </span>
-
-                  </span>
-
-                </p>
+              <li>
+                Identify inconsistencies and correct annotation
+                issues to maintain dataset quality.
+              </li>
 
 
-                <div class="role brown-text text-darken-2">
+              <li>
+                Follow project guidelines and quality standards
+                while maintaining accuracy and attention to detail.
+              </li>
 
-                  Web Developer &amp; Sales Trainee
 
-                </div>
+              <li>
+                Contribute to the preparation and validation of
+                training data used in AI and machine learning
+                workflows.
+              </li>
 
 
-                <ul>
+            </ul>
 
-                  <li>
-                    Developed and maintained websites using WordPress,
-                    cPanel, and Odoo.
-                  </li>
 
-                  <li>
-                    Managed domain and web hosting services.
-                  </li>
+            <div class="experience-areas">
 
-                  <li>
-                    Participated in sales training, developing customer
-                    engagement and communication skills.
-                  </li>
+              <b>Areas:</b>
 
-                  <li>
-                    Collaborated with sales and development teams on
-                    client projects.
-                  </li>
-
-                  <li>
-                    Supported clients with website and hosting-related
-                    requirements.
-                  </li>
-
-                  <li>
-                    <b>Tools:</b>
-                    WordPress, cPanel, Odoo
-                  </li>
-
-                </ul>
-
-              </div>
+              AI Data Labeling,
+              Data Annotation,
+              Dataset Categorization,
+              Quality Review,
+              AI/ML Training Data
 
             </div>
 
-          </div>
-
-
-          <div class="card-action">
-
-            <span>
-              May 2025 - July 2025 | Nairobi, Kenya
-            </span>
 
           </div>
+
 
         </div>
 
 
       </div>
 
-    </section>
+
+      <!-- ================================================= -->
+      <!-- SLIDE 2: AMPERSAND -->
+      <!-- ================================================= -->
+
+      <div
+        class="experience-slide"
+        data-slide="1">
+
+
+        <div class="card experience-card">
+
+
+          <div class="card-content">
+
+
+            <div class="experience-icon">
+
+              <i class="fa fa-bolt"></i>
+
+            </div>
+
+
+            <h4 class="experience-company teal-text">
+
+              Ampersand E-Mobility
+
+            </h4>
+
+
+            <div class="experience-role brown-text text-darken-2">
+
+              Charging Station Attendant
+
+            </div>
+
+
+            <div class="experience-meta brown-text">
+
+              <i class="fa fa-calendar"></i>
+
+              October 2025 - September 2026
+
+              &nbsp;&nbsp; | &nbsp;&nbsp;
+
+              <i class="fa fa-map-marker"></i>
+
+              Nairobi, Kenya
+
+            </div>
+
+
+            <ul>
+
+
+              <li>
+                Supported daily EV battery swapping and charging
+                operations while following established procedures
+                and safety requirements.
+              </li>
+
+
+              <li>
+                Assisted riders and customers by providing guidance
+                on battery swapping, charging, and station processes.
+              </li>
+
+
+              <li>
+                Performed basic troubleshooting and identified
+                issues affecting batteries, chargers, vehicles,
+                and station systems.
+              </li>
+
+
+              <li>
+                Maintained accurate system and transaction records
+                while following established operational procedures.
+              </li>
+
+
+              <li>
+                Identified operational and technical issues,
+                documented them, and escalated unresolved issues
+                to supervisors or relevant teams.
+              </li>
+
+
+              <li>
+                Worked in a fast-paced operational environment
+                while maintaining service quality, safety, and
+                procedural compliance.
+              </li>
+
+
+            </ul>
+
+
+            <div class="experience-areas">
+
+              <b>Areas:</b>
+
+              EV Operations,
+              Battery Swapping,
+              Technical Support,
+              Troubleshooting,
+              Customer Support
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- SLIDE 3: M-KOPA -->
+      <!-- ================================================= -->
+
+      <div
+        class="experience-slide"
+        data-slide="2">
+
+
+        <div class="card experience-card">
+
+
+          <div class="card-content">
+
+
+            <div class="experience-icon">
+
+              <i class="fa fa-cogs"></i>
+
+            </div>
+
+
+            <h4 class="experience-company teal-text">
+
+              M-KOPA
+
+            </h4>
+
+
+            <div class="experience-role brown-text text-darken-2">
+
+              Production Operator
+
+            </div>
+
+
+            <div class="experience-meta brown-text">
+
+              <i class="fa fa-calendar"></i>
+
+              September 2025 - October 2025
+
+              &nbsp;&nbsp; | &nbsp;&nbsp;
+
+              <i class="fa fa-map-marker"></i>
+
+              Kenya
+
+            </div>
+
+
+            <ul>
+
+
+              <li>
+                Supported production and processing activities
+                while following established operational procedures.
+              </li>
+
+
+              <li>
+                Performed inspection and quality checks to identify
+                defects and ensure products met required standards.
+              </li>
+
+
+              <li>
+                Identified and reported production issues and
+                maintained accurate records of completed tasks.
+              </li>
+
+
+              <li>
+                Worked efficiently to meet production targets while
+                maintaining quality and safety requirements.
+              </li>
+
+
+              <li>
+                Collaborated with team members to maintain smooth
+                production and workflow operations.
+              </li>
+
+
+            </ul>
+
+
+            <div class="experience-areas">
+
+              <b>Areas:</b>
+
+              Production Operations,
+              Quality Control,
+              Inspection,
+              Teamwork,
+              Process Compliance
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- SLIDE 4: SOFTLINK -->
+      <!-- ================================================= -->
+
+      <div
+        class="experience-slide"
+        data-slide="3">
+
+
+        <div class="card experience-card">
+
+
+          <div class="card-content">
+
+
+            <div class="experience-icon">
+
+              <i class="fa fa-code"></i>
+
+            </div>
+
+
+            <h4 class="experience-company teal-text">
+
+              Softlink Options Limited
+
+            </h4>
+
+
+            <div class="experience-role brown-text text-darken-2">
+
+              Web Developer &amp; Sales Trainee
+
+            </div>
+
+
+            <div class="experience-meta brown-text">
+
+              <i class="fa fa-calendar"></i>
+
+              May 2025 - July 2025
+
+              &nbsp;&nbsp; | &nbsp;&nbsp;
+
+              <i class="fa fa-map-marker"></i>
+
+              Nairobi, Kenya
+
+            </div>
+
+
+            <ul>
+
+
+              <li>
+                Developed and maintained websites using WordPress,
+                cPanel, and Odoo.
+              </li>
+
+
+              <li>
+                Managed domain and web hosting services.
+              </li>
+
+
+              <li>
+                Participated in sales training, developing customer
+                engagement and communication skills.
+              </li>
+
+
+              <li>
+                Collaborated with sales and development teams on
+                client projects.
+              </li>
+
+
+              <li>
+                Supported clients with website and hosting-related
+                requirements.
+              </li>
+
+
+            </ul>
+
+
+            <div class="experience-areas">
+
+              <b>Tools:</b>
+
+              WordPress,
+              cPanel,
+              Odoo
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- RIGHT ARROW -->
+      <!-- ================================================= -->
+
+      <div
+        class="experience-arrow right"
+        id="experienceNext"
+        role="button"
+        tabindex="0"
+        aria-label="Next experience">
+
+        <i class="fa fa-chevron-right"></i>
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- COUNTER -->
+      <!-- ================================================= -->
+
+      <div class="experience-counter">
+
+        <span id="experienceCounter">
+
+          1 / 4
+
+        </span>
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- DOTS -->
+      <!-- ================================================= -->
+
+      <div class="experience-dots">
+
+
+        <span
+          class="experience-dot active"
+          data-slide="0"
+          aria-label="Atlas Capture AI">
+        </span>
+
+
+        <span
+          class="experience-dot"
+          data-slide="1"
+          aria-label="Ampersand E-Mobility">
+        </span>
+
+
+        <span
+          class="experience-dot"
+          data-slide="2"
+          aria-label="M-KOPA">
+        </span>
+
+
+        <span
+          class="experience-dot"
+          data-slide="3"
+          aria-label="Softlink Options Limited">
+        </span>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+```
 
   </main>
 
+  <!-- ========================================================= -->
 
-  <!-- ================================================= -->
-  <!-- TYPED.JS -->
-  <!-- ================================================= -->
+  <!-- JQUERY -->
 
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <!-- ========================================================= -->
 
-  <script type="text/javascript">
-
-    var typed = new Typed('.typing', {
-
-      strings: [
-        "Computer Science Professional",
-        "Software Developer",
-        "ML Enthusiast",
-        "IT Professional"
-      ],
-
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-
-    });
-
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
   </script>
 
+  <!-- ========================================================= -->
 
-  <!-- ================================================= -->
-  <!-- JQUERY -->
-  <!-- ================================================= -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-
-  <!-- ================================================= -->
   <!-- MATERIALIZE JAVASCRIPT -->
-  <!-- ================================================= -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <!-- ========================================================= -->
 
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
+  </script>
+
+  <!-- ========================================================= -->
+
+  <!-- EXPERIENCE SLIDER SCRIPT -->
+
+  <!-- ========================================================= -->
 
   <script>
 
     $(document).ready(function () {
+
+
+      /* ======================================================= */
+      /* MATERIALIZE */
+      /* ======================================================= */
 
       $(".scrollspy").scrollSpy();
 
@@ -886,10 +1532,280 @@ html
       $(".button-collapse").sideNav({
 
         menuWidth: 190,
+
         edge: "left",
+
         closeOnClick: true
 
       });
+
+
+      /* ======================================================= */
+      /* EXPERIENCE SLIDER */
+      /* ======================================================= */
+
+      var slides =
+        document.querySelectorAll(".experience-slide");
+
+
+      var dots =
+        document.querySelectorAll(".experience-dot");
+
+
+      var counter =
+        document.getElementById("experienceCounter");
+
+
+      var previousButton =
+        document.getElementById("experiencePrev");
+
+
+      var nextButton =
+        document.getElementById("experienceNext");
+
+
+      var currentSlide = 0;
+
+
+      /* ======================================================= */
+      /* SHOW EXPERIENCE */
+      /* ======================================================= */
+
+      function showExperienceSlide(index) {
+
+
+        if (index < 0) {
+
+          index = slides.length - 1;
+
+        }
+
+
+        if (index >= slides.length) {
+
+          index = 0;
+
+        }
+
+
+        currentSlide = index;
+
+
+        /* Hide all experiences */
+
+        slides.forEach(function (slide) {
+
+          slide.classList.remove("active");
+
+        });
+
+
+        /* Remove active dots */
+
+        dots.forEach(function (dot) {
+
+          dot.classList.remove("active");
+
+        });
+
+
+        /* Show selected experience */
+
+        if (slides[currentSlide]) {
+
+          slides[currentSlide]
+            .classList.add("active");
+
+        }
+
+
+        /* Activate selected dot */
+
+        if (dots[currentSlide]) {
+
+          dots[currentSlide]
+            .classList.add("active");
+
+        }
+
+
+        /* Update counter */
+
+        if (counter) {
+
+          counter.textContent =
+            (currentSlide + 1) +
+            " / " +
+            slides.length;
+
+        }
+
+      }
+
+
+      /* ======================================================= */
+      /* PREVIOUS */
+      /* ======================================================= */
+
+      if (previousButton) {
+
+        previousButton.addEventListener(
+          "click",
+          function () {
+
+            showExperienceSlide(
+              currentSlide - 1
+            );
+
+          }
+        );
+
+      }
+
+
+      /* ======================================================= */
+      /* NEXT */
+      /* ======================================================= */
+
+      if (nextButton) {
+
+        nextButton.addEventListener(
+          "click",
+          function () {
+
+            showExperienceSlide(
+              currentSlide + 1
+            );
+
+          }
+        );
+
+      }
+
+
+      /* ======================================================= */
+      /* DOT NAVIGATION */
+      /* ======================================================= */
+
+      dots.forEach(function (dot, index) {
+
+        dot.addEventListener(
+          "click",
+          function () {
+
+            showExperienceSlide(index);
+
+          }
+        );
+
+      });
+
+
+      /* ======================================================= */
+      /* KEYBOARD NAVIGATION */
+      /* ======================================================= */
+
+      document.addEventListener(
+        "keydown",
+        function (event) {
+
+
+          if (event.key === "ArrowLeft") {
+
+            showExperienceSlide(
+              currentSlide - 1
+            );
+
+          }
+
+
+          if (event.key === "ArrowRight") {
+
+            showExperienceSlide(
+              currentSlide + 1
+            );
+
+          }
+
+
+        }
+      );
+
+
+      /* ======================================================= */
+      /* TOUCH SWIPE */
+      /* ======================================================= */
+
+      var touchStartX = 0;
+
+      var touchEndX = 0;
+
+      var slider =
+        document.querySelector(".experience-slider");
+
+
+      if (slider) {
+
+
+        slider.addEventListener(
+          "touchstart",
+          function (event) {
+
+            touchStartX =
+              event.changedTouches[0].screenX;
+
+          },
+          false
+        );
+
+
+        slider.addEventListener(
+          "touchend",
+          function (event) {
+
+
+            touchEndX =
+              event.changedTouches[0].screenX;
+
+
+            var swipeDistance =
+              touchEndX - touchStartX;
+
+
+            if (Math.abs(swipeDistance) > 50) {
+
+
+              if (swipeDistance < 0) {
+
+                showExperienceSlide(
+                  currentSlide + 1
+                );
+
+              } else {
+
+                showExperienceSlide(
+                  currentSlide - 1
+                );
+
+              }
+
+            }
+
+
+          },
+          false
+        );
+
+
+      }
+
+
+      /* ======================================================= */
+      /* INITIALIZE */
+      /* ======================================================= */
+
+      showExperienceSlide(0);
+
 
     });
 
