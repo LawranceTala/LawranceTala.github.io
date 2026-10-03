@@ -38,8 +38,6 @@
     })(window,document,'script','dataLayer','GTM-PGZH8HT');
   </script>
 
-  <!-- End Google Tag Manager -->
-
   <!-- Google Analytics -->
 
   <script async
@@ -55,397 +53,651 @@
     }
 
     gtag('js', new Date());
-
     gtag('config', 'UA-126939217-2');
 
   </script>
 
   <style>
 
-    /* =========================
-       MAIN PAGE
-    ========================= */
+    /* =====================================================
+       REMOVE ALL CARD / FORM EFFECTS
+    ===================================================== */
 
-    main {
-      min-height: 100vh;
-      margin-left: 0 !important;
-      padding-left: 0 !important;
+    html,
+    body,
+    main,
+    section,
+    div {
+      box-sizing: border-box;
     }
 
 
-    /* =========================
-       HERO SECTION
-    ========================= */
+    /* =====================================================
+       MAIN PAGE
+    ===================================================== */
+
+    main {
+      min-height: 100vh !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      background: transparent !important;
+    }
+
+
+    /* =====================================================
+       NORMAL HOMEPAGE
+    ===================================================== */
 
     .hero-section {
-      min-height: 100vh;
+      min-height: 100vh !important;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 40px 20px;
-      background: transparent;
+
+      padding: 40px 20px !important;
+
+      background: transparent !important;
+
+      border: none !important;
+      box-shadow: none !important;
     }
 
 
-    /* =========================
+    /* =====================================================
        HERO CONTENT
-       TRANSPARENT - WALLPAPER VISIBLE
-    ========================= */
+       NO CARD / NO FORM / NO WHITE BACKGROUND
+    ===================================================== */
 
     .hero-card {
       width: 100%;
       max-width: 850px;
-      background: transparent;
-      padding: 45px 55px;
-      border-radius: 0;
+
+      background: transparent !important;
+
+      padding: 45px 55px !important;
+
+      border: none !important;
+      border-radius: 0 !important;
+
+      box-shadow: none !important;
+
+      filter: none !important;
+      backdrop-filter: none !important;
+
       text-align: center;
-      box-shadow: none;
     }
 
 
-    /* =========================
+    /* =====================================================
        PROFILE PHOTO
-    ========================= */
+    ===================================================== */
 
     .profile-link {
       display: inline-block;
-      text-decoration: none;
-      border: none;
-      outline: none;
+
+      text-decoration: none !important;
+
+      border: none !important;
+      outline: none !important;
+
+      background: transparent !important;
+      box-shadow: none !important;
     }
+
 
     .hero-profile {
       width: 135px;
       height: 135px;
+
       object-fit: cover;
+
       border-radius: 50%;
+
       border: 5px solid rgba(255, 255, 255, 0.75);
+
       margin-bottom: 15px;
+
       cursor: pointer;
+
       transition: 0.3s;
+
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     }
 
+
     .hero-profile:hover {
       transform: scale(1.05);
+
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
     }
 
 
-    /* =========================
+    /* =====================================================
        NAME
-    ========================= */
+    ===================================================== */
 
     .hero-card h1 {
       font-size: 42px;
+
       font-weight: 700;
+
       color: #ffffff;
+
       margin: 8px 0 12px;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.65);
     }
 
 
-    /* =========================
+    /* =====================================================
        TITLE
-    ========================= */
+    ===================================================== */
 
     .hero-title {
       font-size: 20px;
+
       line-height: 1.6;
+
       font-weight: 600;
+
       color: #ffffff;
+
       margin-bottom: 22px;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.65);
     }
 
 
-    /* =========================
+    /* =====================================================
        INTRODUCTION
-    ========================= */
+    ===================================================== */
 
     .hero-description {
       max-width: 720px;
+
       margin: 0 auto 25px;
+
       font-size: 17px;
+
       line-height: 1.8;
+
       color: #ffffff;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.70);
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.70);
     }
 
 
-    /* =========================
+    /* =====================================================
        BUTTONS
-    ========================= */
+    ===================================================== */
 
     .hero-buttons {
       margin: 25px 0;
     }
 
+
     .hero-buttons .btn {
       margin: 5px;
+
       border-radius: 25px;
+
       padding: 0 24px;
+
       background-color: #00695c;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.25);
     }
+
 
     .hero-buttons .btn:hover {
       background-color: #004d40;
     }
 
 
-    /* =========================
-       SOCIAL ICONS
-    ========================= */
+    /* =====================================================
+       SOCIAL LINKS
+    ===================================================== */
 
     .social-links {
       margin-top: 20px;
     }
 
+
     .social-links a {
       display: inline-block;
+
       margin: 0 9px;
+
       font-size: 25px;
+
       color: #ffffff;
+
       transition: 0.3s;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.65);
     }
+
 
     .social-links a:hover {
       color: #80cbc4;
+
       transform: translateY(-3px);
     }
 
 
-    /* =========================
-       PROFILE-ONLY VIEW
-       TRANSPARENT - WALLPAPER VISIBLE
-    ========================= */
+    /* =====================================================
+       PROFILE VIEW
+       COMPLETELY CLEAN
+       NO WHITE FORM
+       NO CARD
+       NO BLUR
+       NO SHADOW
+    ===================================================== */
 
     .profile-only-section {
-      min-height: 100vh;
+
+      min-height: 100vh !important;
+
       display: none;
+
       align-items: center;
+
       justify-content: center;
-      padding: 40px 20px;
-      background: transparent;
+
+      padding: 40px 20px !important;
+
+      background: transparent !important;
+
+      background-color: transparent !important;
+
+      border: none !important;
+
+      box-shadow: none !important;
+
+      filter: none !important;
+
+      backdrop-filter: none !important;
     }
+
+
+    /* =====================================================
+       PROFILE CONTENT
+       NO CARD / NO BOX
+    ===================================================== */
 
     .profile-only-card {
+
       width: 100%;
+
       max-width: 850px;
-      background: transparent;
-      padding: 50px 60px;
-      border-radius: 0;
+
+      padding: 20px !important;
+
+      margin: 0 auto !important;
+
       text-align: center;
-      box-shadow: none;
+
+      background: transparent !important;
+
+      background-color: transparent !important;
+
+      border: none !important;
+
+      border-radius: 0 !important;
+
+      box-shadow: none !important;
+
+      filter: none !important;
+
+      backdrop-filter: none !important;
     }
 
 
-    /* =========================
-       PROFILE-ONLY PHOTO
-    ========================= */
+    /* =====================================================
+       REMOVE POSSIBLE MATERIALIZE / STYLE.CSS EFFECTS
+    ===================================================== */
+
+    .profile-only-card::before,
+    .profile-only-card::after,
+    .profile-only-section::before,
+    .profile-only-section::after {
+
+      display: none !important;
+
+      content: none !important;
+
+      background: transparent !important;
+
+      box-shadow: none !important;
+    }
+
+
+    /* =====================================================
+       PROFILE PHOTO
+    ===================================================== */
 
     .profile-only-card img {
+
       width: 150px;
+
       height: 150px;
+
       object-fit: cover;
+
       border-radius: 50%;
+
       border: 5px solid rgba(255, 255, 255, 0.75);
+
       margin-bottom: 20px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.30);
+
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.30);
+
       transition: 0.3s;
+
+      background: transparent !important;
     }
+
 
     .profile-only-card img:hover {
       transform: scale(1.05);
     }
 
 
-    /* =========================
-       PROFILE-ONLY NAME
-    ========================= */
+    /* =====================================================
+       PROFILE NAME
+    ===================================================== */
 
     .profile-only-card h1 {
+
       font-size: 42px;
+
       font-weight: 700;
+
       color: #ffffff;
+
       margin: 8px 0 15px;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+
+      background: transparent !important;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.65);
     }
 
 
-    /* =========================
-       PROFILE-ONLY TITLE
-    ========================= */
+    /* =====================================================
+       PROFILE TITLE
+    ===================================================== */
 
     .profile-only-title {
+
       font-size: 20px;
+
       line-height: 1.6;
+
       font-weight: 600;
+
       color: #ffffff;
+
       margin-bottom: 25px;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+
+      background: transparent !important;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.65);
     }
 
 
-    /* =========================
-       PROFILE-ONLY DESCRIPTION
-    ========================= */
+    /* =====================================================
+       PROFILE DESCRIPTION
+       CLEAN TEXT ONLY
+       NO FORM
+       NO BOX
+    ===================================================== */
 
     .profile-only-description {
+
       max-width: 720px;
+
       margin: 0 auto;
+
+      padding: 0 !important;
+
       font-size: 17px;
+
       line-height: 1.8;
+
       color: #ffffff;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.70);
+
+      background: transparent !important;
+
+      background-color: transparent !important;
+
+      border: none !important;
+
+      border-radius: 0 !important;
+
+      box-shadow: none !important;
+
+      filter: none !important;
+
+      backdrop-filter: none !important;
+
+      text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.70);
     }
 
 
-    /* =========================
+    /* =====================================================
        PROFILE MODE
-    ========================= */
+    ===================================================== */
 
     body.profile-mode .hero-section {
-      display: none;
+      display: none !important;
     }
+
 
     body.profile-mode .profile-only-section {
-      display: flex;
+      display: flex !important;
     }
 
 
-    /* =========================
+    /* =====================================================
        MOBILE
-    ========================= */
+    ===================================================== */
 
     @media (max-width: 992px) {
 
       main {
         margin-left: 0 !important;
+
         padding-left: 0 !important;
+
         padding-top: 0 !important;
       }
 
+
       .hero-section {
+
         min-height: 100vh;
-        padding: 30px 15px;
+
+        padding: 30px 15px !important;
       }
+
 
       .hero-card {
-        padding: 35px 25px;
+
+        padding: 35px 25px !important;
       }
 
+
       .hero-profile {
+
         width: 120px;
+
         height: 120px;
       }
 
+
       .hero-card h1 {
+
         font-size: 34px;
       }
 
+
       .hero-title {
+
         font-size: 18px;
       }
 
+
       .hero-description {
+
         font-size: 16px;
       }
 
+
       .hero-buttons .btn {
+
         width: 90%;
+
         margin: 6px auto;
       }
 
+
       .profile-only-section {
+
         min-height: 100vh;
-        padding: 30px 15px;
+
+        padding: 30px 15px !important;
       }
+
 
       .profile-only-card {
-        padding: 40px 25px;
+
+        padding: 20px 10px !important;
       }
 
+
       .profile-only-card img {
+
         width: 130px;
+
         height: 130px;
       }
 
+
       .profile-only-card h1 {
+
         font-size: 34px;
       }
 
+
       .profile-only-title {
+
         font-size: 18px;
       }
 
+
       .profile-only-description {
+
         font-size: 16px;
       }
 
     }
 
 
-    /* =========================
+    /* =====================================================
        SMALL MOBILE
-    ========================= */
+    ===================================================== */
 
     @media (max-width: 600px) {
 
       .hero-section {
-        padding: 20px 10px;
+
+        padding: 20px 10px !important;
       }
+
 
       .hero-card {
-        padding: 30px 18px;
+
+        padding: 30px 18px !important;
       }
 
+
       .hero-profile {
+
         width: 105px;
+
         height: 105px;
       }
 
+
       .hero-card h1 {
+
         font-size: 29px;
       }
 
+
       .hero-title {
+
         font-size: 16px;
       }
 
+
       .hero-description {
+
         font-size: 15px;
       }
 
+
       .social-links a {
+
         font-size: 22px;
+
         margin: 0 6px;
       }
 
+
       .profile-only-section {
-        padding: 20px 10px;
+
+        padding: 20px 10px !important;
       }
+
 
       .profile-only-card {
-        padding: 30px 18px;
+
+        padding: 15px 5px !important;
       }
 
+
       .profile-only-card img {
+
         width: 110px;
+
         height: 110px;
       }
 
+
       .profile-only-card h1 {
+
         font-size: 29px;
       }
 
+
       .profile-only-title {
+
         font-size: 16px;
       }
 
+
       .profile-only-description {
+
         font-size: 15px;
       }
 
@@ -457,9 +709,9 @@
 
 <body>
 
-  <!-- =========================
+  <!-- =====================================================
        GOOGLE TAG MANAGER
-  ========================= -->
+  ===================================================== -->
 
   <noscript>
 
@@ -474,22 +726,24 @@
 
   </noscript>
 
-  <!-- =========================
+  <!-- =====================================================
        MAIN CONTENT
-  ========================= -->
+  ===================================================== -->
 
   <main>
 
 ```
-<!-- =========================
+<!-- ===================================================
      NORMAL HOMEPAGE
-========================= -->
+=================================================== -->
 
 <section
   id="intro"
   class="section hero-section">
 
+
   <div class="hero-card">
+
 
     <!-- PROFILE PICTURE -->
 
@@ -543,6 +797,7 @@
 
     <div class="hero-buttons">
 
+
       <a
         href="about.html"
         class="btn waves-effect waves-light">
@@ -583,12 +838,14 @@
 
       </a>
 
+
     </div>
 
 
     <!-- SOCIAL LINKS -->
 
     <div class="social-links">
+
 
       <a
         href="https://github.com/LawranceTala"
@@ -620,25 +877,30 @@
 
       </a>
 
+
     </div>
 
+
   </div>
+
 
 </section>
 
 
-<!-- =========================
+<!-- ===================================================
      CLEAN PROFILE VIEW
-========================= -->
+     NO CARD / NO FORM / NO WHITE BACKGROUND
+=================================================== -->
 
 <section
   id="profile"
   class="profile-only-section">
 
+
   <div class="profile-only-card">
 
-    <!-- PROFILE PICTURE
-         CLICK TO RETURN HOME -->
+
+    <!-- PROFILE PHOTO -->
 
     <a
       href="index.html"
@@ -671,7 +933,7 @@
     </div>
 
 
-    <!-- DESCRIPTION -->
+    <!-- CLEAN PROFILE DESCRIPTION -->
 
     <p class="profile-only-description">
 
@@ -684,40 +946,42 @@
 
     </p>
 
+
   </div>
+
 
 </section>
 ```
 
   </main>
 
-  <!-- =========================
+  <!-- =====================================================
        jQuery
-  ========================= -->
+  ===================================================== -->
 
   <script
     src="https://code.jquery.com/jquery-2.1.1.min.js">
   </script>
 
-  <!-- =========================
+  <!-- =====================================================
        MATERIALIZE JS
-  ========================= -->
+  ===================================================== -->
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
   </script>
 
-  <!-- =========================
+  <!-- =====================================================
        TYPED.JS
-  ========================= -->
+  ===================================================== -->
 
   <script
     src="assets/vendor/typed.js/typed.min.js">
   </script>
 
-  <!-- =========================
+  <!-- =====================================================
        PROFILE VIEW SCRIPT
-  ========================= -->
+  ===================================================== -->
 
   <script>
 
@@ -736,12 +1000,8 @@
     }
 
 
-    /* Run when page loads */
-
     updateProfileView();
 
-
-    /* Run when URL hash changes */
 
     window.addEventListener(
       "hashchange",
