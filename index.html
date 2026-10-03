@@ -3,733 +3,331 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="description"
-     content="Education and professional certifications of Lawrance Tala Ogaywa">
+ content="Lawrance Tala Ogaywa - Software Developer, Machine Learning Enthusiast, IT Professional and Operations Support."> <meta name="author" content="Lawrance Tala Ogaywa">
 
-  <title>Education | Lawrance Tala</title>
-
-  <!-- Google Tag Manager -->
-
-  <script>
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];
-      w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),
-          dl=l!='dataLayer'?'&l='+l:'';
-
-      j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-
-      f.parentNode.insertBefore(j,f);
-
-    })(window,document,'script','dataLayer','GTM-PGZH8HT');
-  </script>
-
-  <!-- End Google Tag Manager -->
+  <title>Lawrance Tala | Software Developer</title>
 
   <!-- Materialize CSS -->
 
   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
 
   <!-- Font Awesome -->
 
   <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Material Icons -->
-
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-  <!-- Main CSS -->
+  <!-- Google Material Icons -->
 
   <link rel="stylesheet"
-        href="assets/css/style.css">
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Your main stylesheet -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-
     /* =========================================================
-       GENERAL
-    ========================================================= */
+       INDEX / HOME PAGE
+       ========================================================= */
 
     html,
     body {
+      margin: 0;
+      padding: 0;
       overflow-x: hidden;
     }
 
-
-    /* =========================================================
-       MOBILE NAME/TITLE BAR
-       
-       IMPORTANT:
-       This page does NOT display the name/title bar.
-    ========================================================= */
-
-    .education-name-title {
-      display: none !important;
+    body {
+      background: #ffffff;
     }
 
+    /* Desktop navigation */
+    .side-nav.fixed {
+      width: 250px;
+    }
 
-    /* =========================================================
-       EDUCATION PAGE HEADING
-    ========================================================= */
+    .side-nav .logo {
+      padding: 25px 0 20px;
+      text-align: center;
+    }
 
-    .education-page-title {
-      margin: 0 !important;
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+    }
 
-      padding: 22px 40px;
+    .side-nav li.bold a {
+      height: 52px;
+      line-height: 52px;
+    }
 
-      text-align: left;
+    .side-nav li.bold a i {
+      margin-right: 12px;
+    }
 
-      font-size: 32px;
+    /* Main content */
+    main {
+      margin-left: 250px;
+      min-height: 100vh;
+    }
 
-      line-height: 1.3;
+    /* Hero */
+    .hero-section {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 30px;
+      box-sizing: border-box;
+      background: linear-gradient(135deg, #00897b 0%, #00695c 100%);
+      color: #ffffff;
+    }
 
+    .hero-content {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-photo {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.9);
+      margin-bottom: 25px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-name {
+      margin: 5px 0 10px;
+      font-size: 52px;
+      line-height: 1.15;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-title {
+      margin: 0 auto 25px;
+      font-size: 23px;
+      line-height: 1.5;
       font-weight: 400;
     }
 
-
-    /* =========================================================
-       SLIDER
-    ========================================================= */
-
-    .education-slider {
-
-      position: relative;
-
-      width: 100%;
-
-      padding: 35px 70px 90px;
-
-      box-sizing: border-box;
-
+    .hero-description {
+      max-width: 720px;
+      margin: 0 auto 30px;
+      font-size: 17px;
+      line-height: 1.8;
+      opacity: 0.95;
     }
 
-
-    /* =========================================================
-       SLIDES
-    ========================================================= */
-
-    .education-slide {
-
-      display: none;
-
-      width: 100%;
-
+    .hero-buttons {
+      margin-top: 25px;
     }
 
-
-    .education-slide.active {
-
-      display: block;
-
+    .hero-buttons .btn {
+      margin: 6px;
+      min-width: 145px;
+      border-radius: 3px;
     }
 
-
-    /* =========================================================
-       EDUCATION GRID
-    ========================================================= */
-
-    .education-grid {
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-      gap: 25px;
-
-      width: 100%;
-
+    .hero-buttons .btn.white-btn {
+      background: #ffffff;
+      color: #00897b;
     }
 
-
-    /* =========================================================
-       CERTIFICATION GRID
-    ========================================================= */
-
-    .certifications-grid {
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-      gap: 25px;
-
-      width: 100%;
-
+    .hero-buttons .btn.outline-btn {
+      background: transparent;
+      border: 1px solid #ffffff;
+      box-shadow: none;
     }
 
-
-    /* =========================================================
-       CARDS
-    ========================================================= */
-
-    .education-card,
-    .certification-card {
-
-      margin: 0;
-
-      border-radius: 6px;
-
-      height: 100%;
-
-      box-sizing: border-box;
-
-      transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-
+    .hero-buttons .btn.outline-btn:hover {
+      background: #ffffff;
+      color: #00897b;
     }
 
-
-    .education-card:hover,
-    .certification-card:hover {
-
-      transform: translateY(-5px);
-
+    /* Social links */
+    .social-links {
+      margin-top: 30px;
     }
 
-
-    .education-card .card-content,
-    .certification-card .card-content {
-
-      padding: 28px;
-
-    }
-
-
-    /* =========================================================
-       ICONS
-    ========================================================= */
-
-    .education-icon,
-    .certification-icon {
-
-      width: 55px;
-
-      height: 55px;
-
-      line-height: 55px;
-
-      text-align: center;
-
+    .social-links a {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      line-height: 42px;
+      margin: 0 5px;
       border-radius: 50%;
-
-      background: #e0f2f1;
-
-      color: #009688;
-
-      font-size: 24px;
-
-      margin-bottom: 18px;
-
-    }
-
-
-    /* =========================================================
-       CARD CATEGORY
-    ========================================================= */
-
-    .education-heading {
-
-      display: block;
-
-      font-size: 14px;
-
-      font-weight: 600;
-
-      text-transform: uppercase;
-
-      letter-spacing: 0.5px;
-
-      margin-bottom: 12px;
-
-    }
-
-
-    /* =========================================================
-       INSTITUTION
-    ========================================================= */
-
-    .education-institution {
-
-      margin-top: 5px;
-
-      margin-bottom: 5px;
-
-      font-weight: 600;
-
-    }
-
-
-    /* =========================================================
-       LOCATION
-    ========================================================= */
-
-    .education-location {
-
-      margin-top: 0;
-
-      margin-bottom: 20px;
-
-    }
-
-
-    /* =========================================================
-       DIVIDER
-    ========================================================= */
-
-    .education-divider {
-
-      border: 0;
-
-      border-top: 1px solid #eeeeee;
-
-      margin: 22px 0;
-
-    }
-
-
-    /* =========================================================
-       COURSEWORK
-    ========================================================= */
-
-    .coursework-list {
-
-      margin-top: 5px;
-
-      padding-left: 20px;
-
-    }
-
-
-    .coursework-list li {
-
-      margin-bottom: 8px;
-
-      list-style-type: disc;
-
-    }
-
-
-    /* =========================================================
-       CERTIFICATION TITLE
-    ========================================================= */
-
-    .certification-title {
-
-      margin-top: 8px;
-
-      margin-bottom: 8px;
-
-      font-weight: 600;
-
-      line-height: 1.4;
-
-    }
-
-
-    /* =========================================================
-       CERTIFICATION PROVIDER
-    ========================================================= */
-
-    .certification-provider {
-
-      color: #795548;
-
-      font-weight: 500;
-
-      margin-bottom: 18px;
-
-    }
-
-
-    /* =========================================================
-       ARROWS
-    ========================================================= */
-
-    .education-arrow {
-
-      position: absolute;
-
-      top: 50%;
-
-      transform: translateY(-50%);
-
-      width: 44px;
-
-      height: 44px;
-
-      line-height: 44px;
-
-      text-align: center;
-
-      border-radius: 50%;
-
-      background: #009688;
-
       color: #ffffff;
-
-      cursor: pointer;
-
-      z-index: 20;
-
-      box-shadow:
-        0 3px 8px rgba(0,0,0,0.18);
-
-      transition:
-        background 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-
-    }
-
-
-    .education-arrow:hover {
-
-      background: #00796b;
-
-      transform:
-        translateY(-50%)
-        scale(1.08);
-
-      box-shadow:
-        0 5px 12px rgba(0,0,0,0.25);
-
-    }
-
-
-    .education-arrow:active {
-
-      transform:
-        translateY(-50%)
-        scale(0.96);
-
-    }
-
-
-    /* =========================================================
-       LEFT ARROW
-    ========================================================= */
-
-    .education-arrow.left {
-
-      left: 10px;
-
-    }
-
-
-    /* =========================================================
-       RIGHT ARROW
-    ========================================================= */
-
-    .education-arrow.right {
-
-      right: 10px;
-
-    }
-
-
-    /* =========================================================
-       COUNTER
-    ========================================================= */
-
-    .education-counter {
-
-      position: absolute;
-
-      bottom: 38px;
-
-      left: 50%;
-
-      transform: translateX(-50%);
-
-      font-size: 14px;
-
-      color: #757575;
-
-      font-weight: 500;
-
-    }
-
-
-    /* =========================================================
-       DOTS
-    ========================================================= */
-
-    .education-dots {
-
-      position: absolute;
-
-      bottom: 12px;
-
-      left: 50%;
-
-      transform: translateX(-50%);
-
-      display: flex;
-
-      gap: 8px;
-
-    }
-
-
-    .education-dot {
-
-      display: block;
-
-      width: 9px;
-
-      height: 9px;
-
-      border-radius: 50%;
-
-      background: #bdbdbd;
-
-      cursor: pointer;
-
+      font-size: 19px;
       transition: all 0.2s ease;
-
     }
 
-
-    .education-dot.active {
-
-      background: #009688;
-
-      transform: scale(1.2);
-
+    .social-links a:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-3px);
     }
 
-
-    /* =========================================================
-       TABLET
-    ========================================================= */
-
-    @media (max-width: 900px) {
-
-      .education-page-title {
-
-        padding-left: 55px;
-
-        padding-right: 55px;
-
-      }
-
-
-      .education-slider {
-
-        padding-left: 55px;
-
-        padding-right: 55px;
-
-      }
-
-
-      .education-grid,
-      .certifications-grid {
-
-        gap: 18px;
-
-      }
-
-
-      .education-card .card-content,
-      .certification-card .card-content {
-
-        padding: 22px;
-
-      }
-
+    /* Small scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      opacity: 0.8;
+      letter-spacing: 1px;
     }
 
+    .scroll-indicator i {
+      display: block;
+      margin-top: 5px;
+    }
 
-    /* =========================================================
-       MOBILE
-    ========================================================= */
+    /* Mobile navbar */
+    .mobile-navbar {
+      display: none;
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+
+      .side-nav.fixed {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+      }
+
+      .mobile-navbar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        line-height: 56px;
+        background: #00897b;
+        z-index: 999;
+      }
+
+      .mobile-navbar .button-collapse {
+        display: block;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .mobile-navbar .button-collapse i {
+        font-size: 30px;
+        line-height: 56px;
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .hero-section {
+        min-height: 100vh;
+        padding: 85px 25px 60px;
+      }
+
+      .hero-name {
+        font-size: 42px;
+      }
+
+      .hero-title {
+        font-size: 21px;
+      }
+    }
 
     @media (max-width: 600px) {
 
-
-      /* -------------------------------------------------------
-         EDUCATION HEADING
-      ------------------------------------------------------- */
-
-      .education-page-title {
-
-        margin: 0 !important;
-
-        padding: 18px 20px;
-
-        text-align: center;
-
-        font-size: 27px;
-
+      .hero-section {
+        padding: 85px 18px 55px;
       }
 
-
-      /* -------------------------------------------------------
-         SLIDER
-      ------------------------------------------------------- */
-
-      .education-slider {
-
-        padding:
-
-          25px
-
-          42px
-
-          85px;
-
+      .hero-photo {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 20px;
       }
 
-
-      /* -------------------------------------------------------
-         ONE CARD PER ROW
-      ------------------------------------------------------- */
-
-      .education-grid,
-      .certifications-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 18px;
-
+      .hero-name {
+        font-size: 34px;
       }
 
-
-      /* -------------------------------------------------------
-         CARDS
-      ------------------------------------------------------- */
-
-      .education-card,
-      .certification-card {
-
-        width: 100%;
-
-        height: auto;
-
+      .hero-title {
+        font-size: 18px;
+        line-height: 1.5;
       }
 
-
-      .education-card .card-content,
-      .certification-card .card-content {
-
-        padding: 20px;
-
+      .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
       }
 
+      .hero-buttons .btn {
+        display: block;
+        width: 90%;
+        max-width: 260px;
+        margin: 10px auto;
+      }
 
-      /* -------------------------------------------------------
-         ARROWS
-      ------------------------------------------------------- */
+      .social-links {
+        margin-top: 22px;
+      }
 
-      .education-arrow {
-
+      .social-links a {
         width: 38px;
-
         height: 38px;
-
         line-height: 38px;
-
       }
 
-
-      .education-arrow.left {
-
-        left: 0;
-
+      .scroll-indicator {
+        display: none;
       }
-
-
-      .education-arrow.right {
-
-        right: 0;
-
-      }
-
-
-      /* -------------------------------------------------------
-         COUNTER
-      ------------------------------------------------------- */
-
-      .education-counter {
-
-        bottom: 38px;
-
-      }
-
-
-      /* -------------------------------------------------------
-         DOTS
-      ------------------------------------------------------- */
-
-      .education-dots {
-
-        bottom: 12px;
-
-      }
-
     }
-
-
-    /* =========================================================
-       SMALL PHONES
-    ========================================================= */
 
     @media (max-width: 380px) {
 
-      .education-page-title {
-
-        font-size: 24px;
-
-        padding: 15px;
-
+      .hero-name {
+        font-size: 30px;
       }
 
-
-      .education-slider {
-
-        padding-left: 38px;
-
-        padding-right: 38px;
-
+      .hero-title {
+        font-size: 17px;
       }
 
-
-      .education-card .card-content,
-      .certification-card .card-content {
-
-        padding: 17px;
-
+      .hero-description {
+        font-size: 14px;
       }
 
-
-      .education-arrow {
-
-        width: 34px;
-
-        height: 34px;
-
-        line-height: 34px;
-
+      .hero-photo {
+        width: 120px;
+        height: 120px;
       }
-
     }
-
   </style>
 
 </head>
@@ -738,178 +336,92 @@
 
   <!-- =========================================================
        GOOGLE TAG MANAGER
-  ========================================================= -->
+       ========================================================= -->
 
   <noscript>
-
-```
-<iframe
-  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0"
-  width="0"
-  style="display:none;visibility:hidden">
-</iframe>
-```
-
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+      height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
   </noscript>
 
   <!-- =========================================================
        DESKTOP NAVIGATION
-  ========================================================= -->
+       ========================================================= -->
 
   <nav>
+    <ul class="side-nav fixed section table-of-contents">
 
 ```
-<ul class="side-nav fixed section table-of-contents">
-
-
-  <!-- PROFILE -->
-
+  <!-- Profile -->
   <li class="logo">
-
-    <a
-      id="logo-container"
-      aria-label="Navigate to the beginning of the page"
+    <a id="logo-container"
       href="index.html"
       class="brand-logo grey-blue-text">
-
       <img
         src="assets/img/passport-new.jpg"
         class="circle img-responsive profile-pic"
         alt="Lawrance Tala profile photo">
-
     </a>
-
   </li>
 
-
-  <!-- ABOUT -->
-
+  <!-- About -->
   <li class="bold">
-
-    <a
-      aria-label="Navigate to the About section"
-      href="about.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="about.html">
       <i class="mdi-social-person small"></i>
-
       <span>About</span>
-
     </a>
-
   </li>
 
-
-  <!-- EXPERIENCE -->
-
+  <!-- Experience -->
   <li class="bold">
-
-    <a
-      aria-label="Navigate to the Experience section"
-      href="experience.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="experience.html">
       <i class="mdi-action-trending-up small"></i>
-
       <span>Experience</span>
-
     </a>
-
   </li>
 
-
-  <!-- PROJECTS -->
-
+  <!-- Projects -->
   <li class="bold">
-
-    <a
-      aria-label="Navigate to the Projects section"
-      href="projects.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="projects.html">
       <i class="mdi-av-my-library-books small"></i>
-
       <span>Projects</span>
-
     </a>
-
   </li>
 
-
-  <!-- SKILLS -->
-
+  <!-- Skills -->
   <li class="bold">
-
-    <a
-      aria-label="Navigate to the Skills section"
-      href="skills.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="skills.html">
       <i class="mdi-action-assessment small"></i>
-
       <span>Skills</span>
-
     </a>
-
   </li>
 
-
-  <!-- EDUCATION -->
-
+  <!-- Education -->
   <li class="bold">
-
-    <a
-      aria-label="Navigate to the Education section"
-      href="education.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="education.html">
       <i class="mdi-social-school small"></i>
-
       <span>Education</span>
-
     </a>
-
   </li>
 
-
-  <!-- CONTACT -->
-
+  <!-- Contact -->
   <li class="bold">
-
-    <a
-      aria-label="Navigate to the Contact section"
-      href="contact.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="contact.html">
       <i class="mdi-content-mail small"></i>
-
       <span>Contact</span>
-
     </a>
-
   </li>
 
-
-  <!-- RESUME -->
-
+  <!-- Resume -->
   <li class="bold">
-
     <a
-      aria-label="Open Lawrance Tala resume in a new tab"
       href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
       target="_blank"
-      rel="noopener"
-      class="waves-effect waves-dark teal-text">
-
+      rel="noopener">
       <i class="mdi-file-folder-open small"></i>
-
       <span>Resume</span>
-
     </a>
-
   </li>
-
 
 </ul>
 ```
@@ -918,145 +430,80 @@
 
   <!-- =========================================================
        MOBILE NAVIGATION
+       ========================================================= -->
 
-       ONLY THE HAMBURGER IS SHOWN.
-       NO NAME.
-       NO SOFTWARE DEVELOPER.
-       NO COMPUTER SCIENCE PROFESSIONAL.
-  ========================================================= -->
-
-  <nav class="hide-on-large only trigger z-depth-1">
-
-```
-<a
-  aria-label="Toggle visibility of the mobile navbar"
-  href="#"
-  data-activates="slide-out"
-  class="button-collapse">
-
-  <i class="mdi-navigation-menu"></i>
-
-</a>
-```
-
+  <nav class="mobile-navbar">
+    <a
+      href="#"
+      data-activates="mobile-slide-out"
+      class="button-collapse"
+      aria-label="Open navigation menu">
+      <i class="mdi-navigation-menu"></i>
+    </a>
   </nav>
 
-  <!-- =========================================================
-       MOBILE SIDE NAVIGATION
-  ========================================================= -->
-
-  <nav class="hide-on-large only">
+  <nav class="mobile-menu">
+    <ul id="mobile-slide-out" class="side-nav">
 
 ```
-<ul id="slide-out" class="side-nav">
-
+  <li class="bold">
+    <a href="index.html">
+      <i class="mdi-action-home small"></i>
+      <span>Home</span>
+    </a>
+  </li>
 
   <li class="bold">
-
-    <a
-      href="about.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="about.html">
       <i class="mdi-social-person small"></i>
-
       <span>About</span>
-
     </a>
-
   </li>
 
-
   <li class="bold">
-
-    <a
-      href="experience.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="experience.html">
       <i class="mdi-action-trending-up small"></i>
-
       <span>Experience</span>
-
     </a>
-
   </li>
 
-
   <li class="bold">
-
-    <a
-      href="projects.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="projects.html">
       <i class="mdi-av-my-library-books small"></i>
-
       <span>Projects</span>
-
     </a>
-
   </li>
 
-
   <li class="bold">
-
-    <a
-      href="skills.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="skills.html">
       <i class="mdi-action-assessment small"></i>
-
       <span>Skills</span>
-
     </a>
-
   </li>
 
-
   <li class="bold">
-
-    <a
-      href="education.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="education.html">
       <i class="mdi-social-school small"></i>
-
       <span>Education</span>
-
     </a>
-
   </li>
 
-
   <li class="bold">
-
-    <a
-      href="contact.html"
-      class="waves-effect waves-dark teal-text">
-
+    <a href="contact.html">
       <i class="mdi-content-mail small"></i>
-
       <span>Contact</span>
-
     </a>
-
   </li>
 
-
   <li class="bold">
-
     <a
       href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
       target="_blank"
-      rel="noopener"
-      class="waves-effect waves-dark teal-text">
-
+      rel="noopener">
       <i class="mdi-file-folder-open small"></i>
-
       <span>Resume</span>
-
     </a>
-
   </li>
-
 
 </ul>
 ```
@@ -1064,518 +511,112 @@
   </nav>
 
   <!-- =========================================================
-       MAIN CONTENT
-  ========================================================= -->
+       MAIN HOME PAGE
+       ========================================================= -->
 
   <main>
 
 ```
-<section
-  id="education"
-  class="section scrollspy">
-
-
-  <!-- =====================================================
-       MAIN HEADING
-
-       This is the ONLY heading shown at the top.
-  ===================================================== -->
-
-  <h3
-    id="educationPageTitle"
-    class="education-page-title page-title white-text teal">
-
-    Education
-
-  </h3>
-
-
-  <div class="container">
-
-
-    <div class="education-slider">
-
-
-      <!-- =================================================
-           PREVIOUS ARROW
-      ================================================= -->
-
-      <div
-        class="education-arrow left"
-        id="educationPrev"
-        role="button"
-        tabindex="0"
-        aria-label="Previous">
-
-        <i class="fa fa-chevron-left"></i>
-
-      </div>
-
-
-      <!-- =================================================
-           SLIDE 1 - EDUCATION
-      ================================================= -->
-
-      <div
-        class="education-slide active"
-        data-slide="0">
-
-
-        <div class="education-grid">
-
-
-          <!-- LAIKIPIA UNIVERSITY -->
-
-          <div class="card education-card">
-
-            <div class="card-content">
-
-
-              <div class="education-icon">
-
-                <i class="fa fa-graduation-cap"></i>
-
-              </div>
-
-
-              <span class="education-heading teal-text">
-
-                University Education
-
-              </span>
-
-
-              <h5 class="education-institution">
-
-                Laikipia University
-
-              </h5>
-
-
-              <p class="brown-text education-location">
-
-                Nyahururu, Kenya
-
-              </p>
-
-
-              <p>
-
-                <b>BSc Computer Science</b>
-
-              </p>
-
-
-              <p>
-
-                <b>Graduated:</b><br>
-
-                11 December 2025
-
-              </p>
-
-
-              <p>
-
-                <b>Classification:</b><br>
-
-                Second Class Honors (Upper Division)
-
-              </p>
-
-
-              <hr class="education-divider">
-
-
-              <p>
-
-                <b>Relevant Coursework:</b>
-
-              </p>
-
-
-              <ul class="coursework-list">
-
-                <li>
-                  Internet of Things (IoT)
-                </li>
-
-                <li>
-                  Cloud Computing
-                </li>
-
-                <li>
-                  Machine Learning
-                </li>
-
-              </ul>
-
-
-            </div>
-
-          </div>
-
-
-          <!-- RAMBA SECONDARY SCHOOL -->
-
-          <div class="card education-card">
-
-            <div class="card-content">
-
-
-              <div class="education-icon">
-
-                <i class="fa fa-book"></i>
-
-              </div>
-
-
-              <span class="education-heading teal-text">
-
-                Secondary Education
-
-              </span>
-
-
-              <h5 class="education-institution">
-
-                Ramba Secondary School
-
-              </h5>
-
-
-              <p class="brown-text education-location">
-
-                Siaya, Kenya
-
-              </p>
-
-
-              <p>
-
-                <b>
-                  Kenya Certificate of Secondary Education (KCSE)
-                </b>
-
-              </p>
-
-
-              <p>
-
-                <b>Year:</b><br>
-
-                2019
-
-              </p>
-
-
-              <p>
-
-                <b>Grade:</b><br>
-
-                B Plain
-
-              </p>
-
-
-              <hr class="education-divider">
-
-
-              <p>
-
-                Completed secondary education and obtained
-                the Kenya Certificate of Secondary Education (KCSE).
-
-              </p>
-
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-
-      <!-- =================================================
-           SLIDE 2 - CERTIFICATIONS
-      ================================================= -->
-
-      <div
-        class="education-slide"
-        data-slide="1">
-
-
-        <div class="certifications-grid">
-
-
-          <!-- PLP -->
-
-          <div class="card certification-card">
-
-            <div class="card-content">
-
-
-              <div class="certification-icon">
-
-                <i class="fa fa-code"></i>
-
-              </div>
-
-
-              <span class="education-heading teal-text">
-
-                Software Development
-
-              </span>
-
-
-              <h5 class="certification-title">
-
-                PLP Certificate of Achievement
-
-              </h5>
-
-
-              <p class="certification-provider">
-
-                Power Learn Project (PLP)
-
-              </p>
-
-
-              <p>
-
-                Completed a 16-week Software Development
-                training program covering practical software
-                development concepts and programming skills.
-
-              </p>
-
-
-            </div>
-
-          </div>
-
-
-          <!-- ORACLE -->
-
-          <div class="card certification-card">
-
-            <div class="card-content">
-
-
-              <div class="certification-icon">
-
-                <i class="fa fa-cloud"></i>
-
-              </div>
-
-
-              <span class="education-heading teal-text">
-
-                Artificial Intelligence & Cloud
-
-              </span>
-
-
-              <h5 class="certification-title">
-
-                Oracle Cloud Infrastructure AI Associate
-
-              </h5>
-
-
-              <p class="certification-provider">
-
-                Oracle
-
-              </p>
-
-
-              <p>
-
-                Certification covering foundational concepts
-                in artificial intelligence and Oracle Cloud
-                Infrastructure.
-
-              </p>
-
-
-            </div>
-
-          </div>
-
-
-          <!-- BRIGHTERMONDAY -->
-
-          <div class="card certification-card">
-
-            <div class="card-content">
-
-
-              <div class="certification-icon">
-
-                <i class="fa fa-users"></i>
-
-              </div>
-
-
-              <span class="education-heading teal-text">
-
-                Professional Development
-
-              </span>
-
-
-              <h5 class="certification-title">
-
-                BrighterMonday Soft Skills Training
-
-              </h5>
-
-
-              <p class="certification-provider">
-
-                BrighterMonday
-
-              </p>
-
-
-              <p>
-
-                Professional training covering communication,
-                teamwork, workplace skills and career development.
-
-              </p>
-
-
-            </div>
-
-          </div>
-
-
-          <!-- IBM SKILLSBUILD -->
-
-          <div class="card certification-card">
-
-            <div class="card-content">
-
-
-              <div class="certification-icon">
-
-                <i class="fa fa-desktop"></i>
-
-              </div>
-
-
-              <span class="education-heading teal-text">
-
-                Information Technology
-
-              </span>
-
-
-              <h5 class="certification-title">
-
-                IT Fundamentals
-
-              </h5>
-
-
-              <p class="certification-provider">
-
-                IBM SkillsBuild
-
-              </p>
-
-
-              <p>
-
-                Training covering foundational information
-                technology concepts and essential IT knowledge.
-
-              </p>
-
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-
-      <!-- =================================================
-           NEXT ARROW
-      ================================================= -->
-
-      <div
-        class="education-arrow right"
-        id="educationNext"
-        role="button"
-        tabindex="0"
-        aria-label="Next">
-
-        <i class="fa fa-chevron-right"></i>
-
-      </div>
-
-
-      <!-- =================================================
-           COUNTER
-      ================================================= -->
-
-      <div class="education-counter">
-
-        <span id="educationCounter">
-
-          1 / 2
-
-        </span>
-
-      </div>
-
-
-      <!-- =================================================
-           DOTS
-      ================================================= -->
-
-      <div class="education-dots">
-
-
-        <span
-          class="education-dot active"
-          data-slide="0"
-          role="button"
-          tabindex="0"
-          aria-label="Education">
-        </span>
-
-
-        <span
-          class="education-dot"
-          data-slide="1"
-          role="button"
-          tabindex="0"
-          aria-label="Certifications">
-        </span>
-
-
-      </div>
-
+<section id="home" class="hero-section">
+
+  <div class="hero-content">
+
+    <!-- Profile photo -->
+    <img
+      src="assets/img/passport-new.jpg"
+      alt="Lawrance Tala Ogaywa"
+      class="hero-photo">
+
+    <!-- Name -->
+    <h1 class="hero-name">
+      Lawrance Tala Ogaywa
+    </h1>
+
+    <!-- Professional title -->
+    <h2 class="hero-title">
+      Software Developer |
+      Machine Learning Enthusiast |
+      IT Professional |
+      Operations Support
+    </h2>
+
+    <!-- Introduction -->
+    <p class="hero-description">
+      Computer Science professional passionate about software development,
+      machine learning, IT support, data, and technology solutions.
+      I enjoy building practical digital solutions and continuously
+      developing my technical skills.
+    </p>
+
+
+    <!-- =====================================================
+         BUTTONS
+         ===================================================== -->
+
+    <div class="hero-buttons">
+
+      <a href="about.html"
+        class="btn white-btn">
+        About Me
+      </a>
+
+      <a
+        href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+        target="_blank"
+        rel="noopener"
+        class="btn outline-btn">
+        View Resume
+      </a>
+
+      <a href="contact.html"
+        class="btn outline-btn">
+        Contact Me
+      </a>
 
     </div>
 
 
+    <!-- =====================================================
+         SOCIAL LINKS
+         ===================================================== -->
+
+    <div class="social-links">
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/LawranceTala"
+        target="_blank"
+        rel="noopener"
+        aria-label="GitHub">
+        <i class="fa fa-github"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/lawrance-tala/"
+        target="_blank"
+        rel="noopener"
+        aria-label="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:lawrancetala@gmail.com"
+        aria-label="Email">
+        <i class="fa fa-envelope"></i>
+      </a>
+
+    </div>
+
   </div>
 
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    Explore
+    <i class="fa fa-angle-down"></i>
+  </div>
 
 </section>
 ```
@@ -1583,304 +624,30 @@
   </main>
 
   <!-- =========================================================
-       JQUERY
-  ========================================================= -->
+       JAVASCRIPT
+       ========================================================= -->
 
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
   </script>
 
-  <!-- =========================================================
-       MATERIALIZE JAVASCRIPT
-  ========================================================= -->
-
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
   </script>
 
-  <!-- =========================================================
-       EDUCATION SLIDER JAVASCRIPT
-  ========================================================= -->
-
   <script>
-
     $(document).ready(function () {
 
-
-      /* =======================================================
-         MATERIALIZE MOBILE MENU
-      ======================================================= */
-
+      /*
+       * Initialize the Materialize mobile side navigation.
+       */
       $(".button-collapse").sideNav({
-
-        menuWidth: 190,
-
+        menuWidth: 220,
         edge: "left",
-
         closeOnClick: true
-
       });
-
-
-      /* =======================================================
-         EDUCATION SLIDER
-      ======================================================= */
-
-      var slides =
-        document.querySelectorAll(".education-slide");
-
-
-      var dots =
-        document.querySelectorAll(".education-dot");
-
-
-      var counter =
-        document.getElementById("educationCounter");
-
-
-      var pageTitle =
-        document.getElementById("educationPageTitle");
-
-
-      var previousButton =
-        document.getElementById("educationPrev");
-
-
-      var nextButton =
-        document.getElementById("educationNext");
-
-
-      var currentSlide = 0;
-
-
-      /* =======================================================
-         SHOW SLIDE
-      ======================================================= */
-
-      function showEducationSlide(index) {
-
-
-        if (index < 0) {
-
-          index = slides.length - 1;
-
-        }
-
-
-        if (index >= slides.length) {
-
-          index = 0;
-
-        }
-
-
-        currentSlide = index;
-
-
-        /* Hide slides */
-
-        slides.forEach(function (slide) {
-
-          slide.classList.remove("active");
-
-        });
-
-
-        /* Remove active dots */
-
-        dots.forEach(function (dot) {
-
-          dot.classList.remove("active");
-
-        });
-
-
-        /* Show selected slide */
-
-        slides[currentSlide].classList.add("active");
-
-
-        /* Activate selected dot */
-
-        dots[currentSlide].classList.add("active");
-
-
-        /* =====================================================
-           CHANGE MAIN HEADING
-        ===================================================== */
-
-        if (currentSlide === 0) {
-
-          pageTitle.textContent = "Education";
-
-        } else {
-
-          pageTitle.textContent = "Certifications";
-
-        }
-
-
-        /* =====================================================
-           UPDATE COUNTER
-        ===================================================== */
-
-        counter.textContent =
-          (currentSlide + 1) +
-          " / " +
-          slides.length;
-
-      }
-
-
-      /* =======================================================
-         PREVIOUS BUTTON
-      ======================================================= */
-
-      previousButton.addEventListener(
-        "click",
-        function () {
-
-          showEducationSlide(
-            currentSlide - 1
-          );
-
-        }
-      );
-
-
-      /* =======================================================
-         NEXT BUTTON
-      ======================================================= */
-
-      nextButton.addEventListener(
-        "click",
-        function () {
-
-          showEducationSlide(
-            currentSlide + 1
-          );
-
-        }
-      );
-
-
-      /* =======================================================
-         DOTS
-      ======================================================= */
-
-      dots.forEach(function (dot, index) {
-
-        dot.addEventListener(
-          "click",
-          function () {
-
-            showEducationSlide(index);
-
-          }
-        );
-
-      });
-
-
-      /* =======================================================
-         KEYBOARD
-      ======================================================= */
-
-      document.addEventListener(
-        "keydown",
-        function (event) {
-
-
-          if (event.key === "ArrowLeft") {
-
-            showEducationSlide(
-              currentSlide - 1
-            );
-
-          }
-
-
-          if (event.key === "ArrowRight") {
-
-            showEducationSlide(
-              currentSlide + 1
-            );
-
-          }
-
-        }
-      );
-
-
-      /* =======================================================
-         TOUCH SWIPE
-      ======================================================= */
-
-      var touchStartX = 0;
-
-      var touchEndX = 0;
-
-
-      var slider =
-        document.querySelector(".education-slider");
-
-
-      slider.addEventListener(
-        "touchstart",
-        function (event) {
-
-          touchStartX =
-            event.changedTouches[0].screenX;
-
-        },
-        false
-      );
-
-
-      slider.addEventListener(
-        "touchend",
-        function (event) {
-
-          touchEndX =
-            event.changedTouches[0].screenX;
-
-
-          var swipeDistance =
-            touchEndX - touchStartX;
-
-
-          if (Math.abs(swipeDistance) > 50) {
-
-
-            if (swipeDistance < 0) {
-
-              showEducationSlide(
-                currentSlide + 1
-              );
-
-            } else {
-
-              showEducationSlide(
-                currentSlide - 1
-              );
-
-            }
-
-          }
-
-        },
-        false
-      );
-
-
-      /* =======================================================
-         INITIALIZE
-      ======================================================= */
-
-      showEducationSlide(0);
 
     });
-
   </script>
 
 </body>
