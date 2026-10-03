@@ -1,1479 +1,772 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Google Tag Manager -->
-
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PGZH8HT');
-  </script>
-
-  <!-- End Google Tag Manager -->
-
-  <!-- Materialize CSS -->
-
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-
-  <!-- Font Awesome -->
-
-  <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-
-  <!-- Custom Styles -->
-
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <title>Lawrance Tala | Education</title>
-
-  <!-- Google Analytics -->
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'UA-126939217-2');
-  </script>
-
-  <!-- ============================= -->
-
-  <!-- EDUCATION PAGE STYLES -->
-
-  <!-- ============================= -->
-
-  <style>
-
-    /* Main Slider */
-
-    .education-slider {
-      position: relative;
-      width: 100%;
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 20px 65px 50px 65px;
-    }
-
-
-    /* Individual Slides */
-
-    .education-slide {
-      display: none;
-      animation: educationFade 0.4s ease-in-out;
-    }
-
-    .education-slide.active {
-      display: block;
-    }
-
-
-    @keyframes educationFade {
-
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-    }
-
-
-    /* Main Card */
-
-    .education-card {
-      margin: 0;
-      min-height: 450px;
-    }
-
-    .education-card .card-content {
-      padding: 35px;
-    }
-
-
-    /* Main Icon */
-
-    .education-icon {
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
-      text-align: center;
-      border-radius: 50%;
-      background: #26a69a;
-      color: white;
-      font-size: 30px;
-      margin-bottom: 18px;
-    }
-
-
-    /* Main Heading */
-
-    .education-heading {
-      display: block;
-      font-size: 27px;
-      font-weight: 500;
-      margin-bottom: 25px;
-    }
-
-
-    /* University / School */
-
-    .education-institution {
-      font-size: 22px;
-      margin-top: 15px;
-      margin-bottom: 5px;
-    }
-
-    .education-location {
-      margin-top: 0;
-      margin-bottom: 18px;
-    }
-
-
-    /* Coursework */
-
-    .coursework-list {
-      margin-top: 10px;
-      padding-left: 25px;
-    }
-
-    .coursework-list li {
-      list-style-type: disc;
-      margin-bottom: 7px;
-    }
-
-
-    /* Divider */
-
-    .education-divider {
-      border: 0;
-      border-top: 1px solid #eeeeee;
-      margin: 28px 0;
-    }
-
-
-    /* ============================= */
-    /* CERTIFICATIONS */
-    /* ============================= */
-
-    .certifications-container {
-      margin-top: 5px;
-    }
-
-
-    .certification-item {
-      padding: 22px 18px;
-      margin-bottom: 18px;
-      border-bottom: 1px solid #eeeeee;
-      min-height: 150px;
-    }
-
-
-    .certification-item:last-child {
-      border-bottom: none;
-    }
-
-
-    .certification-icon {
-      float: left;
-      width: 48px;
-      font-size: 27px;
-      text-align: center;
-      margin-right: 15px;
-      color: #26a69a;
-    }
-
-
-    .certification-content {
-      overflow: hidden;
-    }
-
-
-    .certification-content h5 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 19px;
-      line-height: 1.4;
-    }
-
-
-    .certification-content p {
-      margin-top: 5px;
-      margin-bottom: 7px;
-      line-height: 1.5;
-    }
-
-
-    .certification-provider {
-      color: #795548;
-      font-size: 14px;
-    }
-
-
-    /* ============================= */
-    /* ARROWS */
-    /* ============================= */
-
-    .education-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
-      border-radius: 50%;
-      background: #26a69a;
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
-      z-index: 20;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
-      transition: all 0.2s ease;
-    }
-
-
-    .education-arrow:hover {
-      background: #00897b;
-      transform: translateY(-50%) scale(1.05);
-    }
-
-
-    .education-arrow.left {
-      left: 5px;
-    }
-
-
-    .education-arrow.right {
-      right: 5px;
-    }
-
-
-    /* ============================= */
-    /* COUNTER */
-    /* ============================= */
-
-    .education-counter {
-      text-align: center;
-      margin-top: 18px;
-      color: #777777;
-      font-size: 14px;
-    }
-
-
-    /* ============================= */
-    /* DOTS */
-    /* ============================= */
-
-    .education-dots {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-
-    .education-dot {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin: 0 5px;
-      border-radius: 50%;
-      background: #bdbdbd;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-
-    .education-dot.active {
-      background: #26a69a;
-      transform: scale(1.2);
-    }
-
-
-    /* ============================= */
-    /* MOBILE */
-    /* ============================= */
-
-    @media only screen and (max-width: 600px) {
-
-      .education-slider {
-        padding-left: 45px;
-        padding-right: 45px;
-      }
-
-
-      .education-card {
-        min-height: auto;
-      }
-
-
-      .education-card .card-content {
-        padding: 25px 20px;
-      }
-
-
-      .education-heading {
-        font-size: 23px;
-      }
-
-
-      .education-institution {
-        font-size: 20px;
-      }
-
-
-      .education-arrow {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 17px;
-      }
-
-
-      .education-arrow.left {
-        left: 0;
-      }
-
-
-      .education-arrow.right {
-        right: 0;
-      }
-
-
-      .certification-item {
-        padding: 18px 5px;
-      }
-
-    }
-
-  </style>
-
-</head>
-
-<body>
-
-  <!-- ============================= -->
-
-  <!-- GOOGLE TAG MANAGER -->
-
-  <!-- ============================= -->
-
-  <noscript>
-
-```
-<iframe
-  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0"
-  width="0"
-  style="display:none;visibility:hidden">
-</iframe>
-```
-
-  </noscript>
-
-  <!-- ============================= -->
-
-  <!-- DESKTOP NAVIGATION -->
-
-  <!-- ============================= -->
-
-  <nav>
-
-```
-<ul class="side-nav fixed section table-of-contents">
-
-
-  <!-- PROFILE -->
-
-  <li class="logo">
-
-    <a
-      id="logo-container"
-      aria-label="Navigate to the beginning of the page"
-      href="index.html"
-      class="brand-logo grey-blue-text">
-
-      <img
-        src="assets/img/passport-new.jpg"
-        class="circle img-responsive profile-pic"
-        alt="Lawrance Tala">
-
-    </a>
-
-  </li>
-
-
-  <!-- ABOUT -->
-
-  <li class="bold">
-
-    <a
-      aria-label="Navigate to the About section"
-      href="about.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-social-person small"></i>
-
-      <span>About</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- EXPERIENCE -->
-
-  <li class="bold">
-
-    <a
-      aria-label="Navigate to the Experience section"
-      href="experience.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-action-trending-up small"></i>
-
-      <span>Experience</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- PROJECTS -->
-
-  <li class="bold">
-
-    <a
-      aria-label="Navigate to the Projects section"
-      href="projects.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-av-my-library-books small"></i>
-
-      <span>Projects</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- SKILLS -->
-
-  <li class="bold">
-
-    <a
-      aria-label="Navigate to the Skills section"
-      href="skills.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-action-assessment small"></i>
-
-      <span>Skills</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- EDUCATION -->
-
-  <li class="bold">
-
-    <a
-      aria-label="Navigate to the Education section"
-      href="education.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-social-school small"></i>
-
-      <span>Education</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- CONTACT -->
-
-  <li class="bold">
-
-    <a
-      aria-label="Navigate to the Contact section"
-      href="contact.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-content-mail small"></i>
-
-      <span>Contact</span>
-
-    </a>
-
-  </li>
-
-
-  <!-- RESUME -->
-
-  <li class="bold">
-
-    <a
-      aria-label="Open Lawrance Tala resume in a new tab"
-      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-      target="_blank"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-file-folder-open small"></i>
-
-      <span>Resume</span>
-
-    </a>
-
-  </li>
-
-
-</ul>
-```
-
-  </nav>
-
-  <!-- ============================= -->
-
-  <!-- MOBILE TOP NAVIGATION -->
-
-  <!-- ============================= -->
-
-  <nav class="hide-on-large only trigger z-depth-1">
-
-```
-<a
-  aria-label="Toggle visibility of the mobile navbar"
-  href="#"
-  data-activates="slide-out"
-  class="button-collapse">
-
-  <i class="mdi-navigation-menu"></i>
-
-</a>
-
-
-<div class="name-title">
-
-  <a
-    id="name"
-    aria-label="Navigate to the beginning of the page"
-    href="index.html"
-    class="teal-text">
-
-    Lawrance Tala
-
-  </a>
-
-
-  <span class="black-text">
-
-    Software Developer
-
-  </span>
-
-
-</div>
-```
-
-  </nav>
-
-  <!-- ============================= -->
-
-  <!-- MOBILE SIDE MENU -->
-
-  <!-- ============================= -->
-
-  <nav class="hide-on-large only">
-
-```
-<ul id="slide-out" class="side-nav">
-
-
-  <li class="bold">
-
-    <a
-      href="about.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-social-person small"></i>
-
-      <span>About</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a
-      href="experience.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-action-trending-up small"></i>
-
-      <span>Experience</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a
-      href="projects.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-av-my-library-books small"></i>
-
-      <span>Projects</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a
-      href="skills.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-action-assessment small"></i>
-
-      <span>Skills</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a
-      href="education.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-social-school small"></i>
-
-      <span>Education</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a
-      href="contact.html"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-content-mail small"></i>
-
-      <span>Contact</span>
-
-    </a>
-
-  </li>
-
-
-  <li class="bold">
-
-    <a
-      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-      target="_blank"
-      class="waves-effect waves-dark teal-text">
-
-      <i class="mdi-file-folder-open small"></i>
-
-      <span>Resume</span>
-
-    </a>
-
-  </li>
-
-
-</ul>
-```
-
-  </nav>
-
-  <!-- ============================= -->
-
-  <!-- MAIN CONTENT -->
-
-  <!-- ============================= -->
-
-  <main>
-
-```
 <section id="education" class="section scrollspy">
 
-
   <h3 class="page-title white-text teal">
-
     Education & Certifications
-
   </h3>
-
 
   <div class="container">
 
+```
+<div class="education-slider">
 
-    <!-- ============================= -->
-    <!-- EDUCATION SLIDER -->
-    <!-- ============================= -->
+  <!-- LEFT ARROW -->
+  <div
+    class="education-arrow left"
+    id="educationPrev"
+    role="button"
+    tabindex="0"
+    aria-label="Previous">
 
-    <div class="education-slider">
+    <i class="fa fa-chevron-left"></i>
 
+  </div>
 
-      <!-- LEFT ARROW -->
 
-      <div
-        class="education-arrow left"
-        id="educationPrev"
-        role="button"
-        tabindex="0"
-        aria-label="Previous">
+  <!-- ===================================================== -->
+  <!-- SLIDE 1: EDUCATION -->
+  <!-- ===================================================== -->
 
-        <i class="fa fa-chevron-left"></i>
+  <div
+    class="education-slide active"
+    data-slide="0">
 
-      </div>
+    <div class="education-grid">
 
 
+      <!-- UNIVERSITY -->
+      <div class="card education-card">
 
-      <!-- ============================= -->
-      <!-- SLIDE 1: EDUCATION -->
-      <!-- ============================= -->
+        <div class="card-content">
 
-      <div
-        class="education-slide active"
-        data-slide="0">
-
-
-        <div class="card education-card">
-
-
-          <div class="card-content">
-
-
-            <!-- ICON -->
-
-            <div class="education-icon">
-
-              <i class="fa fa-graduation-cap"></i>
-
-            </div>
-
-
-            <!-- TITLE -->
-
-            <span class="education-heading teal-text">
-
-              Education
-
-            </span>
-
-
-            <!-- UNIVERSITY -->
-
-            <h5 class="education-institution">
-
-              Laikipia University
-
-            </h5>
-
-
-            <p class="brown-text education-location">
-
-              Nyahururu, Kenya
-
-            </p>
-
-
-            <p>
-
-              <b>BSc Computer Science</b>
-
-              <br>
-
-              <b>Graduated:</b>
-              11 December 2025
-
-              <br>
-
-              <b>Classification:</b>
-              Second Class Honors (Upper Division)
-
-            </p>
-
-
-            <br>
-
-
-            <p>
-
-              <b>Relevant Coursework:</b>
-
-            </p>
-
-
-            <ul class="coursework-list">
-
-              <li>
-                Internet of Things (IoT)
-              </li>
-
-              <li>
-                Cloud Computing
-              </li>
-
-              <li>
-                Machine Learning
-              </li>
-
-            </ul>
-
-
-            <hr class="education-divider">
-
-
-            <!-- SECONDARY SCHOOL -->
-
-            <h5 class="education-institution">
-
-              Ramba Secondary School
-
-            </h5>
-
-
-            <p class="brown-text education-location">
-
-              Siaya, Kenya
-
-            </p>
-
-
-            <p>
-
-              <b>Kenya Certificate of Secondary Education (KCSE)</b>
-
-              <br>
-
-              <b>Year:</b>
-              2019
-
-              <br>
-
-              <b>Grade:</b>
-              B Plain
-
-            </p>
-
-
+          <div class="education-icon">
+            <i class="fa fa-graduation-cap"></i>
           </div>
+
+          <span class="education-heading teal-text">
+            University Education
+          </span>
+
+          <h5 class="education-institution">
+            Laikipia University
+          </h5>
+
+          <p class="brown-text education-location">
+            Nyahururu, Kenya
+          </p>
+
+          <p>
+            <b>BSc Computer Science</b>
+          </p>
+
+          <p>
+            <b>Graduated:</b><br>
+            11 December 2025
+          </p>
+
+          <p>
+            <b>Classification:</b><br>
+            Second Class Honors (Upper Division)
+          </p>
+
+          <hr class="education-divider">
+
+          <p>
+            <b>Relevant Coursework:</b>
+          </p>
+
+          <ul class="coursework-list">
+            <li>Internet of Things (IoT)</li>
+            <li>Cloud Computing</li>
+            <li>Machine Learning</li>
+          </ul>
 
         </div>
 
-
       </div>
 
 
+      <!-- SECONDARY SCHOOL -->
+      <div class="card education-card">
 
-      <!-- ============================= -->
-      <!-- SLIDE 2: CERTIFICATIONS -->
-      <!-- ============================= -->
+        <div class="card-content">
 
-      <div
-        class="education-slide"
-        data-slide="1">
-
-
-        <div class="card education-card">
-
-
-          <div class="card-content">
-
-
-            <!-- ICON -->
-
-            <div class="education-icon">
-
-              <i class="fa fa-certificate"></i>
-
-            </div>
-
-
-            <!-- TITLE -->
-
-            <span class="education-heading teal-text">
-
-              Certifications & Professional Training
-
-            </span>
-
-
-
-            <div class="certifications-container">
-
-
-              <!-- ============================= -->
-              <!-- SOFTWARE DEVELOPMENT -->
-              <!-- ============================= -->
-
-              <div class="certification-item">
-
-
-                <div class="certification-icon">
-
-                  <i class="fa fa-code"></i>
-
-                </div>
-
-
-                <div class="certification-content">
-
-
-                  <h5>
-
-                    Software Development
-
-                  </h5>
-
-
-                  <p>
-
-                    <b>
-                      PLP Certificate of Achievement
-                    </b>
-
-                  </p>
-
-
-                  <p>
-
-                    Completed a 16-week Software Development
-                    training program.
-
-                  </p>
-
-
-                  <p class="certification-provider">
-
-                    Software Development
-
-                  </p>
-
-
-                </div>
-
-
-              </div>
-
-
-
-              <!-- ============================= -->
-              <!-- ORACLE -->
-              <!-- ============================= -->
-
-              <div class="certification-item">
-
-
-                <div class="certification-icon">
-
-                  <i class="fa fa-cloud"></i>
-
-                </div>
-
-
-                <div class="certification-content">
-
-
-                  <h5>
-
-                    Oracle Cloud Infrastructure AI Associate
-
-                  </h5>
-
-
-                  <p>
-
-                    <b>Oracle</b>
-
-                  </p>
-
-
-                  <p>
-
-                    Certification covering foundational concepts
-                    in artificial intelligence and cloud infrastructure.
-
-                  </p>
-
-
-                  <p class="certification-provider">
-
-                    Artificial Intelligence & Cloud
-
-                  </p>
-
-
-                </div>
-
-
-              </div>
-
-
-
-              <!-- ============================= -->
-              <!-- BRIGHTERMONDAY -->
-              <!-- ============================= -->
-
-              <div class="certification-item">
-
-
-                <div class="certification-icon">
-
-                  <i class="fa fa-users"></i>
-
-                </div>
-
-
-                <div class="certification-content">
-
-
-                  <h5>
-
-                    BrighterMonday Soft Skills Training
-
-                  </h5>
-
-
-                  <p>
-
-                    <b>BrighterMonday</b>
-
-                  </p>
-
-
-                  <p>
-
-                    Professional training covering communication,
-                    teamwork, workplace skills and career development.
-
-                  </p>
-
-
-                  <p class="certification-provider">
-
-                    Professional Development
-
-                  </p>
-
-
-                </div>
-
-
-              </div>
-
-
-
-              <!-- ============================= -->
-              <!-- IBM SKILLSBUILD -->
-              <!-- ============================= -->
-
-              <div class="certification-item">
-
-
-                <div class="certification-icon">
-
-                  <i class="fa fa-desktop"></i>
-
-                </div>
-
-
-                <div class="certification-content">
-
-
-                  <h5>
-
-                    IT Fundamentals
-
-                  </h5>
-
-
-                  <p>
-
-                    <b>IBM SkillsBuild</b>
-
-                  </p>
-
-
-                  <p>
-
-                    Training covering foundational information
-                    technology concepts and essential IT knowledge.
-
-                  </p>
-
-
-                  <p class="certification-provider">
-
-                    Information Technology
-
-                  </p>
-
-
-                </div>
-
-
-              </div>
-
-
-            </div>
-
-
+          <div class="education-icon">
+            <i class="fa fa-book"></i>
           </div>
 
+          <span class="education-heading teal-text">
+            Secondary Education
+          </span>
+
+          <h5 class="education-institution">
+            Ramba Secondary School
+          </h5>
+
+          <p class="brown-text education-location">
+            Siaya, Kenya
+          </p>
+
+          <p>
+            <b>Kenya Certificate of Secondary Education (KCSE)</b>
+          </p>
+
+          <p>
+            <b>Year:</b><br>
+            2019
+          </p>
+
+          <p>
+            <b>Grade:</b><br>
+            B Plain
+          </p>
+
+          <hr class="education-divider">
+
+          <p>
+            Completed secondary education and obtained the
+            Kenya Certificate of Secondary Education (KCSE).
+          </p>
 
         </div>
-
-
-      </div>
-
-
-
-      <!-- RIGHT ARROW -->
-
-      <div
-        class="education-arrow right"
-        id="educationNext"
-        role="button"
-        tabindex="0"
-        aria-label="Next">
-
-        <i class="fa fa-chevron-right"></i>
-
-      </div>
-
-
-
-      <!-- COUNTER -->
-
-      <div class="education-counter">
-
-        <span id="educationCounter">
-
-          1 / 2
-
-        </span>
-
-      </div>
-
-
-
-      <!-- DOTS -->
-
-      <div class="education-dots">
-
-
-        <span
-          class="education-dot active"
-          data-slide="0"
-          aria-label="Education">
-        </span>
-
-
-        <span
-          class="education-dot"
-          data-slide="1"
-          aria-label="Certifications">
-        </span>
-
 
       </div>
 
 
     </div>
 
+  </div>
+
+
+  <!-- ===================================================== -->
+  <!-- SLIDE 2: CERTIFICATIONS -->
+  <!-- ===================================================== -->
+
+  <div
+    class="education-slide"
+    data-slide="1">
+
+    <div class="certifications-grid">
+
+
+      <!-- PLP -->
+      <div class="card certification-card">
+
+        <div class="card-content">
+
+          <div class="certification-icon">
+            <i class="fa fa-code"></i>
+          </div>
+
+          <span class="education-heading teal-text">
+            Software Development
+          </span>
+
+          <h5 class="certification-title">
+            PLP Certificate of Achievement
+          </h5>
+
+          <p class="certification-provider">
+            Power Learn Project (PLP)
+          </p>
+
+          <p>
+            Completed a 16-week Software Development
+            training program covering practical software
+            development concepts and programming skills.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ORACLE -->
+      <div class="card certification-card">
+
+        <div class="card-content">
+
+          <div class="certification-icon">
+            <i class="fa fa-cloud"></i>
+          </div>
+
+          <span class="education-heading teal-text">
+            Artificial Intelligence & Cloud
+          </span>
+
+          <h5 class="certification-title">
+            Oracle Cloud Infrastructure AI Associate
+          </h5>
+
+          <p class="certification-provider">
+            Oracle
+          </p>
+
+          <p>
+            Certification covering foundational concepts
+            in artificial intelligence and Oracle Cloud
+            Infrastructure.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- BRIGHTERMONDAY -->
+      <div class="card certification-card">
+
+        <div class="card-content">
+
+          <div class="certification-icon">
+            <i class="fa fa-users"></i>
+          </div>
+
+          <span class="education-heading teal-text">
+            Professional Development
+          </span>
+
+          <h5 class="certification-title">
+            BrighterMonday Soft Skills Training
+          </h5>
+
+          <p class="certification-provider">
+            BrighterMonday
+          </p>
+
+          <p>
+            Professional training covering communication,
+            teamwork, workplace skills and career development.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- IBM -->
+      <div class="card certification-card">
+
+        <div class="card-content">
+
+          <div class="certification-icon">
+            <i class="fa fa-desktop"></i>
+          </div>
+
+          <span class="education-heading teal-text">
+            Information Technology
+          </span>
+
+          <h5 class="certification-title">
+            IT Fundamentals
+          </h5>
+
+          <p class="certification-provider">
+            IBM SkillsBuild
+          </p>
+
+          <p>
+            Training covering foundational information
+            technology concepts and essential IT knowledge.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
 
   </div>
 
 
-</section>
+  <!-- RIGHT ARROW -->
+  <div
+    class="education-arrow right"
+    id="educationNext"
+    role="button"
+    tabindex="0"
+    aria-label="Next">
+
+    <i class="fa fa-chevron-right"></i>
+
+  </div>
+
+
+  <!-- COUNTER -->
+  <div class="education-counter">
+
+    <span id="educationCounter">
+      1 / 2
+    </span>
+
+  </div>
+
+
+  <!-- DOTS -->
+  <div class="education-dots">
+
+    <span
+      class="education-dot active"
+      data-slide="0"
+      aria-label="Education">
+    </span>
+
+    <span
+      class="education-dot"
+      data-slide="1"
+      aria-label="Certifications">
+    </span>
+
+  </div>
+
+</div>
 ```
 
-  </main>
+  </div>
 
-  <!-- ============================= -->
+</section>
 
-  <!-- TYPED.JS -->
+<!-- ========================================================= -->
 
-  <!-- ============================= -->
+<!-- EDUCATION & CERTIFICATION STYLES -->
 
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+<!-- ========================================================= -->
 
-  <script>
+<style>
 
-    if (document.querySelector('.typing')) {
+  /* MAIN SLIDER */
+  .education-slider {
+    position: relative;
+    width: 100%;
+    padding: 20px 60px 60px;
+  }
 
-      var typed = new Typed('.typing', {
 
-        strings: [
-          "Software Developer",
-          "ML Enthusiast",
-          "IT Professional"
-        ],
+  /* SLIDES */
+  .education-slide {
+    display: none;
+    width: 100%;
+  }
 
-        loop: true,
+  .education-slide.active {
+    display: block;
+  }
 
-        typeSpeed: 80,
 
-        backSpeed: 40
+  /* EDUCATION TWO-COLUMN LAYOUT */
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+  }
 
+
+  /* CERTIFICATIONS TWO-COLUMN LAYOUT */
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+  }
+
+
+  /* EDUCATION CARD */
+  .education-card {
+    margin: 0;
+    min-height: 390px;
+    border-radius: 6px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .education-card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  /* CERTIFICATION CARD */
+  .certification-card {
+    margin: 0;
+    min-height: 300px;
+    border-radius: 6px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .certification-card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  /* CARD CONTENT */
+  .education-card .card-content,
+  .certification-card .card-content {
+    padding: 28px;
+  }
+
+
+  /* ICON */
+  .education-icon,
+  .certification-icon {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    background: #e0f2f1;
+    color: #009688;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+
+  /* SECTION LABEL */
+  .education-heading {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+
+
+  /* INSTITUTION */
+  .education-institution {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+
+  /* LOCATION */
+  .education-location {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+
+  /* DIVIDER */
+  .education-divider {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 22px 0;
+  }
+
+
+  /* COURSEWORK */
+  .coursework-list {
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+
+  .coursework-list li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+  }
+
+
+  /* CERTIFICATION TITLE */
+  .certification-title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+
+  /* CERTIFICATION PROVIDER */
+  .certification-provider {
+    color: #795548;
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+
+
+  /* ARROWS */
+  .education-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    background: #009688;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  .education-arrow:hover {
+    background: #00796b;
+    transform: translateY(-50%) scale(1.08);
+  }
+
+  .education-arrow.left {
+    left: 5px;
+  }
+
+  .education-arrow.right {
+    right: 5px;
+  }
+
+
+  /* COUNTER */
+  .education-counter {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #757575;
+    font-weight: 500;
+  }
+
+
+  /* DOTS */
+  .education-dots {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+
+  .education-dot {
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #bdbdbd;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .education-dot.active {
+    background: #009688;
+    transform: scale(1.2);
+  }
+
+
+  /* ========================================================= */
+  /* TABLET */
+  /* ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .education-slider {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+
+    .education-grid,
+    .certifications-grid {
+      gap: 18px;
+    }
+
+    .education-card .card-content,
+    .certification-card .card-content {
+      padding: 22px;
+    }
+
+  }
+
+
+  /* ========================================================= */
+  /* MOBILE */
+  /* ========================================================= */
+
+  @media (max-width: 600px) {
+
+    .education-slider {
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 60px;
+    }
+
+    .education-grid,
+    .certifications-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .education-card {
+      min-height: auto;
+    }
+
+    .certification-card {
+      min-height: auto;
+    }
+
+    .education-arrow {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    .education-arrow.left {
+      left: 0;
+    }
+
+    .education-arrow.right {
+      right: 0;
+    }
+
+  }
+
+</style>
+
+<!-- ========================================================= -->
+
+<!-- EDUCATION & CERTIFICATION SLIDER SCRIPT -->
+
+<!-- ========================================================= -->
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    var slides = document.querySelectorAll(".education-slide");
+    var dots = document.querySelectorAll(".education-dot");
+    var counter = document.getElementById("educationCounter");
+    var previousButton = document.getElementById("educationPrev");
+    var nextButton = document.getElementById("educationNext");
+
+    var currentSlide = 0;
+
+
+    function showEducationSlide(index) {
+
+      if (index < 0) {
+        index = slides.length - 1;
+      }
+
+      if (index >= slides.length) {
+        index = 0;
+      }
+
+      currentSlide = index;
+
+
+      /* Hide all slides */
+      slides.forEach(function (slide) {
+        slide.classList.remove("active");
+      });
+
+
+      /* Remove active dot */
+      dots.forEach(function (dot) {
+        dot.classList.remove("active");
+      });
+
+
+      /* Show selected slide */
+      slides[currentSlide].classList.add("active");
+
+
+      /* Activate selected dot */
+      if (dots[currentSlide]) {
+        dots[currentSlide].classList.add("active");
+      }
+
+
+      /* Update counter */
+      if (counter) {
+        counter.textContent =
+          (currentSlide + 1) + " / " + slides.length;
+      }
+
+    }
+
+
+    /* PREVIOUS */
+    if (previousButton) {
+
+      previousButton.addEventListener("click", function () {
+        showEducationSlide(currentSlide - 1);
       });
 
     }
 
-  </script>
 
-  <!-- ============================= -->
+    /* NEXT */
+    if (nextButton) {
 
-  <!-- JQUERY -->
-
-  <!-- ============================= -->
-
-  <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-  </script>
-
-  <!-- ============================= -->
-
-  <!-- MATERIALIZE JAVASCRIPT -->
-
-  <!-- ============================= -->
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
-  </script>
-
-  <!-- ============================= -->
-
-  <!-- PAGE JAVASCRIPT -->
-
-  <!-- ============================= -->
-
-  <script>
-
-    $(document).ready(function () {
-
-
-      /* Materialize */
-
-      $(".scrollspy").scrollSpy();
-
-
-      $(".button-collapse").sideNav({
-
-        menuWidth: 190,
-
-        edge: "left",
-
-        closeOnClick: true
-
-      });
-
-
-
-      /* ============================= */
-      /* EDUCATION SLIDER */
-      /* ============================= */
-
-      var currentSlide = 0;
-
-      var slides = $(".education-slide");
-
-      var dots = $(".education-dot");
-
-      var totalSlides = slides.length;
-
-
-
-      function showEducationSlide(index) {
-
-
-        if (index < 0) {
-
-          index = totalSlides - 1;
-
-        }
-
-
-        if (index >= totalSlides) {
-
-          index = 0;
-
-        }
-
-
-        currentSlide = index;
-
-
-        slides.removeClass("active");
-
-        dots.removeClass("active");
-
-
-        $(slides[currentSlide]).addClass("active");
-
-        $(dots[currentSlide]).addClass("active");
-
-
-        $("#educationCounter").text(
-
-          (currentSlide + 1) +
-          " / " +
-          totalSlides
-
-        );
-
-      }
-
-
-
-      /* NEXT BUTTON */
-
-      $("#educationNext").click(function () {
-
+      nextButton.addEventListener("click", function () {
         showEducationSlide(currentSlide + 1);
-
       });
 
+    }
 
 
-      /* PREVIOUS BUTTON */
+    /* DOT NAVIGATION */
+    dots.forEach(function (dot, index) {
 
-      $("#educationPrev").click(function () {
-
-        showEducationSlide(currentSlide - 1);
-
+      dot.addEventListener("click", function () {
+        showEducationSlide(index);
       });
-
-
-
-      /* DOTS */
-
-      $(".education-dot").click(function () {
-
-        var slideNumber = parseInt(
-          $(this).attr("data-slide")
-        );
-
-        showEducationSlide(slideNumber);
-
-      });
-
-
-
-      /* KEYBOARD */
-
-      $(document).keydown(function (event) {
-
-
-        if (event.key === "ArrowRight") {
-
-          showEducationSlide(currentSlide + 1);
-
-        }
-
-
-        if (event.key === "ArrowLeft") {
-
-          showEducationSlide(currentSlide - 1);
-
-        }
-
-      });
-
-
-
-      /* ============================= */
-      /* TOUCH SWIPE */
-      /* ============================= */
-
-      var touchStartX = 0;
-
-      var touchEndX = 0;
-
-
-      $(".education-slider").on(
-        "touchstart",
-        function (event) {
-
-          touchStartX =
-            event.originalEvent.touches[0].clientX;
-
-        }
-      );
-
-
-      $(".education-slider").on(
-        "touchend",
-        function (event) {
-
-          touchEndX =
-            event.originalEvent.changedTouches[0].clientX;
-
-
-          var difference =
-            touchStartX - touchEndX;
-
-
-          if (Math.abs(difference) > 50) {
-
-
-            if (difference > 0) {
-
-              showEducationSlide(currentSlide + 1);
-
-            } else {
-
-              showEducationSlide(currentSlide - 1);
-
-            }
-
-          }
-
-        }
-      );
-
 
     });
 
-  </script>
 
-</body>
+    /* KEYBOARD NAVIGATION */
+    document.addEventListener("keydown", function (event) {
 
-</html>
+      if (event.key === "ArrowLeft") {
+        showEducationSlide(currentSlide - 1);
+      }
+
+      if (event.key === "ArrowRight") {
+        showEducationSlide(currentSlide + 1);
+      }
+
+    });
+
+
+    /* TOUCH SWIPE */
+    var touchStartX = 0;
+    var touchEndX = 0;
+
+    var slider = document.querySelector(".education-slider");
+
+
+    if (slider) {
+
+      slider.addEventListener("touchstart", function (event) {
+
+        touchStartX = event.changedTouches[0].screenX;
+
+      }, false);
+
+
+      slider.addEventListener("touchend", function (event) {
+
+        touchEndX = event.changedTouches[0].screenX;
+
+        var swipeDistance = touchEndX - touchStartX;
+
+
+        if (Math.abs(swipeDistance) > 50) {
+
+          if (swipeDistance < 0) {
+            showEducationSlide(currentSlide + 1);
+          } else {
+            showEducationSlide(currentSlide - 1);
+          }
+
+        }
+
+      }, false);
+
+    }
+
+
+    /* INITIALIZE */
+    showEducationSlide(0);
+
+  });
+
+</script>
