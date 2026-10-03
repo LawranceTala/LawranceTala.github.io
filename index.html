@@ -8,21 +8,14 @@
 
   <title>Lawrance Tala Ogaywa | Software Developer | ML Enthusiast</title>
 
-  <!-- Materialize CSS -->
-
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
-
-  <!-- Font Awesome -->
 
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Google Material Icons -->
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- Custom CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -30,8 +23,8 @@
 
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js');var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+i:'';j.async=true;j.src=
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PGZH8HT');
   </script>
@@ -40,7 +33,9 @@
 
   <!-- Google Analytics -->
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2">
+  </script>
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -53,33 +48,25 @@
     gtag('config', 'UA-126939217-2');
   </script>
 
-  <!-- Google Site Verification -->
-
-<meta name="google-site-verification"
- content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84">
-
   <style>
 
-    /* ==============================
+    /* =========================
        SIDEBAR
-    ============================== */
+    ========================= */
 
     .side-nav.fixed {
       width: 190px;
     }
 
-    .side-nav .logo {
-      text-align: center;
-    }
-
-    .side-nav .logo img {
-      cursor: default;
+    .profile-pic {
+      cursor: default !important;
+      pointer-events: none;
     }
 
 
-    /* ==============================
-       MAIN CONTENT
-    ============================== */
+    /* =========================
+       MAIN
+    ========================= */
 
     main {
       min-height: 100vh;
@@ -87,82 +74,80 @@
     }
 
 
-    /* ==============================
-       HERO SECTION
-    ============================== */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero-section {
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
-      padding: 50px 20px;
+      padding: 40px 20px;
       background: transparent;
     }
 
 
-    /* ==============================
-       MAIN CARD
-    ============================== */
+    /* =========================
+       ONE CLEAN CARD
+    ========================= */
 
     .hero-card {
       width: 100%;
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.94);
-      border-radius: 18px;
-      padding: 45px 50px;
+      max-width: 850px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 45px 55px;
+      border-radius: 16px;
       text-align: center;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
-      border: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
     }
 
 
-    /* ==============================
-       PROFILE IMAGE
-    ============================== */
+    /* =========================
+       PROFILE PHOTO
+    ========================= */
 
     .hero-profile {
-      width: 145px;
-      height: 145px;
+      width: 135px;
+      height: 135px;
       object-fit: cover;
       border-radius: 50%;
       border: 5px solid rgba(0, 77, 64, 0.25);
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
 
-    /* ==============================
+    /* =========================
        NAME
-    ============================== */
+    ========================= */
 
     .hero-card h1 {
-      font-size: 44px;
+      font-size: 42px;
       font-weight: 700;
       color: #004d40;
-      margin: 10px 0 12px;
+      margin: 8px 0 12px;
     }
 
 
-    /* ==============================
-       PROFESSIONAL TITLE
-    ============================== */
+    /* =========================
+       TITLE
+    ========================= */
 
     .hero-title {
       font-size: 20px;
+      line-height: 1.6;
       font-weight: 500;
-      line-height: 1.7;
-      color: #00695c;
+      color: #00796b;
       margin-bottom: 22px;
     }
 
 
-    /* ==============================
-       DESCRIPTION
-    ============================== */
+    /* =========================
+       INTRODUCTION
+    ========================= */
 
     .hero-description {
-      max-width: 760px;
+      max-width: 720px;
       margin: 0 auto 25px;
       font-size: 17px;
       line-height: 1.8;
@@ -170,44 +155,16 @@
     }
 
 
-    /* ==============================
-       HIGHLIGHTS
-    ============================== */
-
-    .hero-highlights {
-      margin: 25px auto;
-      max-width: 720px;
-    }
-
-    .highlight-item {
-      padding: 12px 5px;
-    }
-
-    .highlight-item i {
-      display: block;
-      font-size: 28px;
-      color: #00796b;
-      margin-bottom: 8px;
-    }
-
-    .highlight-item span {
-      display: block;
-      font-size: 14px;
-      color: #555;
-      font-weight: 500;
-    }
-
-
-    /* ==============================
+    /* =========================
        BUTTONS
-    ============================== */
+    ========================= */
 
     .hero-buttons {
-      margin: 25px 0 20px;
+      margin: 25px 0;
     }
 
     .hero-buttons .btn {
-      margin: 6px;
+      margin: 5px;
       border-radius: 25px;
       padding: 0 24px;
       background-color: #00695c;
@@ -218,9 +175,9 @@
     }
 
 
-    /* ==============================
-       SOCIAL LINKS
-    ============================== */
+    /* =========================
+       SOCIAL ICONS
+    ========================= */
 
     .social-links {
       margin-top: 20px;
@@ -231,7 +188,7 @@
       margin: 0 9px;
       font-size: 25px;
       color: #004d40;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
 
     .social-links a:hover {
@@ -240,26 +197,9 @@
     }
 
 
-    /* ==============================
-       LOCATION / AVAILABILITY
-    ============================== */
-
-    .availability {
-      margin-top: 25px;
-      font-size: 14px;
-      color: #666;
-    }
-
-    .availability i {
-      color: #00796b;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-
-
-    /* ==============================
-       SCROLL INDICATOR
-    ============================== */
+    /* =========================
+       SCROLL BUTTON
+    ========================= */
 
     .scroll-down {
       position: absolute;
@@ -288,9 +228,9 @@
     }
 
 
-    /* ==============================
+    /* =========================
        MOBILE
-    ============================== */
+    ========================= */
 
     @media (max-width: 992px) {
 
@@ -301,17 +241,16 @@
 
       .hero-section {
         min-height: calc(100vh - 64px);
-        padding: 35px 15px;
+        padding: 30px 15px;
       }
 
       .hero-card {
         padding: 35px 25px;
-        border-radius: 15px;
       }
 
       .hero-profile {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
       }
 
       .hero-card h1 {
@@ -320,12 +259,10 @@
 
       .hero-title {
         font-size: 18px;
-        line-height: 1.6;
       }
 
       .hero-description {
         font-size: 16px;
-        line-height: 1.7;
       }
 
       .hero-buttons .btn {
@@ -343,16 +280,17 @@
     @media (max-width: 600px) {
 
       .hero-section {
-        padding: 25px 12px;
+        padding: 20px 10px;
       }
 
       .hero-card {
         padding: 30px 18px;
+        border-radius: 14px;
       }
 
       .hero-profile {
-        width: 110px;
-        height: 110px;
+        width: 105px;
+        height: 105px;
       }
 
       .hero-card h1 {
@@ -365,15 +303,6 @@
 
       .hero-description {
         font-size: 15px;
-        line-height: 1.7;
-      }
-
-      .highlight-item i {
-        font-size: 24px;
-      }
-
-      .highlight-item span {
-        font-size: 13px;
       }
 
       .social-links a {
@@ -400,15 +329,13 @@
     </iframe>
   </noscript>
 
-  <!-- ==============================
+  <!-- =========================
        DESKTOP SIDEBAR
-  ============================== -->
+  ========================= -->
 
   <ul id="slide-out" class="side-nav fixed">
 
 ```
-<!-- Profile - NOT CLICKABLE -->
-
 <li class="logo">
 
   <div class="user-view center-align"
@@ -439,17 +366,12 @@
 </li>
 
 
-<!-- Home -->
-
 <li>
   <a href="index.html">
     <i class="material-icons">home</i>
     Home
   </a>
 </li>
-
-
-<!-- About -->
 
 <li>
   <a href="about.html">
@@ -458,18 +380,12 @@
   </a>
 </li>
 
-
-<!-- Experience -->
-
 <li>
   <a href="experience.html">
     <i class="material-icons">work</i>
     Experience
   </a>
 </li>
-
-
-<!-- Projects -->
 
 <li>
   <a href="projects.html">
@@ -478,18 +394,12 @@
   </a>
 </li>
 
-
-<!-- Skills -->
-
 <li>
   <a href="skills.html">
     <i class="material-icons">build</i>
     Skills
   </a>
 </li>
-
-
-<!-- Education -->
 
 <li>
   <a href="education.html">
@@ -498,18 +408,12 @@
   </a>
 </li>
 
-
-<!-- Contact -->
-
 <li>
   <a href="contact.html">
     <i class="material-icons">email</i>
     Contact
   </a>
 </li>
-
-
-<!-- Resume -->
 
 <li>
   <a
@@ -525,9 +429,9 @@
 
   </ul>
 
-  <!-- ==============================
+  <!-- =========================
        MOBILE NAVIGATION
-  ============================== -->
+  ========================= -->
 
   <div class="navbar-fixed hide-on-large-only">
 
@@ -545,13 +449,8 @@
 
     </a>
 
-
-    <a
-      href="index.html"
-      class="brand-logo">
-
+    <a href="index.html" class="brand-logo">
       Lawrance Tala
-
     </a>
 
 
@@ -626,19 +525,18 @@
 
   </div>
 
-  <!-- ==============================
+  <!-- =========================
        MAIN CONTENT
-  ============================== -->
+  ========================= -->
 
   <main>
 
 ```
 <section id="intro" class="section hero-section">
 
+  <!-- ONE CLEAN CARD -->
+
   <div class="hero-card">
-
-
-    <!-- Profile Picture -->
 
     <img
       src="assets/img/passport-new.jpg"
@@ -647,14 +545,10 @@
     >
 
 
-    <!-- Name -->
-
     <h1>
       Lawrance Tala Ogaywa
     </h1>
 
-
-    <!-- Professional Title -->
 
     <div class="hero-title">
 
@@ -666,83 +560,17 @@
     </div>
 
 
-    <!-- Introduction -->
-
     <p class="hero-description">
 
       Computer Science professional passionate about software
       development, machine learning, artificial intelligence,
       IT support, data analysis, and technology-driven solutions.
-
-      I enjoy building practical systems, learning new technologies,
-      solving problems, and continuously improving my technical skills.
+      I enjoy building practical systems, solving problems,
+      learning new technologies, and continuously improving
+      my technical skills.
 
     </p>
 
-
-    <!-- ==============================
-         PROFESSIONAL HIGHLIGHTS
-    ============================== -->
-
-    <div class="row hero-highlights">
-
-      <div class="col s6 m3 highlight-item">
-
-        <i class="material-icons">
-          code
-        </i>
-
-        <span>
-          Software Development
-        </span>
-
-      </div>
-
-
-      <div class="col s6 m3 highlight-item">
-
-        <i class="material-icons">
-          psychology
-        </i>
-
-        <span>
-          Machine Learning
-        </span>
-
-      </div>
-
-
-      <div class="col s6 m3 highlight-item">
-
-        <i class="material-icons">
-          computer
-        </i>
-
-        <span>
-          IT Support
-        </span>
-
-      </div>
-
-
-      <div class="col s6 m3 highlight-item">
-
-        <i class="material-icons">
-          analytics
-        </i>
-
-        <span>
-          Data & AI
-        </span>
-
-      </div>
-
-    </div>
-
-
-    <!-- ==============================
-         BUTTONS
-    ============================== -->
 
     <div class="hero-buttons">
 
@@ -788,10 +616,6 @@
     </div>
 
 
-    <!-- ==============================
-         SOCIAL LINKS
-    ============================== -->
-
     <div class="social-links">
 
       <a
@@ -824,35 +648,7 @@
 
     </div>
 
-
-    <!-- Availability -->
-
-    <div class="availability">
-
-      <i class="material-icons">
-        location_on
-      </i>
-
-      Kenya · Open to Technology Opportunities
-
-    </div>
-
-
   </div>
-
-
-  <!-- Scroll Indicator -->
-
-  <a
-    href="about.html"
-    class="scroll-down"
-    aria-label="Go to About section">
-
-    <i class="material-icons">
-      keyboard_arrow_down
-    </i>
-
-  </a>
 
 </section>
 ```
@@ -863,9 +659,11 @@
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-  <!-- Materialize JavaScript -->
+  <!-- Materialize JS -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
+  </script>
 
   <!-- Typed.js -->
 
