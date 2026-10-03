@@ -1,46 +1,101 @@
 ```html
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js');var f=d.getElementsByTagName(s)[0],
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PGZH8HT');
   </script>
   <!-- End Google Tag Manager -->
 
-  <!-- Materialize - Compiled and minified CSS-->
+  <!-- Materialize - Compiled and minified CSS -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
 
-  <!-- Font Awesome Icon - CSS-->
+  <!-- Font Awesome Icon - CSS -->
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
-  <!-- Custom Styles-->
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <title>Lawrance Tala | Computer Science Professional</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag('js', new Date());
 
+    gtag('js', new Date());
     gtag('config', 'UA-126939217-2');
   </script>
+
+  <!-- Logo Styling -->
+  <style>
+    .company-logo-wrapper {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 12px;
+      box-sizing: border-box;
+    }
+
+    .company-logo {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .company-logo.atlas-logo {
+      max-width: 115px;
+      max-height: 115px;
+    }
+
+    .company-logo.ampersand-logo {
+      max-width: 120px;
+      max-height: 120px;
+    }
+
+    .company-logo.mkopa-logo {
+      max-width: 120px;
+      max-height: 100px;
+    }
+
+    .company-logo.softlink-logo {
+      max-width: 110px;
+      max-height: 110px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .company-logo-wrapper {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 
 </head>
 
@@ -48,14 +103,20 @@
 
   <!-- Google Tag Manager (noscript) -->
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-      height="0" width="0" style="display:none;visibility:hidden">
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
     </iframe>
   </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Navigation Menu-->
 
-  <!-- Nav class 1 -->
+  <!-- =============================== -->
+  <!-- DESKTOP NAVIGATION -->
+  <!-- =============================== -->
+
   <nav>
     <ul class="side-nav fixed section table-of-contents">
 
@@ -65,73 +126,102 @@
           href="index.html"
           class="brand-logo grey-blue-text">
 
-          <img src="assets/img/passport-new.jpg"
+          <img
+            src="assets/img/passport-new.jpg"
             class="circle img-responsive profile-pic"
             alt="Lawrance Tala profile photo">
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the About section"
+        <a
+          aria-label="Navigate to the About section"
           href="about.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-social-person small"></i>
           <span>About</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Experience section"
+        <a
+          aria-label="Navigate to the Experience section"
           href="experience.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-action-trending-up small"></i>
           <span>Experience</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Projects section"
+        <a
+          aria-label="Navigate to the Projects section"
           href="projects.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-av-my-library-books small"></i>
           <span>Projects</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Skills section"
+        <a
+          aria-label="Navigate to the Skills section"
           href="skills.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-action-assessment small"></i>
           <span>Skills</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Education section"
+        <a
+          aria-label="Navigate to the Education section"
           href="education.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-social-school small"></i>
           <span>Education</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Contact section"
+        <a
+          aria-label="Navigate to the Contact section"
           href="contact.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-content-mail small"></i>
           <span>Contact</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Open Lawrance Tala resume in a new tab"
+        <a
+          aria-label="Open Lawrance Tala resume in a new tab"
           href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
           target="_blank"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-file-folder-open small"></i>
           <span>Resume</span>
+
         </a>
       </li>
 
@@ -139,116 +229,171 @@
   </nav>
 
 
-  <!-- Nav class 2 -->
+  <!-- =============================== -->
+  <!-- MOBILE TOP NAVIGATION -->
+  <!-- =============================== -->
+
   <nav class="hide-on-large only trigger z-depth-1">
 
-    <a aria-label="Toggle visibility of the mobile navbar"
+    <a
+      aria-label="Toggle visibility of the mobile navbar"
       href="#"
       data-activates="slide-out"
       class="button-collapse">
+
       <i class="mdi-navigation-menu"></i>
+
     </a>
 
+
     <div class="name-title">
-      <a id="name"
+
+      <a
+        id="name"
         aria-label="Navigate to the beginning of the page"
-        href="#"
+        href="index.html"
         class="teal-text">
+
         Lawrance Tala
+
       </a>
 
-      <span class="black-text">Computer Science Professional</span>
+      <span class="black-text">
+        Computer Science Professional
+      </span>
+
     </div>
 
   </nav>
 
 
-  <!-- Nav class 3 -->
+  <!-- =============================== -->
+  <!-- MOBILE MENU -->
+  <!-- =============================== -->
+
   <nav class="hide-on-large only">
 
     <ul id="slide-out" class="side-nav">
 
       <li class="bold">
-        <a aria-label="Navigate to the About section"
+        <a
+          aria-label="Navigate to the About section"
           href="about.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-social-person small"></i>
           <span>About</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Experience section"
-          href="#"
+        <a
+          aria-label="Navigate to the Experience section"
+          href="experience.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-action-trending-up small"></i>
           <span>Experience</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Projects section"
+        <a
+          aria-label="Navigate to the Projects section"
           href="projects.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-av-my-library-books small"></i>
           <span>Projects</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Skills section"
+        <a
+          aria-label="Navigate to the Skills section"
           href="skills.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-action-assessment small"></i>
           <span>Skills</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Education section"
+        <a
+          aria-label="Navigate to the Education section"
           href="education.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-social-school small"></i>
           <span>Education</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Navigate to the Contact section"
+        <a
+          aria-label="Navigate to the Contact section"
           href="contact.html"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-content-mail small"></i>
           <span>Contact</span>
+
         </a>
       </li>
 
+
       <li class="bold">
-        <a aria-label="Open Lawrance Tala resume in a new tab"
+        <a
+          aria-label="Open Lawrance Tala resume in a new tab"
           href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
           target="_blank"
           class="waves-effect waves-dark teal-text">
+
           <i class="mdi-file-folder-open small"></i>
           <span>Resume</span>
+
         </a>
       </li>
 
     </ul>
+
   </nav>
 
+
+  <!-- =============================== -->
+  <!-- MAIN CONTENT -->
+  <!-- =============================== -->
 
   <main>
 
     <!-- Experience Section -->
-    <section id="experience" class="section scrollspy">
 
-      <h3 class="page-title white-text teal">Experience</h3>
+    <section
+      id="experience"
+      class="section scrollspy">
+
+      <h3 class="page-title white-text teal">
+        Experience
+      </h3>
+
 
       <div class="container">
 
 
-        <!-- ========================================= -->
-        <!-- Atlas Capture AI - Current Experience -->
-        <!-- ========================================= -->
+        <!-- ================================================= -->
+        <!-- ATLAS CAPTURE AI -->
+        <!-- ================================================= -->
 
         <div class="card">
 
@@ -256,25 +401,50 @@
 
             <div class="row">
 
+
+              <!-- LOGO -->
+
               <div class="col s12 m2">
+
                 <div class="center-align">
-                  <i class="fa fa-database fa-5x teal-text"></i>
+
+                  <div class="company-logo-wrapper">
+
+                    <img
+                      src="assets/img/logos/atlas.png"
+                      class="company-logo atlas-logo"
+                      alt="Atlas Capture AI logo">
+
+                  </div>
+
                 </div>
+
               </div>
+
+
+              <!-- EXPERIENCE -->
 
               <div class="col s12 m10">
 
                 <p>
+
                   <span class="card-title">
+
                     <span class="teal-text hoverline">
                       Atlas Capture AI
                     </span>
+
                   </span>
+
                 </p>
 
+
                 <div class="role brown-text text-darken-2">
+
                   AI Data Annotator / Human Verifier
+
                 </div>
+
 
                 <ul>
 
@@ -309,8 +479,9 @@
                   </li>
 
                   <li>
-                    <b>Areas:</b> AI Data Labeling, Data Annotation,
-                    Dataset Categorization, Quality Review, AI/ML Training Data
+                    <b>Areas:</b>
+                    AI Data Labeling, Data Annotation, Dataset Categorization,
+                    Quality Review, AI/ML Training Data
                   </li>
 
                 </ul>
@@ -321,16 +492,21 @@
 
           </div>
 
+
           <div class="card-action">
-            <span>June 2026 - Present | Remote</span>
+
+            <span>
+              June 2026 - Present | Remote
+            </span>
+
           </div>
 
         </div>
 
 
-        <!-- ========================================= -->
-        <!-- Ampersand E-Mobility -->
-        <!-- ========================================= -->
+        <!-- ================================================= -->
+        <!-- AMPERSAND E-MOBILITY -->
+        <!-- ================================================= -->
 
         <div class="card">
 
@@ -338,25 +514,50 @@
 
             <div class="row">
 
+
+              <!-- LOGO -->
+
               <div class="col s12 m2">
+
                 <div class="center-align">
-                  <i class="fa fa-cogs fa-5x teal-text"></i>
+
+                  <div class="company-logo-wrapper">
+
+                    <img
+                      src="assets/img/logos/ampersand.png"
+                      class="company-logo ampersand-logo"
+                      alt="Ampersand E-Mobility logo">
+
+                  </div>
+
                 </div>
+
               </div>
+
+
+              <!-- EXPERIENCE -->
 
               <div class="col s12 m10">
 
                 <p>
+
                   <span class="card-title">
+
                     <span class="teal-text hoverline">
                       Ampersand E-Mobility
                     </span>
+
                   </span>
+
                 </p>
 
+
                 <div class="role brown-text text-darken-2">
-                  Systems & Operations Support
+
+                  Systems &amp; Operations Support
+
                 </div>
+
 
                 <ul>
 
@@ -392,8 +593,9 @@
                   </li>
 
                   <li>
-                    <b>Areas:</b> Systems Operations, Technical Support,
-                    Troubleshooting, Customer Support, EV Charging Operations
+                    <b>Areas:</b>
+                    Systems Operations, Technical Support, Troubleshooting,
+                    Customer Support, EV Charging Operations
                   </li>
 
                 </ul>
@@ -404,16 +606,21 @@
 
           </div>
 
+
           <div class="card-action">
-            <span>October 2025 - September 2026 | Nairobi, Kenya</span>
+
+            <span>
+              October 2025 - September 2026 | Nairobi, Kenya
+            </span>
+
           </div>
 
         </div>
 
 
-        <!-- ========================================= -->
+        <!-- ================================================= -->
         <!-- M-KOPA -->
-        <!-- ========================================= -->
+        <!-- ================================================= -->
 
         <div class="card">
 
@@ -421,25 +628,50 @@
 
             <div class="row">
 
+
+              <!-- LOGO -->
+
               <div class="col s12 m2">
+
                 <div class="center-align">
-                  <i class="fa fa-mobile fa-5x teal-text"></i>
+
+                  <div class="company-logo-wrapper">
+
+                    <img
+                      src="assets/img/logos/mkopa.png"
+                      class="company-logo mkopa-logo"
+                      alt="M-KOPA logo">
+
+                  </div>
+
                 </div>
+
               </div>
+
+
+              <!-- EXPERIENCE -->
 
               <div class="col s12 m10">
 
                 <p>
+
                   <span class="card-title">
+
                     <span class="teal-text hoverline">
                       M-KOPA
                     </span>
+
                   </span>
+
                 </p>
 
+
                 <div class="role brown-text text-darken-2">
+
                   Production Operator
+
                 </div>
+
 
                 <ul>
 
@@ -469,8 +701,9 @@
                   </li>
 
                   <li>
-                    <b>Areas:</b> Production Operations, Quality Control,
-                    Inspection, Teamwork, Process Compliance
+                    <b>Areas:</b>
+                    Production Operations, Quality Control, Inspection,
+                    Teamwork, Process Compliance
                   </li>
 
                 </ul>
@@ -481,16 +714,21 @@
 
           </div>
 
+
           <div class="card-action">
-            <span>September 2025 - October 2025 | Kenya</span>
+
+            <span>
+              September 2025 - October 2025 | Kenya
+            </span>
+
           </div>
 
         </div>
 
 
-        <!-- ========================================= -->
-        <!-- Softlink Options Limited -->
-        <!-- ========================================= -->
+        <!-- ================================================= -->
+        <!-- SOFTLINK OPTIONS LIMITED -->
+        <!-- ================================================= -->
 
         <div class="card">
 
@@ -498,25 +736,47 @@
 
             <div class="row">
 
+
+              <!-- ICON -->
+
               <div class="col s12 m2">
+
                 <div class="center-align">
-                  <i class="fa fa-code fa-5x teal-text"></i>
+
+                  <div class="company-logo-wrapper">
+
+                    <i class="fa fa-code fa-5x teal-text"></i>
+
+                  </div>
+
                 </div>
+
               </div>
+
+
+              <!-- EXPERIENCE -->
 
               <div class="col s12 m10">
 
                 <p>
+
                   <span class="card-title">
+
                     <span class="teal-text hoverline">
                       Softlink Options Limited
                     </span>
+
                   </span>
+
                 </p>
 
+
                 <div class="role brown-text text-darken-2">
-                  Web Developer & Sales Trainee
+
+                  Web Developer &amp; Sales Trainee
+
                 </div>
+
 
                 <ul>
 
@@ -545,7 +805,8 @@
                   </li>
 
                   <li>
-                    <b>Tools:</b> WordPress, cPanel, Odoo
+                    <b>Tools:</b>
+                    WordPress, cPanel, Odoo
                   </li>
 
                 </ul>
@@ -556,8 +817,13 @@
 
           </div>
 
+
           <div class="card-action">
-            <span>May 2025 - July 2025 | Nairobi, Kenya</span>
+
+            <span>
+              May 2025 - July 2025 | Nairobi, Kenya
+            </span>
+
           </div>
 
         </div>
@@ -570,43 +836,59 @@
   </main>
 
 
-  <!-- typed.js -->
+  <!-- ================================================= -->
+  <!-- TYPED.JS -->
+  <!-- ================================================= -->
+
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <script type="text/javascript">
+
     var typed = new Typed('.typing', {
+
       strings: [
         "Computer Science Professional",
         "Software Developer",
         "ML Enthusiast",
         "IT Professional"
       ],
+
       loop: true,
       typeSpeed: 80,
       backSpeed: 40
+
     });
+
   </script>
 
 
-  <!-- jQuery-->
+  <!-- ================================================= -->
+  <!-- JQUERY -->
+  <!-- ================================================= -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
-  <!-- Materialize - Compiled and minified JavaScript-->
+  <!-- ================================================= -->
+  <!-- MATERIALIZE JAVASCRIPT -->
+  <!-- ================================================= -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+
 
   <script>
 
-    // Materialize - Initializers
     $(document).ready(function () {
 
       $(".scrollspy").scrollSpy();
 
-      // Initialize collapse button
+
       $(".button-collapse").sideNav({
+
         menuWidth: 190,
         edge: "left",
         closeOnClick: true
+
       });
 
     });
