@@ -33,25 +33,30 @@
 
   <!-- End Google Tag Manager -->
 
+
   <!-- Materialize CSS -->
 
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+
 
   <!-- Font Awesome -->
 
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+
   <!-- Material Design Icons -->
 
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
   <!-- Your Main CSS -->
 
   <link rel="stylesheet"
         href="assets/css/style.css">
+
 
   <style>
 
@@ -62,16 +67,29 @@
     .education-slider {
       position: relative;
       width: 100%;
-      padding: 20px 60px 70px;
+      padding: 35px 65px 85px;
     }
 
 
+    /* ========================================================= */
+    /* EDUCATION PAGE HEADING */
+    /* ========================================================= */
+
+    .page-title {
+      margin-bottom: 0 !important;
+      padding: 18px 0;
+    }
+
+
+    /* ========================================================= */
     /* SLIDES */
+    /* ========================================================= */
 
     .education-slide {
       display: none;
       width: 100%;
     }
+
 
     .education-slide.active {
       display: block;
@@ -201,6 +219,7 @@
       padding-left: 20px;
     }
 
+
     .coursework-list li {
       margin-bottom: 8px;
       list-style-type: disc;
@@ -231,17 +250,19 @@
 
 
     /* ========================================================= */
-    /* ARROWS */
+    /* SLIDER ARROWS */
     /* ========================================================= */
 
     .education-arrow {
       position: absolute;
+
       top: 50%;
       transform: translateY(-50%);
 
-      width: 42px;
-      height: 42px;
-      line-height: 42px;
+      width: 44px;
+      height: 44px;
+
+      line-height: 44px;
 
       text-align: center;
 
@@ -252,25 +273,50 @@
 
       cursor: pointer;
 
-      z-index: 10;
+      z-index: 20;
 
-      transition: all 0.2s ease;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
 
     .education-arrow:hover {
       background: #00796b;
-      transform: translateY(-50%) scale(1.08);
+
+      transform:
+        translateY(-50%)
+        scale(1.08);
+
+      box-shadow: 0 5px 12px rgba(0,0,0,0.25);
     }
 
+
+    .education-arrow:active {
+      transform:
+        translateY(-50%)
+        scale(0.96);
+    }
+
+
+    /* ========================================================= */
+    /* LEFT ARROW */
+    /* ========================================================= */
 
     .education-arrow.left {
-      left: 5px;
+      left: 8px;
     }
 
 
+    /* ========================================================= */
+    /* RIGHT / NEXT ARROW */
+    /* ========================================================= */
+
     .education-arrow.right {
-      right: 5px;
+      right: 8px;
     }
 
 
@@ -281,7 +327,7 @@
     .education-counter {
       position: absolute;
 
-      bottom: 30px;
+      bottom: 35px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -301,7 +347,7 @@
     .education-dots {
       position: absolute;
 
-      bottom: 7px;
+      bottom: 10px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -342,8 +388,8 @@
     @media (max-width: 900px) {
 
       .education-slider {
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 55px;
+        padding-right: 55px;
       }
 
       .education-grid,
@@ -365,10 +411,15 @@
 
     @media (max-width: 600px) {
 
+      .page-title {
+        padding: 15px 0;
+      }
+
+
       .education-slider {
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-bottom: 70px;
+        padding-left: 42px;
+        padding-right: 42px;
+        padding-bottom: 80px;
       }
 
 
@@ -386,9 +437,9 @@
 
 
       .education-arrow {
-        width: 36px;
-        height: 36px;
-        line-height: 36px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
       }
 
 
@@ -401,18 +452,28 @@
         right: 0;
       }
 
+
+      .education-counter {
+        bottom: 38px;
+      }
+
+
+      .education-dots {
+        bottom: 12px;
+      }
+
     }
 
   </style>
 
 </head>
 
+
 <body>
 
+
   <!-- ========================================================= -->
-
   <!-- GOOGLE TAG MANAGER -->
-
   <!-- ========================================================= -->
 
   <noscript>
@@ -426,13 +487,13 @@
 
   </noscript>
 
+
   <!-- ========================================================= -->
-
   <!-- DESKTOP NAVIGATION -->
-
   <!-- ========================================================= -->
 
   <ul class="side-nav fixed section table-of-contents">
+
 
     <!-- PROFILE -->
 
@@ -584,9 +645,7 @@
 
 
   <!-- ========================================================= -->
-
   <!-- MOBILE NAVIGATION -->
-
   <!-- ========================================================= -->
 
   <a
@@ -625,6 +684,7 @@
   <!-- MOBILE SIDE NAV -->
 
   <ul id="slide-out" class="side-nav">
+
 
     <li class="bold">
 
@@ -735,12 +795,11 @@
 
 
   <!-- ========================================================= -->
-
   <!-- EDUCATION -->
-
   <!-- ========================================================= -->
 
   <section id="education" class="section scrollspy">
+
 
     <h3 class="page-title white-text teal">
 
@@ -783,9 +842,7 @@
           <div class="education-grid">
 
 
-            <!-- ============================================= -->
             <!-- LAIKIPIA UNIVERSITY -->
-            <!-- ============================================= -->
 
             <div class="card education-card">
 
@@ -877,9 +934,7 @@
             </div>
 
 
-            <!-- ============================================= -->
             <!-- RAMBA SECONDARY SCHOOL -->
-            <!-- ============================================= -->
 
             <div class="card education-card">
 
@@ -975,9 +1030,7 @@
           <div class="certifications-grid">
 
 
-            <!-- ============================================= -->
             <!-- PLP -->
-            <!-- ============================================= -->
 
             <div class="card certification-card">
 
@@ -1026,9 +1079,7 @@
             </div>
 
 
-            <!-- ============================================= -->
             <!-- ORACLE -->
-            <!-- ============================================= -->
 
             <div class="card certification-card">
 
@@ -1077,9 +1128,7 @@
             </div>
 
 
-            <!-- ============================================= -->
             <!-- BRIGHTERMONDAY -->
-            <!-- ============================================= -->
 
             <div class="card certification-card">
 
@@ -1127,9 +1176,7 @@
             </div>
 
 
-            <!-- ============================================= -->
             <!-- IBM SKILLSBUILD -->
-            <!-- ============================================= -->
 
             <div class="card certification-card">
 
@@ -1184,7 +1231,7 @@
 
 
         <!-- ================================================= -->
-        <!-- RIGHT ARROW -->
+        <!-- RIGHT / NEXT ARROW -->
         <!-- ================================================= -->
 
         <div
@@ -1247,18 +1294,18 @@
 
 
   <!-- ========================================================= -->
-
   <!-- JAVASCRIPT -->
-
   <!-- ========================================================= -->
 
   <script
     src="https://code.jquery.com/jquery-2.1.1.min.js">
   </script>
 
+
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
   </script>
+
 
   <script>
 
@@ -1272,14 +1319,18 @@
       var slides =
         document.querySelectorAll(".education-slide");
 
+
       var dots =
         document.querySelectorAll(".education-dot");
+
 
       var counter =
         document.getElementById("educationCounter");
 
+
       var previousButton =
         document.getElementById("educationPrev");
+
 
       var nextButton =
         document.getElementById("educationNext");
@@ -1461,6 +1512,7 @@
 
       var touchEndX = 0;
 
+
       var slider =
         document.querySelector(".education-slider");
 
@@ -1510,14 +1562,11 @@
 
               }
 
-
             }
-
 
           },
           false
         );
-
 
       }
 
@@ -1539,7 +1588,6 @@
           .sideNav();
 
       }
-
 
     });
 
