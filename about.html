@@ -13,10 +13,15 @@
   <!-- Google Tag Manager -->
 
   <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PGZH8HT');
   </script>
 
@@ -94,7 +99,8 @@
 
     #about {
       min-height: 100vh;
-      padding-bottom: 60px;
+      padding-bottom: 70px;
+      background: transparent !important;
     }
 
 
@@ -103,24 +109,28 @@
     ========================= */
 
     .page-title {
-      margin: 0 0 35px 0;
+      margin: 0 0 45px 0;
       padding: 20px;
       text-align: center;
-      font-size: 32px;
-      font-weight: 500;
+      font-size: 36px;
+      font-weight: 600;
+
+      background: transparent !important;
+
+      text-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.9);
     }
 
 
     /* =========================
-       REMOVE ABOUT CARD
-       CONTENT SITS DIRECTLY
-       ON THE BACKGROUND
+       ABOUT CONTENT
+       NO CARD / NO FORM
     ========================= */
 
     .about-card {
       max-width: 950px;
       margin: 0 auto;
-      padding: 20px 30px 50px;
+      padding: 10px 30px 50px;
 
       background: transparent !important;
       border: none !important;
@@ -133,140 +143,36 @@
 
 
     /* =========================
-       ABOUT TITLE
-    ========================= */
-
-    .about-card-title {
-      text-align: center;
-      color: #ffffff;
-      font-size: 30px;
-      font-weight: 500;
-      margin: 0 0 30px;
-
-      text-shadow:
-        0 2px 5px rgba(0, 0, 0, 0.8);
-    }
-
-    .about-card-title i {
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-
-
-    /* =========================
-       TEXT
+       ABOUT WRITING
     ========================= */
 
     .about-card p {
       color: #ffffff;
-      font-size: 16px;
-      line-height: 1.8;
-      margin-bottom: 18px;
+      font-size: 19px;
+      line-height: 1.9;
+      margin: 0 0 24px 0;
 
       text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.85);
+        0 2px 5px rgba(0, 0, 0, 0.9);
     }
 
 
-    /* =========================
-       SECTION HEADINGS
-    ========================= */
-
-    .about-heading {
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: 500;
-      margin-top: 35px;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
-
-      border-bottom: none !important;
-
-      text-shadow:
-        0 2px 5px rgba(0, 0, 0, 0.85);
-    }
-
-    .about-heading i {
-      margin-right: 8px;
-      vertical-align: middle;
-    }
-
-
-    /* =========================
-       TECHNICAL INFORMATION
-    ========================= */
-
-    .technical-info {
-      margin-top: 10px;
-    }
-
-    .technical-info p {
-      margin: 10px 0;
-      font-size: 15px;
-    }
-
-    .technical-info strong {
+    /* Highlighted words */
+    .about-card strong {
       color: #80cbc4;
+      font-weight: 600;
+
       text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.9);
+        0 2px 5px rgba(0, 0, 0, 0.95);
     }
 
 
     /* =========================
-       PROFESSIONAL STRENGTHS
-       NO BOXES / NO CARDS
+       FINAL STATEMENT
     ========================= */
 
-    .strengths {
-      margin-top: 10px;
-    }
-
-    .strengths span {
-      display: inline;
-      margin: 0 18px 0 0;
-      padding: 0;
-
-      background: transparent !important;
-      border: none !important;
-      border-radius: 0 !important;
-      box-shadow: none !important;
-
-      color: #ffffff;
-      font-size: 15px;
-
-      text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.85);
-    }
-
-    .strengths span::after {
-      content: " • ";
-      margin-left: 18px;
-      color: #80cbc4;
-    }
-
-    .strengths span:last-child::after {
-      content: "";
-    }
-
-
-    /* =========================
-       CAREER INTERESTS
-    ========================= */
-
-    .career-interests {
-      margin-top: 10px;
-    }
-
-    .career-interests p {
-      margin: 10px 0;
-    }
-
-    .career-interests i {
-      color: #80cbc4;
-      margin-right: 10px;
-
-      text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.9);
+    .about-closing {
+      margin-top: 30px !important;
     }
 
 
@@ -277,12 +183,17 @@
     @media (max-width: 992px) {
 
       .about-card {
-        margin: 0 15px;
-        padding: 20px 20px 40px;
+        margin: 0 20px;
+        padding: 10px 20px 40px;
       }
 
       .page-title {
-        font-size: 28px;
+        font-size: 32px;
+      }
+
+      .about-card p {
+        font-size: 18px;
+        line-height: 1.8;
       }
 
     }
@@ -291,34 +202,23 @@
     @media (max-width: 600px) {
 
       #about {
-        padding-bottom: 30px;
+        padding-bottom: 40px;
       }
 
       .about-card {
         margin: 0 10px;
-        padding: 15px 10px 30px;
+        padding: 5px 10px 30px;
       }
 
-      .about-card-title {
-        font-size: 25px;
+      .page-title {
+        font-size: 29px;
+        margin-bottom: 30px;
       }
 
       .about-card p {
-        font-size: 15px;
-        line-height: 1.7;
-      }
-
-      .about-heading {
-        font-size: 18px;
-        margin-top: 28px;
-      }
-
-      .technical-info p {
-        font-size: 14px;
-      }
-
-      .strengths span {
-        font-size: 14px;
+        font-size: 16.5px;
+        line-height: 1.8;
+        margin-bottom: 20px;
       }
 
     }
@@ -349,7 +249,7 @@
 ```
 <ul class="side-nav fixed section table-of-contents">
 
-  <!-- Profile Image - NOT CLICKABLE -->
+  <!-- Profile Image -->
 
   <li class="logo">
 
@@ -365,8 +265,7 @@
           height:120px;
           object-fit:cover;
           margin-top:20px;
-        "
-      >
+        ">
 
     </div>
 
@@ -633,7 +532,6 @@
 ```
 <section id="about" class="section">
 
-
   <h3 class="page-title white-text teal">
     About
   </h3>
@@ -641,184 +539,60 @@
 
   <div class="container">
 
-
-    <!-- CLEAN CONTENT - NO CARD -->
-
     <div class="about-card">
 
-
-      <h2 class="about-card-title">
-
-        <i class="fa fa-user"></i>
-        About Me
-
-      </h2>
-
-
-      <!-- Introduction -->
-
       <p>
-
-        I’m a passionate and curious Computer Science professional
-        with experience in software development, machine learning,
-        IT support, and operations.
-
+        I’m a passionate and curious <strong>Computer Science professional</strong>
+        with experience in software development, machine learning, IT support,
+        and technology-driven operations. I enjoy building practical technology
+        solutions, solving problems, learning new technologies, and continuously
+        expanding my technical knowledge.
       </p>
 
 
       <p>
-
-        I enjoy building practical technology solutions,
-        solving problems, learning new technologies, and
-        continuously expanding my technical knowledge.
-
-      </p>
-
-
-      <!-- Professional Profile -->
-
-      <h3 class="about-heading">
-
-        <i class="fa fa-code"></i>
-        Professional Profile
-
-      </h3>
-
-
-      <p>
-
-        I have experience developing and deploying websites using
-        WordPress and cPanel, working with ERP systems such as Odoo,
-        and supporting technology-driven operational environments.
-
+        My experience includes developing and deploying websites using
+        <strong>WordPress and cPanel</strong>, working with systems such as
+        <strong>Odoo</strong>, supporting technology-driven operations, and
+        working with data and AI-related tasks. I also have experience with
+        <strong>AI data labeling and verification</strong>, where accuracy,
+        attention to detail, and following project guidelines are important.
       </p>
 
 
       <p>
-
-        My technical interests include backend development,
-        frontend development, machine learning, data analysis,
-        and IT support.
-
+        My technical interests include <strong>software development,
+        backend development, frontend development, machine learning,
+        data analysis, and IT support</strong>. I work with technologies
+        such as Python, JavaScript, HTML, CSS, FastAPI, Flask, Laravel,
+        Django, React, TensorFlow, Keras, PyTorch, scikit-learn, Pandas,
+        NumPy, MySQL, PostgreSQL, GitHub, Jupyter Notebook, VS Code,
+        cPanel, and cloud technologies.
       </p>
-
-
-      <!-- Technical Focus -->
-
-      <h3 class="about-heading">
-
-        <i class="fa fa-laptop"></i>
-        Technical Focus
-
-      </h3>
-
-
-      <div class="technical-info">
-
-        <p>
-          <strong>Programming:</strong>
-          Python, JavaScript, HTML/CSS
-        </p>
-
-        <p>
-          <strong>Backend & Frameworks:</strong>
-          FastAPI, Flask, Laravel, Django, Node.js
-        </p>
-
-        <p>
-          <strong>Machine Learning & Data:</strong>
-          TensorFlow, Keras, PyTorch, scikit-learn,
-          Pandas, NumPy, Matplotlib
-        </p>
-
-        <p>
-          <strong>Tools & Technologies:</strong>
-          GitHub, Jupyter Notebook, cPanel, Anaconda, VS Code
-        </p>
-
-        <p>
-          <strong>Databases:</strong>
-          MySQL, PostgreSQL, MongoDB
-        </p>
-
-        <p>
-          <strong>Cloud & AI:</strong>
-          Oracle Cloud Infrastructure AI Foundations
-        </p>
-
-      </div>
-
-
-      <!-- Professional Strengths -->
-
-      <h3 class="about-heading">
-
-        <i class="fa fa-lightbulb-o"></i>
-        Professional Strengths
-
-      </h3>
-
-
-      <div class="strengths">
-
-        <span>Problem Solving</span>
-
-        <span>Troubleshooting</span>
-
-        <span>Communication</span>
-
-        <span>Teamwork</span>
-
-        <span>Adaptability</span>
-
-        <span>Continuous Learning</span>
-
-      </div>
-
-
-      <!-- Career Interests -->
-
-      <h3 class="about-heading">
-
-        <i class="fa fa-rocket"></i>
-        Career Interests
-
-      </h3>
-
-
-      <div class="career-interests">
-
-        <p>
-          <i class="fa fa-code"></i>
-          Software Development
-        </p>
-
-        <p>
-          <i class="fa fa-cogs"></i>
-          Machine Learning
-        </p>
-
-        <p>
-          <i class="fa fa-database"></i>
-          Data Analysis
-        </p>
-
-        <p>
-          <i class="fa fa-desktop"></i>
-          IT Support
-        </p>
-
-      </div>
 
 
       <p>
-
-        I am motivated to contribute to meaningful projects,
-        learn from experienced teams, and continue growing
-        professionally in technology.
-
+        I also bring strong <strong>problem-solving, troubleshooting,
+        communication, teamwork, adaptability, and continuous-learning
+        skills</strong>. I enjoy working in environments where I can apply
+        my technical knowledge to real-world challenges while learning
+        from experienced teams.
       </p>
 
+
+      <p>
+        I am particularly interested in opportunities where I can continue
+        growing in <strong>software development, machine learning,
+        data analysis, IT support, and other technology-related areas</strong>,
+        while contributing to meaningful projects and building solutions
+        that create practical value.
+      </p>
+
+
+      <p class="about-closing">
+        I am always open to learning, taking on new challenges, and
+        improving my technical and professional skills.
+      </p>
 
     </div>
 
