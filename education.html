@@ -51,128 +51,243 @@
     gtag('config', 'UA-126939217-2');
   </script>
 
-  <!-- Education Page Styles -->
+  <!-- ============================= -->
+
+  <!-- EDUCATION PAGE STYLES -->
+
+  <!-- ============================= -->
 
   <style>
+
+    /* Main Slider */
 
     .education-slider {
       position: relative;
       width: 100%;
-      max-width: 1100px;
+      max-width: 1050px;
       margin: 0 auto;
-      padding: 20px 70px 60px 70px;
+      padding: 20px 65px 50px 65px;
     }
+
+
+    /* Individual Slides */
 
     .education-slide {
       display: none;
-      animation: fadeIn 0.4s ease-in-out;
+      animation: educationFade 0.4s ease-in-out;
     }
 
     .education-slide.active {
       display: block;
     }
 
-    @keyframes fadeIn {
+
+    @keyframes educationFade {
+
       from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(8px);
       }
 
       to {
         opacity: 1;
         transform: translateY(0);
       }
+
     }
 
+
+    /* Main Card */
+
     .education-card {
-      min-height: 420px;
       margin: 0;
+      min-height: 450px;
     }
 
     .education-card .card-content {
       padding: 35px;
     }
 
+
+    /* Main Icon */
+
     .education-icon {
-      width: 75px;
-      height: 75px;
-      line-height: 75px;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
       text-align: center;
       border-radius: 50%;
       background: #26a69a;
-      color: #ffffff;
-      font-size: 32px;
-      margin-bottom: 20px;
+      color: white;
+      font-size: 30px;
+      margin-bottom: 18px;
     }
 
-    .education-card .card-title {
-      font-size: 28px;
+
+    /* Main Heading */
+
+    .education-heading {
+      display: block;
+      font-size: 27px;
       font-weight: 500;
-      margin-bottom: 8px;
+      margin-bottom: 25px;
     }
 
-    .education-card h5 {
-      margin-top: 25px;
-      font-size: 20px;
+
+    /* University / School */
+
+    .education-institution {
+      font-size: 22px;
+      margin-top: 15px;
+      margin-bottom: 5px;
     }
 
-    .education-card ul {
+    .education-location {
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+
+    /* Coursework */
+
+    .coursework-list {
+      margin-top: 10px;
       padding-left: 25px;
     }
 
-    .education-card li {
+    .coursework-list li {
       list-style-type: disc;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
 
-    /* Arrow Buttons */
+
+    /* Divider */
+
+    .education-divider {
+      border: 0;
+      border-top: 1px solid #eeeeee;
+      margin: 28px 0;
+    }
+
+
+    /* ============================= */
+    /* CERTIFICATIONS */
+    /* ============================= */
+
+    .certifications-container {
+      margin-top: 5px;
+    }
+
+
+    .certification-item {
+      padding: 22px 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid #eeeeee;
+      min-height: 150px;
+    }
+
+
+    .certification-item:last-child {
+      border-bottom: none;
+    }
+
+
+    .certification-icon {
+      float: left;
+      width: 48px;
+      font-size: 27px;
+      text-align: center;
+      margin-right: 15px;
+      color: #26a69a;
+    }
+
+
+    .certification-content {
+      overflow: hidden;
+    }
+
+
+    .certification-content h5 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+
+    .certification-content p {
+      margin-top: 5px;
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+
+    .certification-provider {
+      color: #795548;
+      font-size: 14px;
+    }
+
+
+    /* ============================= */
+    /* ARROWS */
+    /* ============================= */
 
     .education-arrow {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 52px;
-      height: 52px;
-      line-height: 52px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
       text-align: center;
       border-radius: 50%;
       background: #26a69a;
-      color: #ffffff;
-      font-size: 22px;
+      color: white;
+      font-size: 20px;
       cursor: pointer;
-      z-index: 10;
-      transition: all 0.2s ease;
+      z-index: 20;
       box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+      transition: all 0.2s ease;
     }
+
 
     .education-arrow:hover {
       background: #00897b;
       transform: translateY(-50%) scale(1.05);
     }
 
+
     .education-arrow.left {
       left: 5px;
     }
+
 
     .education-arrow.right {
       right: 5px;
     }
 
-    /* Counter */
+
+    /* ============================= */
+    /* COUNTER */
+    /* ============================= */
 
     .education-counter {
       text-align: center;
-      margin-top: 20px;
-      color: #777;
-      font-size: 15px;
+      margin-top: 18px;
+      color: #777777;
+      font-size: 14px;
     }
 
-    /* Dots */
+
+    /* ============================= */
+    /* DOTS */
+    /* ============================= */
 
     .education-dots {
       text-align: center;
-      margin-top: 12px;
+      margin-top: 10px;
     }
+
 
     .education-dot {
       display: inline-block;
@@ -185,44 +300,16 @@
       transition: all 0.2s ease;
     }
 
+
     .education-dot.active {
       background: #26a69a;
       transform: scale(1.2);
     }
 
-    /* Certification Grid */
 
-    .certification-grid {
-      margin-top: 10px;
-    }
-
-    .certification-box {
-      min-height: 230px;
-      margin-bottom: 20px;
-      padding: 25px;
-      border: 1px solid #eeeeee;
-      border-radius: 4px;
-      background: #ffffff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    }
-
-    .certification-box h5 {
-      margin-top: 0;
-      font-size: 19px;
-      line-height: 1.4;
-    }
-
-    .certification-box .cert-icon {
-      font-size: 30px;
-      margin-bottom: 12px;
-      color: #26a69a;
-    }
-
-    .certification-box p {
-      line-height: 1.6;
-    }
-
-    /* Mobile */
+    /* ============================= */
+    /* MOBILE */
+    /* ============================= */
 
     @media only screen and (max-width: 600px) {
 
@@ -231,35 +318,47 @@
         padding-right: 45px;
       }
 
+
       .education-card {
         min-height: auto;
       }
 
+
       .education-card .card-content {
-        padding: 25px;
+        padding: 25px 20px;
       }
 
-      .education-card .card-title {
+
+      .education-heading {
         font-size: 23px;
       }
 
-      .education-arrow {
-        width: 42px;
-        height: 42px;
-        line-height: 42px;
-        font-size: 18px;
+
+      .education-institution {
+        font-size: 20px;
       }
+
+
+      .education-arrow {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+      }
+
 
       .education-arrow.left {
         left: 0;
       }
 
+
       .education-arrow.right {
         right: 0;
       }
 
-      .certification-box {
-        min-height: auto;
+
+      .certification-item {
+        padding: 18px 5px;
       }
 
     }
@@ -270,15 +369,23 @@
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
+  <!-- ============================= -->
+
+  <!-- GOOGLE TAG MANAGER -->
+
+  <!-- ============================= -->
 
   <noscript>
-    <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-      height="0"
-      width="0"
-      style="display:none;visibility:hidden">
-    </iframe>
+
+```
+<iframe
+  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0"
+  width="0"
+  style="display:none;visibility:hidden">
+</iframe>
+```
+
   </noscript>
 
   <!-- ============================= -->
@@ -291,6 +398,9 @@
 
 ```
 <ul class="side-nav fixed section table-of-contents">
+
+
+  <!-- PROFILE -->
 
   <li class="logo">
 
@@ -310,6 +420,8 @@
   </li>
 
 
+  <!-- ABOUT -->
+
   <li class="bold">
 
     <a
@@ -325,6 +437,8 @@
 
   </li>
 
+
+  <!-- EXPERIENCE -->
 
   <li class="bold">
 
@@ -342,6 +456,8 @@
   </li>
 
 
+  <!-- PROJECTS -->
+
   <li class="bold">
 
     <a
@@ -357,6 +473,8 @@
 
   </li>
 
+
+  <!-- SKILLS -->
 
   <li class="bold">
 
@@ -374,6 +492,8 @@
   </li>
 
 
+  <!-- EDUCATION -->
+
   <li class="bold">
 
     <a
@@ -389,6 +509,8 @@
 
   </li>
 
+
+  <!-- CONTACT -->
 
   <li class="bold">
 
@@ -406,6 +528,8 @@
   </li>
 
 
+  <!-- RESUME -->
+
   <li class="bold">
 
     <a
@@ -422,6 +546,7 @@
 
   </li>
 
+
 </ul>
 ```
 
@@ -429,7 +554,7 @@
 
   <!-- ============================= -->
 
-  <!-- MOBILE NAVIGATION -->
+  <!-- MOBILE TOP NAVIGATION -->
 
   <!-- ============================= -->
 
@@ -459,21 +584,30 @@
 
   </a>
 
+
   <span class="black-text">
+
     Software Developer
+
   </span>
+
 
 </div>
 ```
 
   </nav>
 
+  <!-- ============================= -->
+
   <!-- MOBILE SIDE MENU -->
+
+  <!-- ============================= -->
 
   <nav class="hide-on-large only">
 
 ```
 <ul id="slide-out" class="side-nav">
+
 
   <li class="bold">
 
@@ -580,6 +714,7 @@
 
   </li>
 
+
 </ul>
 ```
 
@@ -587,7 +722,7 @@
 
   <!-- ============================= -->
 
-  <!-- MAIN -->
+  <!-- MAIN CONTENT -->
 
   <!-- ============================= -->
 
@@ -598,7 +733,9 @@
 
 
   <h3 class="page-title white-text teal">
+
     Education & Certifications
+
   </h3>
 
 
@@ -606,7 +743,7 @@
 
 
     <!-- ============================= -->
-    <!-- SLIDER -->
+    <!-- EDUCATION SLIDER -->
     <!-- ============================= -->
 
     <div class="education-slider">
@@ -619,24 +756,30 @@
         id="educationPrev"
         role="button"
         tabindex="0"
-        aria-label="Previous education section">
+        aria-label="Previous">
 
         <i class="fa fa-chevron-left"></i>
 
       </div>
 
 
+
       <!-- ============================= -->
       <!-- SLIDE 1: EDUCATION -->
       <!-- ============================= -->
 
-      <div class="education-slide active" data-slide="0">
+      <div
+        class="education-slide active"
+        data-slide="0">
 
 
         <div class="card education-card">
 
+
           <div class="card-content">
 
+
+            <!-- ICON -->
 
             <div class="education-icon">
 
@@ -645,7 +788,9 @@
             </div>
 
 
-            <span class="card-title teal-text">
+            <!-- TITLE -->
+
+            <span class="education-heading teal-text">
 
               Education
 
@@ -654,14 +799,14 @@
 
             <!-- UNIVERSITY -->
 
-            <h5>
+            <h5 class="education-institution">
 
               Laikipia University
 
             </h5>
 
 
-            <p class="brown-text">
+            <p class="brown-text education-location">
 
               Nyahururu, Kenya
 
@@ -695,7 +840,7 @@
             </p>
 
 
-            <ul>
+            <ul class="coursework-list">
 
               <li>
                 Internet of Things (IoT)
@@ -712,19 +857,19 @@
             </ul>
 
 
-            <hr>
+            <hr class="education-divider">
 
 
             <!-- SECONDARY SCHOOL -->
 
-            <h5>
+            <h5 class="education-institution">
 
               Ramba Secondary School
 
             </h5>
 
 
-            <p class="brown-text">
+            <p class="brown-text education-location">
 
               Siaya, Kenya
 
@@ -747,6 +892,7 @@
 
             </p>
 
+
           </div>
 
         </div>
@@ -755,17 +901,23 @@
       </div>
 
 
+
       <!-- ============================= -->
       <!-- SLIDE 2: CERTIFICATIONS -->
       <!-- ============================= -->
 
-      <div class="education-slide" data-slide="1">
+      <div
+        class="education-slide"
+        data-slide="1">
 
 
         <div class="card education-card">
 
+
           <div class="card-content">
 
+
+            <!-- ICON -->
 
             <div class="education-icon">
 
@@ -774,30 +926,34 @@
             </div>
 
 
-            <span class="card-title teal-text">
+            <!-- TITLE -->
+
+            <span class="education-heading teal-text">
 
               Certifications & Professional Training
 
             </span>
 
 
-            <div class="row certification-grid">
+
+            <div class="certifications-container">
 
 
               <!-- ============================= -->
-              <!-- PLP -->
+              <!-- SOFTWARE DEVELOPMENT -->
               <!-- ============================= -->
 
-              <div class="col s12 m6">
-
-                <div class="certification-box">
+              <div class="certification-item">
 
 
-                  <div class="cert-icon">
+                <div class="certification-icon">
 
-                    <i class="fa fa-code"></i>
+                  <i class="fa fa-code"></i>
 
-                  </div>
+                </div>
+
+
+                <div class="certification-content">
 
 
                   <h5>
@@ -809,7 +965,9 @@
 
                   <p>
 
-                    <b>PLP Certificate of Achievement</b>
+                    <b>
+                      PLP Certificate of Achievement
+                    </b>
 
                   </p>
 
@@ -817,13 +975,12 @@
                   <p>
 
                     Completed a 16-week Software Development
-                    training program covering software development
-                    concepts and practical programming skills.
+                    training program.
 
                   </p>
 
 
-                  <p class="brown-text">
+                  <p class="certification-provider">
 
                     Software Development
 
@@ -832,23 +989,26 @@
 
                 </div>
 
+
               </div>
+
 
 
               <!-- ============================= -->
               <!-- ORACLE -->
               <!-- ============================= -->
 
-              <div class="col s12 m6">
-
-                <div class="certification-box">
+              <div class="certification-item">
 
 
-                  <div class="cert-icon">
+                <div class="certification-icon">
 
-                    <i class="fa fa-cloud"></i>
+                  <i class="fa fa-cloud"></i>
 
-                  </div>
+                </div>
+
+
+                <div class="certification-content">
 
 
                   <h5>
@@ -868,13 +1028,12 @@
                   <p>
 
                     Certification covering foundational concepts
-                    in artificial intelligence and cloud
-                    infrastructure.
+                    in artificial intelligence and cloud infrastructure.
 
                   </p>
 
 
-                  <p class="brown-text">
+                  <p class="certification-provider">
 
                     Artificial Intelligence & Cloud
 
@@ -883,23 +1042,26 @@
 
                 </div>
 
+
               </div>
+
 
 
               <!-- ============================= -->
               <!-- BRIGHTERMONDAY -->
               <!-- ============================= -->
 
-              <div class="col s12 m6">
-
-                <div class="certification-box">
+              <div class="certification-item">
 
 
-                  <div class="cert-icon">
+                <div class="certification-icon">
 
-                    <i class="fa fa-users"></i>
+                  <i class="fa fa-users"></i>
 
-                  </div>
+                </div>
+
+
+                <div class="certification-content">
 
 
                   <h5>
@@ -919,13 +1081,12 @@
                   <p>
 
                     Professional training covering communication,
-                    teamwork, workplace skills and career
-                    development.
+                    teamwork, workplace skills and career development.
 
                   </p>
 
 
-                  <p class="brown-text">
+                  <p class="certification-provider">
 
                     Professional Development
 
@@ -934,23 +1095,26 @@
 
                 </div>
 
+
               </div>
+
 
 
               <!-- ============================= -->
               <!-- IBM SKILLSBUILD -->
               <!-- ============================= -->
 
-              <div class="col s12 m6">
-
-                <div class="certification-box">
+              <div class="certification-item">
 
 
-                  <div class="cert-icon">
+                <div class="certification-icon">
 
-                    <i class="fa fa-desktop"></i>
+                  <i class="fa fa-desktop"></i>
 
-                  </div>
+                </div>
+
+
+                <div class="certification-content">
 
 
                   <h5>
@@ -970,13 +1134,12 @@
                   <p>
 
                     Training covering foundational information
-                    technology concepts and essential IT
-                    knowledge.
+                    technology concepts and essential IT knowledge.
 
                   </p>
 
 
-                  <p class="brown-text">
+                  <p class="certification-provider">
 
                     Information Technology
 
@@ -984,6 +1147,7 @@
 
 
                 </div>
+
 
               </div>
 
@@ -993,10 +1157,12 @@
 
           </div>
 
+
         </div>
 
 
       </div>
+
 
 
       <!-- RIGHT ARROW -->
@@ -1006,11 +1172,12 @@
         id="educationNext"
         role="button"
         tabindex="0"
-        aria-label="Next education section">
+        aria-label="Next">
 
         <i class="fa fa-chevron-right"></i>
 
       </div>
+
 
 
       <!-- COUNTER -->
@@ -1018,27 +1185,33 @@
       <div class="education-counter">
 
         <span id="educationCounter">
+
           1 / 2
+
         </span>
 
       </div>
+
 
 
       <!-- DOTS -->
 
       <div class="education-dots">
 
+
         <span
           class="education-dot active"
           data-slide="0"
-          aria-label="Show Education">
+          aria-label="Education">
         </span>
+
 
         <span
           class="education-dot"
           data-slide="1"
-          aria-label="Show Certifications">
+          aria-label="Certifications">
         </span>
+
 
       </div>
 
@@ -1056,11 +1229,9 @@
 
   <!-- ============================= -->
 
-  <!-- JAVASCRIPT -->
+  <!-- TYPED.JS -->
 
   <!-- ============================= -->
-
-  <!-- Typed.js -->
 
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
@@ -1088,13 +1259,21 @@
 
   </script>
 
-  <!-- jQuery -->
+  <!-- ============================= -->
+
+  <!-- JQUERY -->
+
+  <!-- ============================= -->
 
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
   </script>
 
-  <!-- Materialize JavaScript -->
+  <!-- ============================= -->
+
+  <!-- MATERIALIZE JAVASCRIPT -->
+
+  <!-- ============================= -->
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
@@ -1102,7 +1281,7 @@
 
   <!-- ============================= -->
 
-  <!-- EDUCATION SLIDER SCRIPT -->
+  <!-- PAGE JAVASCRIPT -->
 
   <!-- ============================= -->
 
@@ -1127,7 +1306,10 @@
       });
 
 
-      /* Education Slider */
+
+      /* ============================= */
+      /* EDUCATION SLIDER */
+      /* ============================= */
 
       var currentSlide = 0;
 
@@ -1136,6 +1318,7 @@
       var dots = $(".education-dot");
 
       var totalSlides = slides.length;
+
 
 
       function showEducationSlide(index) {
@@ -1169,33 +1352,40 @@
 
 
         $("#educationCounter").text(
-          (currentSlide + 1) + " / " + totalSlides
+
+          (currentSlide + 1) +
+          " / " +
+          totalSlides
+
         );
 
       }
 
 
-      /* Next */
 
-      $("#educationNext").on("click", function () {
+      /* NEXT BUTTON */
+
+      $("#educationNext").click(function () {
 
         showEducationSlide(currentSlide + 1);
 
       });
 
 
-      /* Previous */
 
-      $("#educationPrev").on("click", function () {
+      /* PREVIOUS BUTTON */
+
+      $("#educationPrev").click(function () {
 
         showEducationSlide(currentSlide - 1);
 
       });
 
 
-      /* Dots */
 
-      $(".education-dot").on("click", function () {
+      /* DOTS */
+
+      $(".education-dot").click(function () {
 
         var slideNumber = parseInt(
           $(this).attr("data-slide")
@@ -1206,15 +1396,18 @@
       });
 
 
-      /* Keyboard arrows */
 
-      $(document).on("keydown", function (event) {
+      /* KEYBOARD */
+
+      $(document).keydown(function (event) {
+
 
         if (event.key === "ArrowRight") {
 
           showEducationSlide(currentSlide + 1);
 
         }
+
 
         if (event.key === "ArrowLeft") {
 
@@ -1225,44 +1418,56 @@
       });
 
 
-      /* Touch swipe */
+
+      /* ============================= */
+      /* TOUCH SWIPE */
+      /* ============================= */
 
       var touchStartX = 0;
 
       var touchEndX = 0;
 
 
-      $(".education-slider").on("touchstart", function (event) {
+      $(".education-slider").on(
+        "touchstart",
+        function (event) {
 
-        touchStartX = event.originalEvent.touches[0].clientX;
+          touchStartX =
+            event.originalEvent.touches[0].clientX;
 
-      });
-
-
-      $(".education-slider").on("touchend", function (event) {
-
-        touchEndX = event.originalEvent.changedTouches[0].clientX;
-
-
-        var difference = touchStartX - touchEndX;
+        }
+      );
 
 
-        if (Math.abs(difference) > 50) {
+      $(".education-slider").on(
+        "touchend",
+        function (event) {
+
+          touchEndX =
+            event.originalEvent.changedTouches[0].clientX;
 
 
-          if (difference > 0) {
+          var difference =
+            touchStartX - touchEndX;
 
-            showEducationSlide(currentSlide + 1);
 
-          } else {
+          if (Math.abs(difference) > 50) {
 
-            showEducationSlide(currentSlide - 1);
+
+            if (difference > 0) {
+
+              showEducationSlide(currentSlide + 1);
+
+            } else {
+
+              showEducationSlide(currentSlide - 1);
+
+            }
 
           }
 
         }
-
-      });
+      );
 
 
     });
