@@ -1,206 +1,512 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+i:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PGZH8HT');
+  </script>
+
   <!-- End Google Tag Manager -->
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Lawrance Tala | Software Developer</title>
+  <!-- Materialize CSS -->
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+  <!-- Custom Styles -->
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <title>Contact | Lawrance Tala</title>
+
+  <!-- Google Analytics -->
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
+    gtag('js', new Date());
     gtag('config', 'UA-126939217-2');
   </script>
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+  <!-- Google Site Verification -->
+
+<meta name="google-site-verification"
+ content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    
-    <!-- Navigation Menu-->
-    <!-- Nav class 1 -->
- <nav>
+
+  <!-- Google Tag Manager (noscript) -->
+
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <!-- ================= DESKTOP NAVIGATION ================= -->
+
+  <nav>
     <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="index.html"
-          class="brand-logo grey-blue-text">
-          <img src="assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="about.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="experience.html"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="projects.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="skills.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="education.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="contact.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Open Lawrance Tala resume in a new tab" href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-      
-    </ul>
-  </nav>
-  
-    <!-- Nav class 2 -->
-    <nav class="hide-on-large only trigger z-depth-1">
-      <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-        class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      <div class="name-title">
-        <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Lawrance Tala </a><span class="black-text">Software Developer</span>
-      </div>
-    </nav>
-  
-    <!-- Nav class 3 -->
-    <nav class="hide-on-large only">
-      <ul id="slide-out" class="side-nav">
-        <li class="bold">
-          <a aria-label="Navigate to the About section" href="about.html" class="waves-effect waves-dark teal-text"><i
-              class="mdi-social-person small"></i><span>About</span></a>
-        </li>
-        <li class="bold">
-          <a aria-label="Navigate to the Experience section" href="experience.html"
-            class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-trending-up small"></i><span>Experience</span></a>
-        </li>
-        <li class="bold">
-          <a aria-label="Navigate to the Projects section" href="projects.html" class="waves-effect waves-dark teal-text"><i
-              class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-        </li>
-        <li class="bold">
-          <a aria-label="Navigate to the Skills section" href="skills.html" class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-assessment small"></i><span>Skills</span></a>
-        </li>
-  
-        <li class="bold">
-          <a aria-label="Navigate to the Education section" href="education.html" class="waves-effect waves-dark teal-text"><i
-              class="mdi-social-school small"></i><span>Education</span></a>
-        </li>
-        
-        <li class="bold">
-          <a aria-label="Navigate to the Contact section" href="#" class="waves-effect waves-dark teal-text"><i
-              class="mdi-content-mail small"></i><span>Contact</span></a>
-        </li>
-        
-        <li class="bold">
-          <a aria-label="Open Lawrance Tala resume in a new tab" href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf" target="_blank"
-            class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-        </li>
-      
-      </ul>
-    </nav>
-    <main>
-<!-- Eight Section: Contact -->
- <section id="contact" class="section scrollspy full-height">
-    <h3 class="page-title white-text teal">Contact</h3>
-    <div class="container">
-      <p>
-        <a aria-label="Call Lawrance Tala" data-position="top" data-tooltip="Call Lawrance Tala"
-          class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-            aria-label="Call Lawrance Tala">+254112888507</a></a>
-      </p>
-      <p>
-        <a aria-label="Email Lawrance Tala" href="mailto:lawrancetala@gmail.com" target="_blank" data-position="top"
-          data-tooltip="Email Lawrance Tala" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-            class="fa fa-envelope"></i><a aria-label="Email Lawrance Tala" href="mailto:lawrancetala@gmail.com"
-            class="hoverline">lawrancetala@gmail.com</a></a>
-      </p>
-      <p>
-        <a aria-label="View Lawrance Tala on GitHub" href="https://github.com/LawranceTala" target="_blank"
-          data-position="top" data-tooltip="View Lawrance Tala on GitHub"
-          class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-            aria-label="Lawrance Tala on Github" href="https://github.com/LawranceTala" class="hoverline"
-            target="_blank">github.com/LawranceTala</a></a>
-      </p>
+```
+  <!-- Profile Image - NOT CLICKABLE -->
+  <li class="logo">
+    <div id="logo-container" class="brand-logo center-align">
+      <img
+        src="assets/img/passport-new.jpg"
+        class="circle img-responsive profile-pic"
+        alt="Lawrance Tala Ogaywa"
+        style="width:120px;height:120px;object-fit:cover;margin-top:20px;cursor:default;">
     </div>
-  </section>
-</main>
+  </li>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Machine learning enthuasist", "Developer", "Fast Learner"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+  <li class="bold">
+    <a href="about.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-social-person small"></i>
+      <span>About</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="experience.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-action-trending-up small"></i>
+      <span>Experience</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="projects.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-av-my-library-books small"></i>
+      <span>Projects</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="skills.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-action-assessment small"></i>
+      <span>Skills</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="education.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-social-school small"></i>
+      <span>Education</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="contact.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-content-mail small"></i>
+      <span>Contact</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a
+      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+      target="_blank"
+      class="waves-effect waves-dark teal-text">
+      <i class="mdi-file-folder-open small"></i>
+      <span>Resume</span>
+    </a>
+  </li>
+
+</ul>
+```
+
+  </nav>
+
+  <!-- ================= MOBILE NAVIGATION ================= -->
+
+  <nav class="hide-on-large-only trigger z-depth-1">
+
+```
+<a
+  aria-label="Toggle visibility of the mobile navbar"
+  href="#"
+  data-activates="slide-out"
+  class="button-collapse">
+  <i class="mdi-navigation-menu"></i>
+</a>
+
+<div class="name-title">
+  <a
+    id="name"
+    aria-label="Navigate to the beginning of the page"
+    href="index.html"
+    class="teal-text">
+    Lawrance Tala
+  </a>
+
+  <span class="black-text">
+    Software Developer
+  </span>
+</div>
+```
+
+  </nav>
+
+  <!-- Mobile Side Navigation -->
+
+  <nav class="hide-on-large-only">
+
+```
+<ul id="slide-out" class="side-nav">
+
+  <li class="bold">
+    <a href="about.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-social-person small"></i>
+      <span>About</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="experience.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-action-trending-up small"></i>
+      <span>Experience</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="projects.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-av-my-library-books small"></i>
+      <span>Projects</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="skills.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-action-assessment small"></i>
+      <span>Skills</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="education.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-social-school small"></i>
+      <span>Education</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a href="contact.html" class="waves-effect waves-dark teal-text">
+      <i class="mdi-content-mail small"></i>
+      <span>Contact</span>
+    </a>
+  </li>
+
+  <li class="bold">
+    <a
+      href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
+      target="_blank"
+      class="waves-effect waves-dark teal-text">
+      <i class="mdi-file-folder-open small"></i>
+      <span>Resume</span>
+    </a>
+  </li>
+
+</ul>
+```
+
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+
+  <main>
+
+```
+<section id="contact" class="section">
+
+  <h3 class="page-title white-text teal">
+    Contact
+  </h3>
+
+  <div class="container">
+
+    <!-- Contact Introduction -->
+    <div class="card">
+
+      <div class="card-content">
+
+        <span class="card-title teal-text">
+          <i class="fa fa-envelope"></i>
+          Get In Touch
+        </span>
+
+        <p>
+          I'm open to opportunities in software development,
+          machine learning, IT support, data, and other
+          technology-related roles.
+        </p>
+
+        <p>
+          Feel free to reach out through any of the contact
+          options below.
+        </p>
+
+      </div>
+
+    </div>
 
 
-  <!-- jQuery-->
+    <!-- Contact Information -->
+
+    <div class="row">
+
+      <!-- Phone -->
+      <div class="col s12 m6">
+
+        <div class="card contact-card">
+
+          <div class="card-content">
+
+            <span class="card-title teal-text">
+              <i class="fa fa-phone"></i>
+              Phone
+            </span>
+
+            <p>
+              <a href="tel:+254112888507" class="teal-text">
+                +254 112 888 507
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Email -->
+      <div class="col s12 m6">
+
+        <div class="card contact-card">
+
+          <div class="card-content">
+
+            <span class="card-title teal-text">
+              <i class="fa fa-envelope"></i>
+              Email
+            </span>
+
+            <p>
+              <a
+                href="mailto:lawrancetala@gmail.com"
+                class="teal-text">
+                lawrancetala@gmail.com
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- GitHub -->
+      <div class="col s12 m6">
+
+        <div class="card contact-card">
+
+          <div class="card-content">
+
+            <span class="card-title teal-text">
+              <i class="fa fa-github"></i>
+              GitHub
+            </span>
+
+            <p>
+              <a
+                href="https://github.com/LawranceTala"
+                target="_blank"
+                class="teal-text">
+                github.com/LawranceTala
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- LinkedIn -->
+      <div class="col s12 m6">
+
+        <div class="card contact-card">
+
+          <div class="card-content">
+
+            <span class="card-title teal-text">
+              <i class="fa fa-linkedin"></i>
+              LinkedIn
+            </span>
+
+            <p>
+              <a
+                href="https://www.linkedin.com/in/lawrance-tala/"
+                target="_blank"
+                class="teal-text">
+                linkedin.com/in/lawrance-tala
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Simple Message Form -->
+
+    <div class="card">
+
+      <div class="card-content">
+
+        <span class="card-title teal-text">
+          <i class="fa fa-paper-plane"></i>
+          Send Me a Message
+        </span>
+
+        <form action="mailto:lawrancetala@gmail.com"
+          method="post"
+          enctype="text/plain">
+
+          <div class="row">
+
+            <div class="input-field col s12 m6">
+
+              <input
+                id="name"
+                name="Name"
+                type="text"
+                required>
+
+              <label for="name">
+                Your Name
+              </label>
+
+            </div>
+
+
+            <div class="input-field col s12 m6">
+
+              <input
+                id="email"
+                name="Email"
+                type="email"
+                required>
+
+              <label for="email">
+                Your Email
+              </label>
+
+            </div>
+
+
+            <div class="input-field col s12">
+
+              <input
+                id="subject"
+                name="Subject"
+                type="text"
+                required>
+
+              <label for="subject">
+                Subject
+              </label>
+
+            </div>
+
+
+            <div class="input-field col s12">
+
+              <textarea
+                id="message"
+                name="Message"
+                class="materialize-textarea"
+                required></textarea>
+
+              <label for="message">
+                Your Message
+              </label>
+
+            </div>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn waves-effect waves-light teal">
+
+            Send Message
+            <i class="fa fa-paper-plane right"></i>
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+```
+
+  </main>
+
+  <!-- jQuery -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <!-- Materialize - Compiled and minified JavaScript-->
+  <!-- Materialize JavaScript -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+
   <script>
-    // Materialize - Initializers
     $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
+
       $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+        menuWidth: 190,
+        edge: "left",
+        closeOnClick: true
+      });
+
+    });
   </script>
 
 </body>
 
-
-
-
-
-
+</html>
