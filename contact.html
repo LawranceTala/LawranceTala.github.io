@@ -3,16 +3,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Contact | Lawrance Tala</title>
 
   <!-- Google Tag Manager -->
 
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+i:'';j.async=true;j.src=
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PGZH8HT');
   </script>
@@ -22,25 +25,31 @@
   <!-- Materialize CSS -->
 
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
 
   <!-- Font Awesome -->
 
   <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Custom Styles -->
+  <!-- Google Material Icons -->
 
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 
-  <title>Contact | Lawrance Tala</title>
+  <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Google Analytics -->
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2">
+  </script>
 
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -52,7 +61,269 @@
   <!-- Google Site Verification -->
 
 <meta name="google-site-verification"
- content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+ content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84">
+
+  <style>
+
+    /* =========================
+       SIDEBAR
+    ========================= */
+
+    .side-nav.fixed {
+      width: 190px;
+    }
+
+    .profile-pic {
+      cursor: default !important;
+      pointer-events: none;
+    }
+
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    main {
+      min-height: 100vh;
+    }
+
+
+    /* =========================
+       CONTACT SECTION
+    ========================= */
+
+    #contact {
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+
+    /* =========================
+       PAGE TITLE
+    ========================= */
+
+    .page-title {
+      margin: 0 0 35px 0;
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+
+    /* =========================
+       ONE CLEAN CARD
+    ========================= */
+
+    .contact-card {
+      max-width: 950px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 16px;
+      padding: 40px 50px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* =========================
+       CARD TITLE
+    ========================= */
+
+    .contact-card-title {
+      text-align: center;
+      color: #004d40;
+      font-size: 30px;
+      font-weight: 500;
+      margin: 0 0 20px;
+    }
+
+    .contact-card-title i {
+      margin-right: 8px;
+    }
+
+
+    /* =========================
+       INTRODUCTION
+    ========================= */
+
+    .contact-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    .contact-intro p {
+      color: #444;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       CONTACT DETAILS
+    ========================= */
+
+    .contact-details {
+      text-align: center;
+      margin: 25px 0 35px;
+      padding: 20px 0;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .contact-details p {
+      margin: 12px 0;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .contact-details i {
+      color: #00796b;
+      width: 25px;
+      margin-right: 5px;
+    }
+
+    .contact-details a {
+      color: #00695c;
+      transition: 0.3s;
+    }
+
+    .contact-details a:hover {
+      color: #26a69a;
+    }
+
+
+    /* =========================
+       FORM TITLE
+    ========================= */
+
+    .form-title {
+      color: #00695c;
+      font-size: 21px;
+      font-weight: 500;
+      margin: 25px 0 20px;
+      text-align: center;
+    }
+
+    .form-title i {
+      margin-right: 7px;
+    }
+
+
+    /* =========================
+       FORM INPUTS
+    ========================= */
+
+    .input-field input,
+    .input-field textarea {
+      color: #333;
+    }
+
+    .input-field label {
+      color: #777;
+    }
+
+    .input-field input:focus,
+    .input-field textarea:focus {
+      border-bottom: 1px solid #00796b;
+      box-shadow: 0 1px 0 0 #00796b;
+    }
+
+    .input-field input:focus + label,
+    .input-field textarea:focus + label {
+      color: #00796b;
+    }
+
+
+    /* =========================
+       SEND BUTTON
+    ========================= */
+
+    .send-button {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .send-button .btn {
+      border-radius: 25px;
+      padding: 0 28px;
+      background-color: #00695c;
+    }
+
+    .send-button .btn:hover {
+      background-color: #004d40;
+    }
+
+
+    /* =========================
+       SOCIAL LINKS
+    ========================= */
+
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 9px;
+      font-size: 24px;
+      color: #004d40;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #26a69a;
+      transform: translateY(-3px);
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 992px) {
+
+      .contact-card {
+        margin: 0 15px;
+        padding: 35px 25px;
+      }
+
+      .page-title {
+        font-size: 28px;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      #contact {
+        padding-bottom: 30px;
+      }
+
+      .contact-card {
+        margin: 0 10px;
+        padding: 30px 18px;
+        border-radius: 14px;
+      }
+
+      .contact-card-title {
+        font-size: 25px;
+      }
+
+      .contact-intro p {
+        font-size: 15px;
+      }
+
+      .contact-details p {
+        font-size: 14px;
+        word-break: break-word;
+      }
+
+    }
+
+  </style>
 
 </head>
 
@@ -61,77 +332,179 @@
   <!-- Google Tag Manager (noscript) -->
 
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-
-  <!-- ================= DESKTOP NAVIGATION ================= -->
-
-  <nav>
-    <ul class="side-nav fixed section table-of-contents">
 
 ```
+<iframe
+  src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0"
+  width="0"
+  style="display:none;visibility:hidden">
+</iframe>
+```
+
+  </noscript>
+
+  <!-- =========================
+       DESKTOP NAVIGATION
+  ========================= -->
+
+  <nav>
+
+```
+<ul class="side-nav fixed section table-of-contents">
+
+
   <!-- Profile Image - NOT CLICKABLE -->
+
   <li class="logo">
-    <div id="logo-container" class="brand-logo center-align">
+
+    <div
+      id="logo-container"
+      class="brand-logo center-align">
+
       <img
         src="assets/img/passport-new.jpg"
         class="circle img-responsive profile-pic"
         alt="Lawrance Tala Ogaywa"
-        style="width:120px;height:120px;object-fit:cover;margin-top:20px;cursor:default;">
+        style="
+          width:120px;
+          height:120px;
+          object-fit:cover;
+          margin-top:20px;
+        "
+      >
+
     </div>
+
   </li>
 
+
+  <!-- Home -->
+
   <li class="bold">
-    <a href="about.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-person small"></i>
+
+    <a
+      href="index.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="fa fa-home"></i>
+      <span>Home</span>
+
+    </a>
+
+  </li>
+
+
+  <!-- About -->
+
+  <li class="bold">
+
+    <a
+      href="about.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="fa fa-user"></i>
       <span>About</span>
+
     </a>
+
   </li>
 
+
+  <!-- Experience -->
+
   <li class="bold">
-    <a href="experience.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-trending-up small"></i>
+
+    <a
+      href="experience.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="fa fa-briefcase"></i>
       <span>Experience</span>
+
     </a>
+
   </li>
 
+
+  <!-- Projects -->
+
   <li class="bold">
-    <a href="projects.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-av-my-library-books small"></i>
+
+    <a
+      href="projects.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="fa fa-code"></i>
       <span>Projects</span>
+
     </a>
+
   </li>
 
+
+  <!-- Skills -->
+
   <li class="bold">
-    <a href="skills.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-assessment small"></i>
+
+    <a
+      href="skills.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="fa fa-cogs"></i>
       <span>Skills</span>
+
     </a>
+
   </li>
 
+
+  <!-- Education -->
+
   <li class="bold">
-    <a href="education.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-school small"></i>
+
+    <a
+      href="education.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="fa fa-graduation-cap"></i>
       <span>Education</span>
+
     </a>
+
   </li>
 
+
+  <!-- Contact -->
+
   <li class="bold">
-    <a href="contact.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-content-mail small"></i>
+
+    <a
+      href="contact.html"
+      class="waves-effect waves-dark teal-text">
+
+      <i class="fa fa-envelope"></i>
       <span>Contact</span>
+
     </a>
+
   </li>
 
+
+  <!-- Resume -->
+
   <li class="bold">
+
     <a
       href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
       target="_blank"
       class="waves-effect waves-dark teal-text">
-      <i class="mdi-file-folder-open small"></i>
+
+      <i class="fa fa-file-text"></i>
       <span>Resume</span>
+
     </a>
+
   </li>
 
 </ul>
@@ -139,93 +512,150 @@
 
   </nav>
 
-  <!-- ================= MOBILE NAVIGATION ================= -->
+  <!-- =========================
+       MOBILE NAVIGATION
+  ========================= -->
 
   <nav class="hide-on-large-only trigger z-depth-1">
 
 ```
 <a
-  aria-label="Toggle visibility of the mobile navbar"
   href="#"
-  data-activates="slide-out"
+  data-activates="slide-out-mobile"
   class="button-collapse">
-  <i class="mdi-navigation-menu"></i>
+
+  <i class="material-icons">
+    menu
+  </i>
+
 </a>
 
+
 <div class="name-title">
+
   <a
     id="name"
-    aria-label="Navigate to the beginning of the page"
     href="index.html"
     class="teal-text">
+
     Lawrance Tala
+
   </a>
 
   <span class="black-text">
     Software Developer
   </span>
+
 </div>
 ```
 
   </nav>
 
-  <!-- Mobile Side Navigation -->
+  <!-- =========================
+       MOBILE SIDE NAVIGATION
+  ========================= -->
 
   <nav class="hide-on-large-only">
 
 ```
-<ul id="slide-out" class="side-nav">
+<ul id="slide-out-mobile" class="side-nav">
+
 
   <li class="bold">
-    <a href="about.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-person small"></i>
+
+    <a href="index.html">
+
+      <i class="fa fa-home"></i>
+      <span>Home</span>
+
+    </a>
+
+  </li>
+
+
+  <li class="bold">
+
+    <a href="about.html">
+
+      <i class="fa fa-user"></i>
       <span>About</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="experience.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-trending-up small"></i>
+
+    <a href="experience.html">
+
+      <i class="fa fa-briefcase"></i>
       <span>Experience</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="projects.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-av-my-library-books small"></i>
+
+    <a href="projects.html">
+
+      <i class="fa fa-code"></i>
       <span>Projects</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="skills.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-assessment small"></i>
+
+    <a href="skills.html">
+
+      <i class="fa fa-cogs"></i>
       <span>Skills</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="education.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-school small"></i>
+
+    <a href="education.html">
+
+      <i class="fa fa-graduation-cap"></i>
       <span>Education</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
-    <a href="contact.html" class="waves-effect waves-dark teal-text">
-      <i class="mdi-content-mail small"></i>
+
+    <a href="contact.html">
+
+      <i class="fa fa-envelope"></i>
       <span>Contact</span>
+
     </a>
+
   </li>
 
+
   <li class="bold">
+
     <a
       href="https://LawranceTala.github.io/assets/resume/LawranceCV.pdf"
-      target="_blank"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-file-folder-open small"></i>
+      target="_blank">
+
+      <i class="fa fa-file-text"></i>
       <span>Resume</span>
+
     </a>
+
   </li>
 
 </ul>
@@ -233,250 +663,278 @@
 
   </nav>
 
-  <!-- ================= MAIN CONTENT ================= -->
+  <!-- =========================
+       MAIN CONTENT
+  ========================= -->
 
   <main>
 
 ```
 <section id="contact" class="section">
 
+
+  <!-- Page Title -->
+
   <h3 class="page-title white-text teal">
     Contact
   </h3>
 
+
   <div class="container">
 
-    <!-- Contact Introduction -->
-    <div class="card">
 
-      <div class="card-content">
+    <!-- =========================
+         ONE SINGLE CONTACT CARD
+    ========================= -->
 
-        <span class="card-title teal-text">
-          <i class="fa fa-envelope"></i>
-          Get In Touch
-        </span>
+    <div class="contact-card">
+
+
+      <!-- Title -->
+
+      <h2 class="contact-card-title">
+
+        <i class="fa fa-envelope"></i>
+        Get In Touch
+
+      </h2>
+
+
+      <!-- Introduction -->
+
+      <div class="contact-intro">
 
         <p>
+
           I'm open to opportunities in software development,
           machine learning, IT support, data, and other
           technology-related roles.
+
         </p>
 
         <p>
-          Feel free to reach out through any of the contact
-          options below.
+
+          Feel free to reach out through any of the
+          contact options below.
+
         </p>
 
       </div>
 
-    </div>
+
+      <!-- Contact Information -->
+
+      <div class="contact-details">
 
 
-    <!-- Contact Information -->
+        <p>
 
-    <div class="row">
+          <i class="fa fa-phone"></i>
 
-      <!-- Phone -->
-      <div class="col s12 m6">
+          <a href="tel:+254112888507">
 
-        <div class="card contact-card">
+            +254 112 888 507
 
-          <div class="card-content">
+          </a>
 
-            <span class="card-title teal-text">
-              <i class="fa fa-phone"></i>
-              Phone
-            </span>
+        </p>
 
-            <p>
-              <a href="tel:+254112888507" class="teal-text">
-                +254 112 888 507
-              </a>
-            </p>
 
-          </div>
+        <p>
 
-        </div>
+          <i class="fa fa-envelope"></i>
+
+          <a href="mailto:lawrancetala@gmail.com">
+
+            lawrancetala@gmail.com
+
+          </a>
+
+        </p>
+
+
+        <p>
+
+          <i class="fa fa-github"></i>
+
+          <a
+            href="https://github.com/LawranceTala"
+            target="_blank">
+
+            github.com/LawranceTala
+
+          </a>
+
+        </p>
+
+
+        <p>
+
+          <i class="fa fa-linkedin"></i>
+
+          <a
+            href="https://www.linkedin.com/in/lawrance-tala/"
+            target="_blank">
+
+            linkedin.com/in/lawrance-tala
+
+          </a>
+
+        </p>
+
 
       </div>
 
 
-      <!-- Email -->
-      <div class="col s12 m6">
+      <!-- Message Form Title -->
 
-        <div class="card contact-card">
+      <h3 class="form-title">
 
-          <div class="card-content">
+        <i class="fa fa-paper-plane"></i>
+        Send Me a Message
 
-            <span class="card-title teal-text">
-              <i class="fa fa-envelope"></i>
-              Email
-            </span>
+      </h3>
 
-            <p>
-              <a
-                href="mailto:lawrancetala@gmail.com"
-                class="teal-text">
-                lawrancetala@gmail.com
-              </a>
-            </p>
+
+      <!-- Message Form -->
+
+      <form
+        action="mailto:lawrancetala@gmail.com"
+        method="post"
+        enctype="text/plain">
+
+
+        <div class="row">
+
+
+          <!-- Name -->
+
+          <div class="input-field col s12 m6">
+
+            <input
+              id="name"
+              name="Name"
+              type="text"
+              required>
+
+            <label for="name">
+              Your Name
+            </label>
 
           </div>
+
+
+          <!-- Email -->
+
+          <div class="input-field col s12 m6">
+
+            <input
+              id="email"
+              name="Email"
+              type="email"
+              required>
+
+            <label for="email">
+              Your Email
+            </label>
+
+          </div>
+
+
+          <!-- Subject -->
+
+          <div class="input-field col s12">
+
+            <input
+              id="subject"
+              name="Subject"
+              type="text"
+              required>
+
+            <label for="subject">
+              Subject
+            </label>
+
+          </div>
+
+
+          <!-- Message -->
+
+          <div class="input-field col s12">
+
+            <textarea
+              id="message"
+              name="Message"
+              class="materialize-textarea"
+              required>
+            </textarea>
+
+            <label for="message">
+              Your Message
+            </label>
+
+          </div>
+
 
         </div>
 
-      </div>
 
+        <!-- Send Button -->
 
-      <!-- GitHub -->
-      <div class="col s12 m6">
-
-        <div class="card contact-card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              <i class="fa fa-github"></i>
-              GitHub
-            </span>
-
-            <p>
-              <a
-                href="https://github.com/LawranceTala"
-                target="_blank"
-                class="teal-text">
-                github.com/LawranceTala
-              </a>
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- LinkedIn -->
-      <div class="col s12 m6">
-
-        <div class="card contact-card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              <i class="fa fa-linkedin"></i>
-              LinkedIn
-            </span>
-
-            <p>
-              <a
-                href="https://www.linkedin.com/in/lawrance-tala/"
-                target="_blank"
-                class="teal-text">
-                linkedin.com/in/lawrance-tala
-              </a>
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Simple Message Form -->
-
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          <i class="fa fa-paper-plane"></i>
-          Send Me a Message
-        </span>
-
-        <form action="mailto:lawrancetala@gmail.com"
-          method="post"
-          enctype="text/plain">
-
-          <div class="row">
-
-            <div class="input-field col s12 m6">
-
-              <input
-                id="name"
-                name="Name"
-                type="text"
-                required>
-
-              <label for="name">
-                Your Name
-              </label>
-
-            </div>
-
-
-            <div class="input-field col s12 m6">
-
-              <input
-                id="email"
-                name="Email"
-                type="email"
-                required>
-
-              <label for="email">
-                Your Email
-              </label>
-
-            </div>
-
-
-            <div class="input-field col s12">
-
-              <input
-                id="subject"
-                name="Subject"
-                type="text"
-                required>
-
-              <label for="subject">
-                Subject
-              </label>
-
-            </div>
-
-
-            <div class="input-field col s12">
-
-              <textarea
-                id="message"
-                name="Message"
-                class="materialize-textarea"
-                required></textarea>
-
-              <label for="message">
-                Your Message
-              </label>
-
-            </div>
-
-          </div>
-
+        <div class="send-button">
 
           <button
             type="submit"
-            class="btn waves-effect waves-light teal">
+            class="btn waves-effect waves-light">
 
             Send Message
+
             <i class="fa fa-paper-plane right"></i>
 
           </button>
 
-        </form>
+        </div>
+
+
+      </form>
+
+
+      <!-- Social Links -->
+
+      <div class="social-links">
+
+
+        <a
+          href="https://github.com/LawranceTala"
+          target="_blank"
+          aria-label="GitHub">
+
+          <i class="fa fa-github"></i>
+
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/lawrance-tala/"
+          target="_blank"
+          aria-label="LinkedIn">
+
+          <i class="fa fa-linkedin"></i>
+
+        </a>
+
+
+        <a
+          href="mailto:lawrancetala@gmail.com"
+          aria-label="Email">
+
+          <i class="fa fa-envelope"></i>
+
+        </a>
+
 
       </div>
+
 
     </div>
 
@@ -487,15 +945,20 @@
 
   </main>
 
-  <!-- jQuery -->
+  <!-- =========================
+       SCRIPTS
+  ========================= -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  </script>
 
-  <!-- Materialize JavaScript -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
+  </script>
 
   <script>
+
     $(document).ready(function () {
 
       $(".button-collapse").sideNav({
@@ -505,6 +968,7 @@
       });
 
     });
+
   </script>
 
 </body>
